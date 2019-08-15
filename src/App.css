@@ -1,0 +1,297 @@
+.item #home{
+ z-index: 4; 
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.backgroundImage {
+  background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/header-background.jpg') center center no-repeat;
+  height: 100%;
+  width: 100%;
+  /* margin-top: -500px; */
+  /* z-index: 1; */
+  position: fixed;
+}
+.container{
+  height: auto;
+}
+.particleStyle {
+  z-index: -1;
+  height: 100% !important;
+  width: 100% !important;
+  background-size: cover;
+  position: absolute;
+}
+.image-1:hover{
+  transform: scale(1.5, 1.5);
+}
+.button-kirim{
+  width: 100%;
+}
+.button-kirim:hover{
+  background-color: lightblue;
+  border: 2px solid #007bff;
+  color: #007bff;
+}
+.form-custom{
+  animation: bounce 1.5s infinite;
+}
+.countdown h2{
+  font-size: 40px;
+  color: lightblue;
+}
+.countdown h5{
+  padding-top: 20%;
+}
+/* .palaHafiz{
+  width: 10%;
+} */
+.textHafiz, .palaHafiz{
+  animation: seconds 1.0s forwards;
+  animation-iteration-count: 1;
+  animation-delay: 4s;
+  opacity: 0;
+}
+.palaHafiz2{
+  animation: seconds 1.0s forwards;
+  animation-iteration-count: 1;
+  animation-delay: 6s;
+  opacity: 0;
+}
+.textHafiz2{
+  animation: seconds 1.0s forwards;
+  animation-iteration-count: 1;
+  animation-delay: 6s;
+  margin-right: 250px;
+  opacity: 0;
+}
+.textHafiz3 , .palaHafiz3{
+  animation: seconds 1.0s forwards;
+  animation-iteration-count: 1;
+  animation-delay: 8s;
+  opacity: 0;
+}
+.palaHafiz4{
+  animation: seconds 1.0s forwards;
+  animation-iteration-count: 1;
+  animation-delay: 10s;  
+  opacity: 0;
+}
+.textHafiz4{
+  animation: seconds 1.0s forwards;
+  animation-iteration-count: 1;
+  animation-delay: 10s;
+  margin-right: 250px;
+  opacity: 0;
+}
+@keyframes seconds  {
+  0%{
+    margin-top: 200px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.3
+  }
+   100% {
+    opacity: 1;
+  }
+} 
+@keyframes seconds2  {
+  0%{
+    /* margin-top:  */
+    opacity: 0;
+  }
+  50% {
+     opacity: 0.3
+  }
+   100% {
+     opacity: 1;
+  }
+} 
+@keyframes seconds3  {
+  0%{
+    opacity: 0;
+  }
+  50% {
+     opacity: 0.3
+  }
+   100% {
+     opacity: 1;
+  }
+} 
+.textUser{
+  animation-delay: 0.5s;
+  font-weight: 600;
+  color: #fff;
+}
+.textHafiz1{
+  animation-name: textup;
+}
+.textHafiz1::after{
+  
+}
+.textHafiz2{
+  font-weight: 600;
+  color: #333;
+}
+.textHafiz2::after{
+ animation-name: textup ; 
+ animation-delay: 0.5s;
+}
+.textUser1{
+  animation-name: textup ;
+  font-weight: 600; 
+}
+.textUser1::after{
+ animation-name: textup ; 
+ animation-delay: 0.5s;
+}
+.textUser2{
+  animation-name: textup ;
+  font-weight: 600; 
+}
+.textUser2::after{
+ animation-name: textup ; 
+ animation-delay: 0.5s;
+}
+
+.ripple-wrapper {
+   height: 70%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.request-loader {
+   margin-top: 10%;
+   position: relative;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   height: 300px;
+   width: 300px;
+   border-radius: 100%;
+   background: #4641b9;
+   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
+}
+ .request-loader span {
+   position: relative;
+   font-size: 72px;
+   top: 0px;
+   left: 0px;
+}
+.request-loader::after {
+   opacity: 0;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   right: 0;
+   bottom: 0;
+   content: '';
+   height: 100%;
+   width: 100%;
+   border: 8px solid rgba(255, 255, 255, 0.2);
+   border-radius: 100%;
+   animation-name: ripple;
+   animation-duration: 3s;
+   animation-delay: 0s;
+   animation-iteration-count: infinite;
+   animation-timing-function: cubic-bezier(0.65, 0, 0.34, 1);
+   z-index: -1;
+}
+ .request-loader::before {
+   opacity: 0;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   right: 0;
+   bottom: 0;
+   content: '';
+   height: 100%;
+   width: 100%;
+   border: 8px solid rgba(255, 255, 255, 0.2);
+   border-radius: 100%;
+   animation-name: ripple;
+   animation-duration: 3s;
+   animation-delay: 0.5s;
+   animation-iteration-count: infinite;
+   animation-timing-function: cubic-bezier(0.65, 0, 0.34, 1);
+   z-index: -1;
+}
+
+ @keyframes ripple {
+  from {
+     opacity: 1;
+     transform: scale3d(0.75, 0.75, 1);
+  }
+   to {
+     opacity: 0;
+     transform: scale3d(1.5, 1.5, 1);
+  }
+}
+ 
+
+@keyframes bounce{
+  0%{}
+  50%{ transform: translate(0, 8px); }
+}
+
+@media (min-width: 1281px) {
+/* ##more than 1281*/
+  /* .alice-carousel{
+    margin-top: -461px !important;
+  } */
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+  /* ##Device = Tablets, Ipads (portrait) */
+  /* .alice-carousel{
+    margin-top: -500px !important;
+  } */
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+   /* ##Device = Low Resolution Tablets, Mobiles (Landscape) */
+ }
+@media (min-width: 481px) and (max-width: 767px) {
+   /* ##Device = Most of the Smartphones Mobiles (Portrait) */
+ }
+ @media only screen and (min-width: 320px) and (max-width: 480px) {
+
+ }
