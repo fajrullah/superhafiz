@@ -18,7 +18,7 @@ class Home extends Component{
                 Ngobrol Bersama<br/>
                 </h1>
                 <Wave
-                  text="AYO KAWAN NGOBROL BERSAMA HAFIZ"
+                  text="AYO KAWAN NGOBROL BERSAMA SUPER HAFIZ"
                   effect="fadeOut"
                   effectChange={1.9}
                 />
