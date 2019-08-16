@@ -15,7 +15,7 @@ class Home extends Component{
             <Row>
               <Col xs={6}>
                 <h1 style={{fontSize:50+'px ', color:'#fff'}}>Ayo Kawan<br/>
-                Ngobrol Bersama<br/>
+                Ngobrol Bersama Super Hafiz <br/>
                 </h1>
                 <Wave
                   text="AYO KAWAN NGOBROL BERSAMA SUPER HAFIZ"
