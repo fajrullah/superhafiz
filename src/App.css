@@ -34,13 +34,29 @@
     transform: rotate(360deg);
   }
 }
-.backgroundImage {
+/* .backgroundImage {
   background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/header-background.jpg') center center no-repeat;
+  height: 100%;
+  width: 100%; */
+  /* margin-top: -500px; */
+  /* z-index: 1; */
+  /* position: fixed;
+} */
+.backgroundImage {
+  background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/bg-purple.png') center center no-repeat;
   height: 100%;
   width: 100%;
   /* margin-top: -500px; */
   /* z-index: 1; */
   position: fixed;
+}
+.paper-plane-image {
+  width:10%;
+}
+.paper-plane-image1 {
+  width:5%;
+  margin-top: 20px;
+  margin-right: 30px;
 }
 .container{
   height: auto;
@@ -267,34 +283,10 @@
      transform: scale3d(1.5, 1.5, 1);
   }
 }
-.eyes{
-   width: 30%;
-   height: 30%;
-   top: 17%;
-   z-index: 1;
-}
-.eyes .eye-left .eye-right {
-   width: 32px;
-   height: 32px;
-   border-radius: 50%;
-   background-color: #fff;
-   bottom: 0;
-   transform-origin: center top;
-   animation: eyeWink 8s linear infinite;
-}
-.eyes .eye-left .pupil:after .eyes .eye-right .pupil-after:after{
-  background-color: #fff;
-   border-radius: 50%;
-   width: 10px;
-   height: 10px;
-   top: 3px;
-   left: -1px;
-   transform-origin: center bottom;
-   animation: eyeWink2 8s linear infinite;
-}
+
 .hafizHome {
-  -webkit-animation: hafizHome-scale infinite ease-in-out 5s;
-          animation: hafizHome-scale infinite ease-in-out 5s;
+  -webkit-animation: hafizHome-scale infinite ease-in 5s;
+          animation: hafizHome-scale infinite ease-in 5s;
 }
 @keyframes hafizHome-scale {
   0% {
@@ -312,6 +304,32 @@
 }
 .cls-7 {
   fill: #aedccd;
+}
+
+.cls-18,
+.cls-19{
+  stroke-miterlimit: 10;
+}
+.cls-20 {
+  fill: #7d8a71;
+}
+.cls-18 {
+  fill: #b5d780;
+}
+.cls-18 {
+  stroke: #b5d780;
+}
+.cls-18,
+.cls-19 {
+  stroke-width: 0.25px;
+}
+
+.cls-19{
+  fill: #aec58b;
+}
+
+.cls-19 {
+  stroke: #aec58b;
 }
 
 #clouds-front {
