@@ -12,6 +12,17 @@ class Home extends Component{
     return (
       <div>
         <Container className="container">
+            <Row style={{height:300+'px'}}>
+              <Col>
+                <img src={images} style={{width:60+'%', height:'auto'}} className="hafizHome" alt="slide 1"/>
+                {/*<OBJModel src={animasi} texPath="" width='500'/>*/}
+              </Col>
+              <Col>
+                {/*<h1 style={{fontSize:50+'px ', color:'#fff'}}>Ayo Kawan<br/>
+                Ngobrol Bersama<br/>
+                </h1>*/}
+                {/*<Wave
+                  text="AYO KAWAN NGOBROL BERSAMA SUPER HAFIZ DARI ALQOLAM"
             <Row>
               <Col xs={6}>
                 <h1 style={{fontSize:50+'px ', color:'#fff'}}>Ayo Kawan<br/>
@@ -19,10 +30,11 @@ class Home extends Component{
                 </h1>
                 <Wave
                   text="AYO KAWAN NGOBROL BERSAMA SUPER HAFIZ"
+
                   effect="fadeOut"
                   effectChange={1.9}
-                />
-                <svg id="sky_day" data-name="sky day" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1295.87 300">
+                />*/}
+                <svg id="sky_day" data-name="sky day" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1295.87 600">
                 <g id="clouds-front">
                   <g id="cloud-1" class="cloud-all">
                     <path class="cls-6" d="M899.69,71.14a26.77,26.77,0,0,0-3,0c-8.74,0-15.84,4.89-16.61,11.11a28.73,28.73,0,0,0-10.76-2c-12.24,0-22.17,7.22-22.17,16.13,0,0,0,.07,0,0.1-9.18,2.27-15.78,8.58-15.78,16,0,9.36,10.42,16.94,23.28,16.94H899.5Z"/>
@@ -43,15 +55,28 @@ class Home extends Component{
                     <path class="cls-7" d="M430.46,168.11a14.69,14.69,0,0,1,2,0c6.16,0,11.15,3.82,11.7,8.68a18.49,18.49,0,0,1,7.58-1.59c8.62,0,15.61,5.64,15.61,12.61,0,0,0,.05,0,0.08,6.46,1.78,11.12,6.71,11.12,12.52,0,7.31-7.34,13.24-16.39,13.24-4.44,0-18-.07-31.58-0.07V168.11Z"/>
                   </g>
                 </g>
+                  <g id="tree2">
+                    <path class="cls-18" d="M1223.27,343.52c-33.86,0-61.3,34.79-61.3,77.71s27.45,77.71,61.3,77.71V343.52Z"/>
+                    <path class="cls-18" d="M1223.27,343.52c-33.86,0-61.3,34.79-61.3,77.71s27.45,77.71,61.3,77.71V343.52Z"/>
+                    <path class="cls-19" d="M1223.27,343.52c33.86,0,61.3,34.79,61.3,77.71s-27.45,77.71-61.3,77.71V343.52Z"/>
+                    <path class="cls-19" d="M1223.27,343.52c33.86,0,61.3,34.79,61.3,77.71s-27.45,77.71-61.3,77.71V343.52Z"/>
+                    <polygon class="cls-20" points="1210.74 544.47 1219.48 498.94 1210.74 472.75 1219.48 485.67 1219.48 452.67 1201.32 408.25 1219.48 438.28 1219.48 392.23 1224.22 438.28 1244.71 423.27 1228.57 444.54 1229.58 472.75 1244.71 452.67 1234.62 476.45 1233.61 507.58 1240.67 544.47 1210.74 544.47"/>
+                    <polygon class="cls-20" points="1210.74 544.47 1219.48 498.94 1210.74 472.75 1219.48 485.67 1219.48 452.67 1201.32 408.25 1219.48 438.28 1219.48 392.23 1224.22 438.28 1244.71 423.27 1228.57 444.54 1229.58 472.75 1244.71 452.67 1234.62 476.45 1233.61 507.58 1240.67 544.47 1210.74 544.47"/>
+                  </g>
+                  <g id="tree2-2" data-name="tree2">
+                    <path class="cls-18" d="M91.48,343.29c-33.86,0-61.3,34.79-61.3,77.71s27.45,77.71,61.3,77.71V343.29Z"/>
+                    <path class="cls-18" d="M91.48,343.29c-33.86,0-61.3,34.79-61.3,77.71s27.45,77.71,61.3,77.71V343.29Z"/>
+                    <path class="cls-19" d="M91.16,342.83c33.86,0,61.3,34.79,61.3,77.71S125,498.24,91.16,498.24V342.83Z"/>
+                    <path class="cls-19" d="M91.16,342.83c33.86,0,61.3,34.79,61.3,77.71S125,498.24,91.16,498.24V342.83Z"/>
+                    <polygon class="cls-20" points="78.88 543.79 87.63 498.26 78.88 472.07 87.63 484.98 87.63 451.98 69.47 407.56 87.63 437.6 87.63 391.55 92.36 437.6 112.86 422.58 96.71 443.86 97.72 472.07 112.86 451.98 102.77 475.77 101.76 506.89 108.82 543.79 78.88 543.79"/>
+                    <polygon class="cls-20" points="78.88 543.79 87.63 498.26 78.88 472.07 87.63 484.98 87.63 451.98 69.47 407.56 87.63 437.6 87.63 391.55 92.36 437.6 112.86 422.58 96.71 443.86 97.72 472.07 112.86 451.98 102.77 475.77 101.76 506.89 108.82 543.79 78.88 543.79"/>
+                  </g>
               </svg>
               </Col>
-              <Col>
-                <img src={images} style={{width:60+'%', height:'auto'}} className="hafizHome" alt="slide 1"/>
-                {/*<OBJModel src={animasi} texPath="" width='500'/>*/}
-              </Col>
+
             </Row>
             <Row>
-              <Button className="" href="./Talk.js">Ngobrol Sekarang</Button>
+              <Button className="" href="./Talk.js" style={{borderRadius: 100+'px'}}>Ngobrol Sekarang</Button>
             </Row>
         </Container>
       </div>

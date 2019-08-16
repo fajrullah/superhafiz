@@ -49,7 +49,7 @@ class ParticlesPage extends Component{
 			                "distance": 250,
 			                "duration": 2,
 			                "size": 0,
-			                "opacity": 0
+			                "opacity": 0.5
 			            },
 			            "repulse": {
 			                "distance": 400,

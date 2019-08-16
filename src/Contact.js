@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import images from './images/HAFIZAI.png';
+import paperPlane from './images/paper-plane.png';
 import { Container, Row, Form, Col, Button } from 'react-bootstrap';
 
 class Contact extends Component{
@@ -29,19 +30,13 @@ class Contact extends Component{
         						<Col style={{marginTop: 20+'px'}}>
         							<Button className="button button-secondary button-kirim"><i className="fas fa-paper-plane"></i> Kirim</Button>
         						</Col>
-        					</Row>
+        					</Row>                            
         				</Form>
+                        <img src={paperPlane} className="paper-plane-image1" alt="paper plane"/>
         			</Col>
-        			<Col>
+        			<Col >
     	    			<img src={images} style={{width:50+'%'}} alt="slide 6"/>
-                        <div class="eyes">
-                            <div class="eye-left">
-                                <div class="pupil"></div>
-                            </div>
-                            <div class="eye-right">
-                                <div class="pupil"></div>
-                            </div>
-                        </div>
+                        <img src={paperPlane} className="paper-plane-image" alt="paper plane"/>
     	    		</Col>
     	    	</Row>
             </Container>

@@ -18,11 +18,11 @@ class Talk extends Component{
           <Col><h4 style={{color:'white',fontSize:30+'px'}}>Ngobrol Sama Hafiz Yuk Teman</h4></Col>  
         </Row>
         <Row>
+        
           {/*<Sound
             url="./SoundEffect.mp3"
             playStatus={Sound.status.PLAYING}
             playFromPosition={300 /* in milliseconds */}
-          />*/}
           <Col className="ripple-wrapper">
             <div className="request-loader">
               <span>
