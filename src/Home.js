@@ -23,6 +23,14 @@ class Home extends Component{
                 </h1>*/}
                 {/*<Wave
                   text="AYO KAWAN NGOBROL BERSAMA SUPER HAFIZ DARI ALQOLAM"
+            <Row>
+              <Col xs={6}>
+                <h1 style={{fontSize:50+'px ', color:'#fff'}}>Ayo Kawan<br/>
+                Ngobrol Bersama SuperHafiz<br/>
+                </h1>
+                <Wave
+                  text="AYO KAWAN NGOBROL BERSAMA SUPER HAFIZ"
+
                   effect="fadeOut"
                   effectChange={1.9}
                 />*/}
