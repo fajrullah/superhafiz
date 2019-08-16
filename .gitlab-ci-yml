@@ -24,4 +24,6 @@ pages:
   artifacts:
     paths:
     - public # The built files for Gitlab Pages to serve
+    only :
+    - master
 
