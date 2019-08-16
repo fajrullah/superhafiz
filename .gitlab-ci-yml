@@ -25,5 +25,5 @@ pages:
     paths:
     - public # The built files for Gitlab Pages to serve
   only:
-    - development # Only run on development branch
+    - master # Only run on development branch
 
