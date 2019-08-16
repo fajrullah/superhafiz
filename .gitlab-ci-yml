@@ -1,0 +1,29 @@
+image: node:8.10.0
+
+variables:
+  PUBLIC_URL: /superhafiz
+cache:
+  paths:
+  - node_modules
+
+stages:
+- test
+
+test :
+stage : test
+script : echo "Running Test On Development Branch"
+
+pages:
+  stage: test
+  script:
+    - npm install # Install all dependencies
+    - npm run build --prod # Build for prod
+    - cp public/index.html public/404.html 
+    - mv public _public
+    - mv build public
+  artifacts:
+    paths:
+    - public # The built files for Gitlab Pages to serve
+  only:
+    - development # Only run on development branch
+

@@ -34,6 +34,14 @@ class Contact extends Component{
         			</Col>
         			<Col>
     	    			<img src={images} style={{width:50+'%'}} alt="slide 6"/>
+                        <div class="eyes">
+                            <div class="eye-left">
+                                <div class="pupil"></div>
+                            </div>
+                            <div class="eye-right">
+                                <div class="pupil"></div>
+                            </div>
+                        </div>
     	    		</Col>
     	    	</Row>
             </Container>
