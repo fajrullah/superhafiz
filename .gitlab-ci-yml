@@ -10,20 +10,17 @@ stages:
 - test
 
 test :
-stage : test
-script : echo "Running Test On Development Branch"
-
-pages:
-  stage: test
+  stage : test
   script:
     - npm install # Install all dependencies
     - npm run build --prod # Build for prod
     - cp public/index.html public/404.html 
     - mv public _public
     - mv build public
-  artifacts:
+    - echo "Merge Request Development Branch"
+  artifacts
     paths:
-    - public # The built files for Gitlab Pages to serve
+    - public
     only :
-    - master
+    - merge_requests 
 
