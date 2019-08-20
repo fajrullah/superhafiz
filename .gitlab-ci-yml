@@ -22,5 +22,5 @@ test :
     paths:
     - public
     only :
-    - merge_requests 
+    - master
 

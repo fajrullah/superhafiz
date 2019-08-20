@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import HAFIZAI from './images/HAFIZAI_hand.png';
-import { Row, Container, Button, Col } from 'react-bootstrap';
+import { Row, Container, Col } from 'react-bootstrap';
 import Sound from 'react-sound';
 import palaHafiz from './images/palaHafiz.png';
 import chat1 from './images/chat1.png';
@@ -15,18 +15,18 @@ class Talk extends Component{
     return (
       <Container>
         <Row className="App">
-          <Col><h4 style={{color:'white',fontSize:30+'px'}}>Ngobrol Sama Hafiz Yuk Teman</h4></Col>  
+          {/*<Col><h4 style={{color:'white',fontSize:30+'px'}} data-shadow="Ngobrol Sama Hafiz Yuk Teman" className="h4Effect">Ngobrol Sama Hafiz Yuk Teman</h4></Col>  */}
+          <Col><h4 style={{color:'white',fontSize:30+'px'}} className="h4Effect">Ngobrol Sama Hafiz Yuk Teman</h4></Col>  
         </Row>
         <Row>
-        
           {/*<Sound
             url="./SoundEffect.mp3"
             playStatus={Sound.status.PLAYING}
-            playFromPosition={300 /* in milliseconds */}
+            playFromPosition={300}/>*/}
           <Col className="ripple-wrapper">
             <div className="request-loader">
               <span>
-                <img src={HAFIZAI} style={{width:90+'%'}} alt="slide 4"/>
+                <img src={HAFIZAI} style={{width:97+'%'}} alt="slide 4"/>
               </span>
             </div>
           </Col>

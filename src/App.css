@@ -29,26 +29,30 @@
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
   }
 }
-/* .backgroundImage {
-  background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/header-background.jpg') center center no-repeat;
-  height: 100%;
-  width: 100%; */
-  /* margin-top: -500px; */
-  /* z-index: 1; */
-  /* position: fixed;
-} */
+
 .backgroundImage {
-  background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/bg-purple.png') center center no-repeat;
+  /* background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/bg-purple.png') center center no-repeat; */
+  background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/SUPER HAFIZ (FITUR) FIX-01.png') center center no-repeat;
   height: 100%;
   width: 100%;
   /* margin-top: -500px; */
   /* z-index: 1; */
   position: fixed;
+  background-attachment: fixed;
+  background-size: cover;
 }
 .paper-plane-image {
   width:10%;
@@ -70,9 +74,18 @@
 }
 .image-1:hover{
   transform: scale(1.5, 1.5);
+  -webkit-transform: scale(1.5, 1.5);
+  -moz-transform: scale(1.5, 1.5);
+  -ms-transform: scale(1.5, 1.5);
+  -o-transform: scale(1.5, 1.5);
 }
 .button-kirim{
   width: 100%;
+}
+.button_home {
+  border-radius: 100px;
+  background:#6b84e1;
+  font-size:15px;
 }
 .button-kirim:hover{
   background-color: lightblue;
@@ -84,11 +97,12 @@
 }
 .countdown h2{
   font-size: 40px;
-  color: lightblue;
+  /* color: lightblue; */
+  color: #7a60a6;
 }
-.countdown h5{
+/* .countdown h5{
   padding-top: 20%;
-}
+} */
 /* .palaHafiz{
   width: 10%;
 } */
@@ -212,12 +226,17 @@
    position: relative;
    display: flex;
    flex-direction: row;
+   -webkit-flex-direction: row;
+   -moz-flex-direction: row;
+   -ms-flex-direction: row;
+   -o-flex-direction: row;
    justify-content: center;
    align-items: center;
    height: 300px;
    width: 300px;
    border-radius: 100%;
-   background: #4641b9;
+   /* background: #4641b9; */
+   background: #afadea;
    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
 }
  .request-loader span {
@@ -230,6 +249,10 @@
    opacity: 0;
    display: flex;
    flex-direction: row;
+   -webkit-flex-direction: row;
+   -moz-flex-direction: row;
+   -ms-flex-direction: row;
+   -o-flex-direction: row;
    justify-content: center;
    align-items: center;
    position: absolute;
@@ -246,6 +269,10 @@
    animation-duration: 3s;
    animation-delay: 0s;
    animation-iteration-count: infinite;
+   -webkit-animation-iteration-count: infinite;
+   -moz-animation-iteration-count: infinite;
+   -ms-animation-iteration-count: infinite;
+   -o-animation-iteration-count: infinite;
    animation-timing-function: cubic-bezier(0.65, 0, 0.34, 1);
    z-index: -1;
 }
@@ -272,21 +299,71 @@
    animation-timing-function: cubic-bezier(0.65, 0, 0.34, 1);
    z-index: -1;
 }
+.h4Effect {
+  display: inline-block;
+  color: white;
+  font-family: 'Righteous', serif;
+  font-size: 12em; 
+  text-shadow: .03em .03em 0 hsla(230,40%,50%,1);
+}
+.h4Effect:after{
+  content: attr(data-shadow);
+    position: absolute;
+    top: .06em; left: .06em;
+    z-index: -1;
+    text-shadow: none;
+    margin-left: 357px;
+    background-image:
+      linear-gradient(
+        45deg,
+        transparent 45%,
+        hsla(48,20%,90%,1) 45%,
+        hsla(48,20%,90%,1) 55%,
+        transparent 0
+        );
+    background-size: .05em .05em;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
+    -o-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+    animation: shad-anim 15s linear infinite;
+}
+
+@keyframes shad-anim {
+  0% { background-position: 0 0 }
+  0% {background-position: 100% -100%}
+}
 
  @keyframes ripple {
   from {
      opacity: 1;
      transform: scale3d(0.75, 0.75, 1);
+     -webkit-transform: scale3d(0.75, 0.75, 1);
+     -moz-transform: scale3d(0.75, 0.75, 1);
+     -ms-transform: scale3d(0.75, 0.75, 1);
+     -o-transform: scale3d(0.75, 0.75, 1);
   }
    to {
      opacity: 0;
      transform: scale3d(1.5, 1.5, 1);
+     -webkit-transform: scale3d(1.5, 1.5, 1);
+     -moz-transform: scale3d(1.5, 1.5, 1);
+     -ms-transform: scale3d(1.5, 1.5, 1);
+     -o-transform: scale3d(1.5, 1.5, 1);
   }
 }
-
+#sky_day {
+  z-index: -1;
+}
 .hafizHome {
-  -webkit-animation: hafizHome-scale infinite ease-in 5s;
-          animation: hafizHome-scale infinite ease-in 5s;
+  -webkit-animation: hafizHome-scale1 infinite ease-in 5s;
+  -moz-animation: hafizHome-scale1 infinite ease-in 5s;
+  -ms-animation: hafizHome-scale1 infinite ease-in 5s;
+  -o-animation: hafizHome-scale1 infinite ease-in 5s;
+          animation: hafizHome-scale1 infinite ease-in 5s;
+          z-index: 1;
 }
 @keyframes hafizHome-scale {
   0% {
@@ -334,11 +411,17 @@
 
 #clouds-front {
   -webkit-animation: cloud-transit infinite ease-in-out 5s;
+  -moz-animation: cloud-transit infinite ease-in-out 5s;
+  -ms-animation:  clpud-transit infinite ease-in-out 5s;
+  -o-animation:  cloud-transit infinite ease-in-out 5s;
           animation: cloud-transit infinite ease-in-out 5s;
 }
 
 #clouds-back {
   -webkit-animation: cloud-transit-2 infinite ease-out 5s;
+  -moz-animation: cloud-transit-2 infinite ease-out 5s;
+  -ms-animation: cloud-transit-2 infinite ease-out 5s;
+  -o-animation: cloud-transit-2 infinite ease-out 5s;
           animation: cloud-transit-2 infinite ease-out 5s;
 }
 @keyframes cloud-transit {
@@ -350,6 +433,9 @@
   }
   100% {
     -webkit-transform: translateX(5%);
+    -moz-transform: translateX(5%);
+    -ms-transform: translateX(5%);
+    -o-transform: translateX(5%);
             transform: translateX(5%);
     opacity: 0;
   }
@@ -363,6 +449,9 @@
   }
   100% {
     -webkit-transform: translateX(-5%);
+    -moz-transform: translateX(-5%);
+    -ms-transform: translateX(-5%);
+    -o-transform: translateX(-5%);
             transform: translateX(-5%);
     opacity: 0;
   }
@@ -370,7 +459,13 @@
 
 @keyframes bounce{
   0%{}
-  50%{ transform: translate(0, 8px); }
+  50%{ 
+    -webkit-transform: translate(0, 8px); 
+    -moz-transform: translate(0, 8px); 
+    -ms-transform: translate(0, 8px); 
+    -o-transform: translate(0, 8px); 
+    transform: translate(0, 8px); 
+  }
 }
 
 @media (min-width: 1281px) {
@@ -392,5 +487,7 @@
    /* ##Device = Most of the Smartphones Mobiles (Portrait) */
  }
  @media only screen and (min-width: 320px) and (max-width: 480px) {
-
+    .HAFIZAI_Talk_Page {
+      width:97%;
+    }
  }
