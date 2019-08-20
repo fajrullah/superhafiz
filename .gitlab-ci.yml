@@ -28,7 +28,7 @@ deploy:
     - cp public/index.html public/404.html 
     - mv public _public
     - mv build public
-  artifacts
+  artifacts:
     paths:
     - public
     only :
