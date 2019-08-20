@@ -6,7 +6,7 @@ import { Row, Col } from 'react-bootstrap';
 class Features extends Component{
   render() {
     return (
-    	<div  className="App">
+    	<div  className="App title_all_page">
 	         <h1 style={{color:'white'}}>Kelebihan Hafiz</h1>
           	<Row>
               <Col>
