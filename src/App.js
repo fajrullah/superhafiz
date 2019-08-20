@@ -8,21 +8,27 @@ import Features from './Features';
 import Talk from './Talk';
 import CountingDown from './CountingDown';
 import Contact from './Contact';
-import img from './images/header-background.jpg';
 import ParticlesPage from './ParticlesPage';
 class App extends Component {
+
   render(){ 
   return (
     
   <div className="backgroundImage">
     <ParticlesPage></ParticlesPage>
     <AliceCarousel
+      
       duration={400}
+      dotsDisable={true}
       mouseDragEnabled={true}
       infinite={true}
       keyboardNavigation={true}
-      fadeOutAnimation={true}
-      buttonsDisabled={true}>
+      fadeOutAnimation={false}
+      buttonsDisabled={false}
+      autoHeight={false}
+      showSlideInfo={false}
+      preventEventOnTouchMove={true}
+      >
       <div className="item" id="Home"><Home/></div>
       <div className="item" id="About"><About/></div>
       <div className="item" id="Features"><Features/></div>
