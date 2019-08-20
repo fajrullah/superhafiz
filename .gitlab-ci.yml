@@ -8,28 +8,32 @@ cache:
 
 stages:
 - test
-- deploy
 
 test :
   stage : test
   script:
    - npm install
-   - npm test
+   - npm run build --prod # Build for prod
+   - mv public _public
+   - mv build public
    - echo "Merge Request Development Branch"
-  only :
+  artifacts:
+   paths:
+    - public
+   only :
    - merge_requests
 
-deploy:
-  stage : test
-  script:
-    - npm install # Install all dependencies
-    - npm run build --prod # Build for prod
-    - cp public/index.html public/404.html 
-    - mv public _public
-    - mv build public
-  artifacts:
-    paths:
-    - public
-  only :
-    - master
+# deploy:
+#   stage : test
+#   script:
+#     - npm install # Install all dependencies
+#     - npm run build --prod # Build for prod
+#     - cp public/index.html public/404.html 
+#     - mv public _public
+#     - mv build public
+#   artifacts:
+#     paths:
+#     - public
+#   only :
+#     - master
 
