@@ -1,3 +1,18 @@
+.title_all_page {
+   color: white;
+   animation:  title-opacity 7s;
+   opacity: 0;
+}
+
+@keyframes title-opacity {
+  from {
+    opacity: 1
+  }
+  to {
+    opacity: 0
+  }
+}
+
 .item #home{
  z-index: 4; 
 }
@@ -236,7 +251,8 @@
    width: 300px;
    border-radius: 100%;
    /* background: #4641b9; */
-   background: #afadea;
+   /* background: #afadea; */
+   background: #ffffff00;
    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
 }
  .request-loader span {

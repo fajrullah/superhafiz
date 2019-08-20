@@ -9,6 +9,7 @@ import Talk from './Talk';
 import CountingDown from './CountingDown';
 import Contact from './Contact';
 import ParticlesPage from './ParticlesPage';
+import Game from './Game';
 class App extends Component {
 
   render(){ 
@@ -35,6 +36,7 @@ class App extends Component {
       <div className="item" id="Talk"><Talk/></div>
       <div className="item" id="CountingDown"><CountingDown/></div>
       <div className="item" id="Contact"><Contact/></div>
+      <div className="item" id="Contact"><Game/></div>
     </AliceCarousel>
   </div>
   );

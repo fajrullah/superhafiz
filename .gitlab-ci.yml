@@ -14,13 +14,15 @@ test :
   stage : test
   script:
    - npm install
-   - npm test
-   - echo "Merge Request Development Branch"
+   - npm run build --prod # Build for prod
+  artifacts:
+    paths:
+    - public
   only :
    - merge_requests
 
 deploy:
-  stage : test
+  stage : deploy
   script:
     - npm install # Install all dependencies
     - npm run build --prod # Build for prod

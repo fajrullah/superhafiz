@@ -8,7 +8,7 @@ class About extends Component{
   render() {
     return (
     	<div className="container">
-			<h1 className="App" style={{color:'white'}}>Kenalan sama Hafiz</h1>
+			<h1 className="App title_all_page">Kenalan sama Hafiz</h1>
     		<Row>
     			<Col>
     				<div>
