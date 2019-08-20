@@ -20,7 +20,7 @@ test :
   artifacts:
    paths:
     - public
-   only :
+  only :
    - merge_requests
 
 # deploy:
