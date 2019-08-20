@@ -34,7 +34,7 @@ class CountingDown extends Component{
             {/*date={Date.now() + 500000}*/}
   		      <Col className="countdown">
 		        	<Countdown
-              date={'August 20, 2019 12:00:00 GMT'}
+              date={'August 20, 2019 12:00:00 GMT+7'}
 					    renderer={renderer}
   					  />
   		      </Col>
