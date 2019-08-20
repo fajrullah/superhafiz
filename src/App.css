@@ -60,7 +60,7 @@
 
 .backgroundImage {
   /* background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/bg-purple.png') center center no-repeat; */
-  background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/SUPER HAFIZ (FITUR) FIX-01.png') center center no-repeat;
+  background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/background.png') center center no-repeat;
   height: 100%;
   width: 100%;
   /* margin-top: -500px; */
@@ -424,7 +424,84 @@
 .cls-19 {
   stroke: #aec58b;
 }
+.hafiz_home {
+  width:100%;
+  height: auto;
+  margin-top: -50%;
+}
+.center_baling{
+ width: 100%;
+ height: auto; 
+ margin-top: -102%;
+ z-index:1;
+ position: inherit;
+}
+.hafiz_baling_baling {
+  z-index:-1;
+  width:100%;
+  height: auto;
+  margin-top: -67%;
+  animation: balingbaling-muter infinite 0.2s linear;
+}
+@keyframes balingbaling-muter {
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    -moz-transform: rotate(359deg);
+    -ms-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+  }
+}
+.awan_front {
+  animation: cloud-transit infinite ease-in-out 6s;
+  width: 150%;
+  height: auto;
+  margin-left: -140%;
+}
 
+.awan_back {
+  animation: cloud-transit-2 infinite ease-in-out 4s;
+  width: 100%;
+  height: auto;
+  margin-left: 100%;
+  margin-top:0%;
+}
+.awan_back_atas {
+  animation: cloud-transit-3 infinite ease-in-out 8s;
+  width: 140%;
+  height: auto;
+  margin-top: -50%;
+}
+.planet_kiri {
+  animation: planet-kiri infinite ease-out 2s;
+  width: 150%;
+  height: auto;
+  margin-left: -110%;
+  margin-top: -90%;
+}
+ @keyframes planet-kiri {
+  0%{}
+  50%{ 
+    -webkit-transform: translate(0, 30px); 
+    -moz-transform: translate(0, 30px); 
+    -ms-transform: translate(0, 30px); 
+    -o-transform: translate(0, 30px); 
+    transform: translate(0, 30px); 
+  }
+}
+.planet_kanan {
+  animation: planet-kiri infinite ease-out 4s;
+  width: 150%;
+  height: auto;
+  margin-left: 0%;
+  margin-top:-40%;
+  z-index: -1;
+}
 #clouds-front {
   -webkit-animation: cloud-transit infinite ease-in-out 5s;
   -moz-animation: cloud-transit infinite ease-in-out 5s;
@@ -448,11 +525,11 @@
     opacity: 1;
   }
   100% {
-    -webkit-transform: translateX(5%);
-    -moz-transform: translateX(5%);
-    -ms-transform: translateX(5%);
-    -o-transform: translateX(5%);
-            transform: translateX(5%);
+    -webkit-transform: translateX(30%);
+    -moz-transform: translateX(30%);
+    -ms-transform: translateX(30%);
+    -o-transform: translateX(30%);
+            transform: translateX(30%);
     opacity: 0;
   }
 }
@@ -464,11 +541,28 @@
     opacity: 1;
   }
   100% {
-    -webkit-transform: translateX(-5%);
-    -moz-transform: translateX(-5%);
-    -ms-transform: translateX(-5%);
-    -o-transform: translateX(-5%);
-            transform: translateX(-5%);
+    -webkit-transform: translateX(-30%);
+    -moz-transform: translateX(-30%);
+    -ms-transform: translateX(-30%);
+    -o-transform: translateX(-30%);
+            transform: translateX(-30%);
+    opacity: 0;
+  }
+}
+
+@keyframes cloud-transit-3 {
+  0% {
+    opacity: 0
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(-20%);
+    -moz-transform: translateX(-20%);
+    -ms-transform: translateX(-20%);
+    -o-transform: translateX(-20%);
+            transform: translateX(-20%);
     opacity: 0;
   }
 }

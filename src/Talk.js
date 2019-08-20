@@ -3,7 +3,7 @@ import './App.css';
 import HAFIZAI from './images/HAFIZAI_hand.png';
 import { Row, Container, Col } from 'react-bootstrap';
 import Sound from 'react-sound';
-import palaHafiz from './images/palaHafiz.png';
+import palaHafiz from './images/kepala_hafiz.png';
 import chat1 from './images/chat1.png';
 import chat2 from './images/chat2.png';
 import chat3 from './images/chat3.png';

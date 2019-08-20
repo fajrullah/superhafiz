@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
-// import images from './images/HAFIZAI.png';
-import { Container, Row, Col, Button } from 'react-bootstrap';
-// import { Wave } from "react-animated-text";
-// import {OBJModel} from 'react-3d-viewer';
-// import images from './images/HAFIZAI.png';
-// import animasi from './images/Juice_Scene.obj';
+import { Container, Row, Col } from 'react-bootstrap';
+import awan from './images/awan.png';
+import planet_kiri from './images/planet-kiri.png';
+import planet_kanan from './images/planet-kanan.png';
+import hafiz from './images/hafiz.png';
+// import baling_baling from './images/baling.png';
+import baling2 from './images/baling2.png';
+import center from './images/center.png';
 
 class Home extends Component{
   render() {
@@ -14,73 +16,19 @@ class Home extends Component{
         <Container className="container">
             <Row style={{height:300+'px'}}>
               <Col>
-                {/*<h1 style={{fontSize:50+'px ', color:'#fff'}}>Ayo Kawan<br/>
-                Ngobrol Bersama<br/>
-                </h1>*/}
-                {/*<Wave
-                  text="AYO KAWAN NGOBROL BERSAMA SUPER HAFIZ DARI ALQOLAM"
-            <Row>
-              <Col xs={6}>
-                <h1 style={{fontSize:50+'px ', color:'#fff'}}>Ayo Kawan<br/>
-                Ngobrol Bersama SuperHafiz<br/>
-                </h1>
-                <Wave
-                  text="AYO KAWAN NGOBROL BERSAMA SUPER HAFIZ"
-
-                  effect="fadeOut"
-                  effectChange={1.9}
-                />*/}
-                {/*<svg id="sky_day" data-name="sky day" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1295.87 600">
-                <g id="clouds-front">
-                  <g id="cloud-1" className="cloud-all">
-                    <path className="cls-6" d="M899.69,71.14a26.77,26.77,0,0,0-3,0c-8.74,0-15.84,4.89-16.61,11.11a28.73,28.73,0,0,0-10.76-2c-12.24,0-22.17,7.22-22.17,16.13,0,0,0,.07,0,0.1-9.18,2.27-15.78,8.58-15.78,16,0,9.36,10.42,16.94,23.28,16.94H899.5Z"/>
-                    <path className="cls-7" d="M899.49,71.14a23.27,23.27,0,0,1,2.81,0c8.74,0,15.84,4.89,16.61,11.11a28.73,28.73,0,0,1,10.76-2c12.24,0,22.17,7.22,22.17,16.13,0,0,0,.07,0,0.1,9.18,2.27,15.78,8.58,15.78,16,0,9.36-10.42,16.94-23.28,16.94H899.49V71.14Z"/>
-                  </g>
-                  <g id="cloud-4" className="cloud-all" data-name="bush">
-                    <path className="cls-6" d="M1151.17,173.76a12.85,12.85,0,0,0-1.91-.14c-5.81,0-10.53,4-11,9.17a15.89,15.89,0,0,0-7.15-1.68c-8.14,0-14.73,6-14.73,13.32,0,0,0,.06,0,0.09-6.1,1.88-10.49,7.09-10.49,13.23,0,7.73,6.93,14,15.48,14h30Z"/>
-                    <path className="cls-7" d="M1151.08,173.75a12.8,12.8,0,0,1,1.91-.13c5.81,0,10.53,4,11,9.17a15.89,15.89,0,0,1,7.15-1.68c8.14,0,14.73,6,14.73,13.32,0,0,0,.06,0,0.09,6.1,1.88,10.49,7.09,10.49,13.23,0,7.73-6.93,14-15.48,14h-29.81Z"/>
-                  </g>
-                </g>
-                <g id="clouds-back">
-                  <g id="cloud-2" className="cloud-all" data-name="bush">
-                    <path className="cls-6" d="M1075.9,143.73a25.08,25.08,0,0,0-3.06-.18c-9.21,0-16.69,5.29-17.5,12a29.61,29.61,0,0,0-11.34-2.2c-12.9,0-23.36,7.81-23.36,17.44,0,0,0,.07,0,0.11-9.67,2.46-16.63,9.28-16.63,17.33,0,10.12,11,18.31,24.53,18.31h47.67Z"/>
-                    <path className="cls-7" d="M1075.8,143.72a23.49,23.49,0,0,1,3-.17c9.21,0,16.69,5.29,17.5,12a29.61,29.61,0,0,1,11.34-2.2c12.9,0,23.36,7.81,23.36,17.44,0,0,0,.07,0,0.11,9.67,2.46,16.63,9.28,16.63,17.33,0,10.12-11,18.31-24.53,18.31H1075.8V143.72Z"/>
-                  </g>
-                  <g id="cloud-3" className="cloud-all" data-name="bush">
-                    <path className="cls-6" d="M430.87,168.15a21.33,21.33,0,0,0-2.39-.07c-6.16,0-11.15,3.82-11.7,8.68a18.49,18.49,0,0,0-7.58-1.59c-8.62,0-15.61,5.64-15.61,12.61,0,0,0,.05,0,0.08-6.46,1.78-11.12,6.71-11.12,12.52,0,7.31,7.34,13.24,16.39,13.24,4.44,0,18.37-.07,32-0.07v-45.4Z"/>
-                    <path className="cls-7" d="M430.46,168.11a14.69,14.69,0,0,1,2,0c6.16,0,11.15,3.82,11.7,8.68a18.49,18.49,0,0,1,7.58-1.59c8.62,0,15.61,5.64,15.61,12.61,0,0,0,.05,0,0.08,6.46,1.78,11.12,6.71,11.12,12.52,0,7.31-7.34,13.24-16.39,13.24-4.44,0-18-.07-31.58-0.07V168.11Z"/>
-                  </g>
-                  <g id="cloud-5" className="cloud-all" data-name="bush">
-                    <path className="cls-6" d="M539.43,64.77a31.69,31.69,0,0,0-3.17-.08c-8,0-14.45,4.52-15.15,10.27a25.88,25.88,0,0,0-9.82-1.88c-11.17,0-20.22,6.68-20.22,14.92,0,0,0,.06,0,0.1-8.37,2.1-14.4,7.94-14.4,14.83,0,8.65,9.51,15.67,21.23,15.67,5.75,0,23.87-.08,41.51-0.08V64.77Z"/>
-                    <path className="cls-7" d="M538.82,64.72a20.83,20.83,0,0,1,2.57,0c8,0,14.45,4.52,15.15,10.27a25.88,25.88,0,0,1,9.82-1.88c11.17,0,20.22,6.68,20.22,14.92,0,0,0,.06,0,0.1C594.93,90.2,601,96,601,102.92c0,8.65-9.51,15.67-21.23,15.67-5.75,0-23.26-.08-40.9-0.08V64.72Z"/>
-                  </g>
-                </g>*/}
-                  {/*<g id="tree2">
-                    <path class="cls-18" d="M1223.27,343.52c-33.86,0-61.3,34.79-61.3,77.71s27.45,77.71,61.3,77.71V343.52Z"/>
-                    <path class="cls-18" d="M1223.27,343.52c-33.86,0-61.3,34.79-61.3,77.71s27.45,77.71,61.3,77.71V343.52Z"/>
-                    <path class="cls-19" d="M1223.27,343.52c33.86,0,61.3,34.79,61.3,77.71s-27.45,77.71-61.3,77.71V343.52Z"/>
-                    <path class="cls-19" d="M1223.27,343.52c33.86,0,61.3,34.79,61.3,77.71s-27.45,77.71-61.3,77.71V343.52Z"/>
-                    <polygon class="cls-20" points="1210.74 544.47 1219.48 498.94 1210.74 472.75 1219.48 485.67 1219.48 452.67 1201.32 408.25 1219.48 438.28 1219.48 392.23 1224.22 438.28 1244.71 423.27 1228.57 444.54 1229.58 472.75 1244.71 452.67 1234.62 476.45 1233.61 507.58 1240.67 544.47 1210.74 544.47"/>
-                    <polygon class="cls-20" points="1210.74 544.47 1219.48 498.94 1210.74 472.75 1219.48 485.67 1219.48 452.67 1201.32 408.25 1219.48 438.28 1219.48 392.23 1224.22 438.28 1244.71 423.27 1228.57 444.54 1229.58 472.75 1244.71 452.67 1234.62 476.45 1233.61 507.58 1240.67 544.47 1210.74 544.47"/>
-                  </g>*/}
-                  {/*<g id="tree2-2" data-name="tree2">
-                    <path class="cls-18" d="M91.48,343.29c-33.86,0-61.3,34.79-61.3,77.71s27.45,77.71,61.3,77.71V343.29Z"/>
-                    <path class="cls-18" d="M91.48,343.29c-33.86,0-61.3,34.79-61.3,77.71s27.45,77.71,61.3,77.71V343.29Z"/>
-                    <path class="cls-19" d="M91.16,342.83c33.86,0,61.3,34.79,61.3,77.71S125,498.24,91.16,498.24V342.83Z"/>
-                    <path class="cls-19" d="M91.16,342.83c33.86,0,61.3,34.79,61.3,77.71S125,498.24,91.16,498.24V342.83Z"/>
-                    <polygon class="cls-20" points="78.88 543.79 87.63 498.26 78.88 472.07 87.63 484.98 87.63 451.98 69.47 407.56 87.63 437.6 87.63 391.55 92.36 437.6 112.86 422.58 96.71 443.86 97.72 472.07 112.86 451.98 102.77 475.77 101.76 506.89 108.82 543.79 78.88 543.79"/>
-                    <polygon class="cls-20" points="78.88 543.79 87.63 498.26 78.88 472.07 87.63 484.98 87.63 451.98 69.47 407.56 87.63 437.6 87.63 391.55 92.36 437.6 112.86 422.58 96.71 443.86 97.72 472.07 112.86 451.98 102.77 475.77 101.76 506.89 108.82 543.79 78.88 543.79"/>
-                  </g>*/}
-              {/*</svg>*/}
+                <img src={planet_kiri} className="planet_kiri" alt="planet kiri"/>
+                <img src={awan} className="awan_front" alt="awan"/>
              </Col>
-
               <Col>
-                {/*<img src={images} style={{width:60+'%', height:'auto'}} className="hafizHome" alt="slide 1"/>*/}
-                {/*<OBJModel src={animasi} texPath="" width='500'/>*/}
+                <img src={awan} className="awan_back_atas" alt="awan"/>
+                <img src={hafiz} className="hafiz_home" alt="hafiz"/>
+                <img src={baling2} className="hafiz_baling_baling" alt="baling baling hafiz"/>
+                <img src={center} className="center_baling" alt="baling baling hafiz"/>
               </Col>
-            </Row>
-            <Row>
-              <Button className="button_home" onClick={console.log('ini di klik')}>Ngobrol Sekarang</Button>
+              <Col>
+                <img src={planet_kanan} className="planet_kanan" alt="planet kanan"/>
+                <img src={awan} className="awan_back" alt="awan"/>
+              </Col>
             </Row>
         </Container>
       </div>
