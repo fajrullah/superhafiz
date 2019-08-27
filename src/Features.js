@@ -1,19 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
-import tes from './images/tes.png';
-import { Row, Col } from 'react-bootstrap';
+// import tes from './images/tes.png';
+// import { Row, Col } from 'react-bootstrap';
 
 class Features extends Component{
   render() {
     return (
-    	<div  className="App title_all_page">
-	         <h1 style={{color:'white'}}>Kelebihan Hafiz</h1>
-          	<Row>
-              <Col>
-          		<img src={tes} style={{width:40+'%'}} alt="slide 3"/>
-              </Col>
-          	</Row>
-	    </div>
+    	<div className="features_text">
+        <h1>Features superhafiz</h1><br/>
+        <h1>in progress</h1>
+      </div>
     );
   }
 }
