@@ -40,8 +40,16 @@
 .App-link {
   color: #61dafb;
 }
+@keyframes spin {
+  0%{
+   background-position-y: 2000px;
+  }
+  100%{
+    background-position-y: 0;
+  }
+}
 
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
@@ -56,18 +64,66 @@
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
   }
+} */
+.backgroundAlice {
+  background: #007bff;
 }
-
-.backgroundImage {
-  /* background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/bg-purple.png') center center no-repeat; */
-  background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/background.png') center center no-repeat;
+.backgroundLayout {
+  background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/bg_bumi.png') center center no-repeat;
   height: 100%;
   width: 100%;
-  /* margin-top: -500px; */
-  /* z-index: 1; */
+  position: absolute;
+  background-size: cover;
+}
+.backgroundAbout {
+  background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/about.png') center center no-repeat;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-size: cover;
+}
+.backgroundTalk1 {
+  background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/talk.png') center center no-repeat;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-size: cover;
+}
+.backgroundHome {
+  background: blue;
+  position: absolute;
+  width: 100%;
+  height: 200%;
+  background-size: cover;
   position: fixed;
   background-attachment: fixed;
+}
+.backgroundFeatures {
+  background: #aec58b;
+  position: absolute;
+  width: 100%;
+  height: 100%;
   background-size: cover;
+  position: fixed;
+  background-attachment: fixed;
+}
+.backgroundTalk {
+  background: #7a60a6;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  position: fixed;
+  background-attachment: fixed;
+}
+.backgroundImage {
+  background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/bg_bumi.png') center center no-repeat;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  /* position: fixed;
+  background-attachment: fixed;
+  background-size: cover; */
 }
 .paper-plane-image {
   width:10%;
@@ -110,8 +166,20 @@
 .form-custom{
   animation: bounce 1.5s infinite;
 }
-.countdown h2{
+.countdown_h5 {
+  color: white;
   font-size: 40px;
+  font-weight: 600;
+  margin-top: 70%;
+}
+.countdown_h5_jam {
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+  /* margin-top: 70%; */
+}
+.countdown h2{
+  font-size: 60px;
   /* color: lightblue; */
   color: #7a60a6;
 }
@@ -124,38 +192,38 @@
 .textHafiz, .palaHafiz{
   animation: seconds 1.0s forwards;
   animation-iteration-count: 1;
-  animation-delay: 4s;
+  /* animation-delay: 4s; */
   opacity: 0;
 }
 .palaHafiz2{
   animation: seconds 1.0s forwards;
   animation-iteration-count: 1;
-  animation-delay: 6s;
+  /* animation-delay: 6s; */
   opacity: 0;
 }
 .textHafiz2{
   animation: seconds 1.0s forwards;
   animation-iteration-count: 1;
-  animation-delay: 6s;
+  /* animation-delay: 6s; */
   margin-right: 250px;
   opacity: 0;
 }
 .textHafiz3 , .palaHafiz3{
   animation: seconds 1.0s forwards;
   animation-iteration-count: 1;
-  animation-delay: 8s;
+  /* animation-delay: 8s; */
   opacity: 0;
 }
 .palaHafiz4{
   animation: seconds 1.0s forwards;
   animation-iteration-count: 1;
-  animation-delay: 10s;  
+  /* animation-delay: 10s;   */
   opacity: 0;
 }
 .textHafiz4{
   animation: seconds 1.0s forwards;
   animation-iteration-count: 1;
-  animation-delay: 10s;
+  /* animation-delay: 10s; */
   margin-right: 250px;
   opacity: 0;
 }
@@ -195,7 +263,7 @@
   }
 } 
 .textUser{
-  animation-delay: 0.5s;
+  /* animation-delay: 0.5s; */
   font-weight: 600;
   color: #fff;
 }
@@ -211,7 +279,7 @@
 }
 .textHafiz2::after{
  animation-name: textup ; 
- animation-delay: 0.5s;
+ /* animation-delay: 0.5s; */
 }
 .textUser1{
   animation-name: textup ;
@@ -219,7 +287,7 @@
 }
 .textUser1::after{
  animation-name: textup ; 
- animation-delay: 0.5s;
+ /* animation-delay: 0.5s; */
 }
 .textUser2{
   animation-name: textup ;
@@ -227,7 +295,7 @@
 }
 .textUser2::after{
  animation-name: textup ; 
- animation-delay: 0.5s;
+ /* animation-delay: 0.5s; */
 }
 
 .ripple-wrapper {
@@ -283,7 +351,7 @@
    border-radius: 100%;
    animation-name: ripple;
    animation-duration: 3s;
-   animation-delay: 0s;
+   /* animation-delay: 0s; */
    animation-iteration-count: infinite;
    -webkit-animation-iteration-count: infinite;
    -moz-animation-iteration-count: infinite;
@@ -310,7 +378,7 @@
    border-radius: 100%;
    animation-name: ripple;
    animation-duration: 3s;
-   animation-delay: 0.5s;
+   /* animation-delay: 0.5s; */
    animation-iteration-count: infinite;
    animation-timing-function: cubic-bezier(0.65, 0, 0.34, 1);
    z-index: -1;
@@ -424,24 +492,13 @@
 .cls-19 {
   stroke: #aec58b;
 }
-.hafiz_home {
-  width:100%;
-  height: auto;
-  margin-top: -50%;
-}
+
 .center_baling{
  width: 100%;
  height: auto; 
  margin-top: -102%;
  z-index:1;
  position: inherit;
-}
-.hafiz_baling_baling {
-  z-index:-1;
-  width:100%;
-  height: auto;
-  margin-top: -67%;
-  animation: balingbaling-muter infinite 0.2s linear;
 }
 @keyframes balingbaling-muter {
   from {
@@ -457,51 +514,26 @@
     -o-transform: rotate(359deg);
   }
 }
-.awan_front {
-  animation: cloud-transit infinite ease-in-out 6s;
-  width: 150%;
-  height: auto;
-  margin-left: -140%;
-}
-
-.awan_back {
-  animation: cloud-transit-2 infinite ease-in-out 4s;
-  width: 100%;
-  height: auto;
-  margin-left: 100%;
-  margin-top:0%;
-}
-.awan_back_atas {
-  animation: cloud-transit-3 infinite ease-in-out 8s;
-  width: 140%;
-  height: auto;
-  margin-top: -50%;
-}
-.planet_kiri {
-  animation: planet-kiri infinite ease-out 2s;
-  width: 150%;
-  height: auto;
-  margin-left: -110%;
-  margin-top: -90%;
-}
- @keyframes planet-kiri {
-  0%{}
-  50%{ 
-    -webkit-transform: translate(0, 30px); 
-    -moz-transform: translate(0, 30px); 
-    -ms-transform: translate(0, 30px); 
-    -o-transform: translate(0, 30px); 
-    transform: translate(0, 30px); 
+/* @keyframes bumi-muter {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
   }
-}
-.planet_kanan {
-  animation: planet-kiri infinite ease-out 4s;
-  width: 150%;
-  height: auto;
-  margin-left: 0%;
-  margin-top:-40%;
-  z-index: -1;
-}
+  50% {
+    -webkit-transform: rotate(40deg);
+    -moz-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    -o-transform: rotate(40deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+} */
 #clouds-front {
   -webkit-animation: cloud-transit infinite ease-in-out 5s;
   -moz-animation: cloud-transit infinite ease-in-out 5s;
@@ -512,58 +544,36 @@
 
 #clouds-back {
   -webkit-animation: cloud-transit-2 infinite ease-out 5s;
-  -moz-animation: cloud-transit-2 infinite ease-out 5s;
+  -moz-animation:  infinite ease-out 5s;
   -ms-animation: cloud-transit-2 infinite ease-out 5s;
   -o-animation: cloud-transit-2 infinite ease-out 5s;
           animation: cloud-transit-2 infinite ease-out 5s;
 }
-@keyframes cloud-transit {
-  0% {
-    opacity: 0
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: translateX(30%);
-    -moz-transform: translateX(30%);
-    -ms-transform: translateX(30%);
-    -o-transform: translateX(30%);
-            transform: translateX(30%);
-    opacity: 0;
-  }
-}
+
 @keyframes cloud-transit-2 {
-  0% {
-    opacity: 0
-  }
-  50% {
+  from {
     opacity: 1;
+    width: 176%;
+    margin-left: 200%;
+    margin-top: -62%;
+    height: 92%;
+    /* background: red; */
+    transform: translateX(0%);
   }
-  100% {
-    -webkit-transform: translateX(-30%);
+  to {
+    opacity: 1;
+    width: 10%;
+    margin-left: -80%;
+    margin-top: -40%;
+    height: 10%;
+    /* background: red; */
+    /* transform: translateX(-300%); */
+    /* -webkit-transform: translateX(-30%);
     -moz-transform: translateX(-30%);
     -ms-transform: translateX(-30%);
     -o-transform: translateX(-30%);
-            transform: translateX(-30%);
-    opacity: 0;
-  }
-}
-
-@keyframes cloud-transit-3 {
-  0% {
-    opacity: 0
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: translateX(-20%);
-    -moz-transform: translateX(-20%);
-    -ms-transform: translateX(-20%);
-    -o-transform: translateX(-20%);
-            transform: translateX(-20%);
-    opacity: 0;
+            transform: translateX(-30%); */
+    
   }
 }
 
@@ -578,26 +588,765 @@
   }
 }
 
-@media (min-width: 1281px) {
+@keyframes planet-orange-about {
+  0%{}
+  50%{ 
+    -webkit-transform: translate(0, 15px); 
+    -moz-transform: translate(0, 15px); 
+    -ms-transform: translate(0, 15px); 
+    -o-transform: translate(0, 15px); 
+    transform: translate(0, 15px); 
+  }
+}
+@keyframes planet-ungu-about {
+  0%{}
+  50%{ 
+    transform: translate(15px, 0px); 
+  }
+}
+
+@media (min-width: 1920px){
+  .talk_text {
+    color: #fff;
+    margin-top: 100%;
+    position: absolute;
+  }
+  .features_text {
+    color: #fff;
+    margin-top: 20%;
+  }
+  .planet_ungu_talk {
+    position: absolute;
+    width: 150% !important;
+    margin-left: -180%;
+  }
+  .planet_orange_talk {
+    position: absolute;
+    width: 150% !important;
+    margin-left: -200%;
+    margin-top: 150%;
+  }
+  .row_bg_awan {
+    width: 268%;
+    margin-top: -6%;
+    margin-left: -58%;
+    animation: awan-about-kiri 10s infinite;
+  }
+  .bg_awan {
+    width: 100% !important;
+    z-index: 2;
+    margin-top: -20%;
+  }
+  /* @keyframes spin {
+    0%{
+     background-position-y: 380px;
+    }
+    100%{
+      background-position-y: 0;
+    }
+  } */
+  .row_bumi {
+    width: 241%;
+    margin-top: -110%;
+    margin-left: -71%; 
+  }
+  .bumi_muter {
+    width: 500%;
+    height: 1000px;
+    background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/BUMI-DATAR.png') center center;
+    /* background: url(https://1.bp.blogspot.com/-UUXaK5GCj-k/UcsKJRMgkVI/AAAAAAAACfM/sePP_H08JTQ/s1600/1.jpg); */
+    border-radius: 50%;
+    background-size: 100%;
+    margin-top: 79%;
+    animation: spin 20s infinite linear;
+  }
+  .center_baling2_about {
+    width: 146%;
+    height: auto; 
+    margin-top: 137%;
+    z-index:3;
+    position: absolute;
+    margin-left: -38%;
+  }
+  @keyframes awan-about-kiri {
+    0%{
+    }
+    50%{ 
+      opacity: 0.5;
+      transform: translate(50px, 0px); 
+    }
+  }
+  .awan_about_kiri {
+    width: 175% !important;
+    height: auto;
+    margin-left: -65%;
+    margin-top: 52%;
+    position: absolute;
+    animation: awan-about-kiri 10s infinite;
+  }
+  @keyframes awan-about-kanan {
+    0%{
+    }
+    50%{ 
+      opacity: 0.5;
+      transform: translate(150px, 0px); 
+    }
+  }
+  .awan_about_kanan {
+    width: 130% !important;
+    height: auto;
+    margin-left: 100%;
+    margin-top: 130%;
+    position: absolute;
+    animation: awan-about-kanan 15s infinite;
+  }
+  .planet_orange_about {
+    margin-left: -20%;
+    margin-top:170%;
+    position: absolute;
+    width: 150% !important;
+    animation: planet-orange-about 1.5s infinite;
+  }
+  .planet_ungu_about {
+    width: 150% !important;
+    height: auto;
+    margin-left: 30%;
+    margin-top:0%;
+    position: absolute;
+    animation: planet-ungu-about 3s infinite;
+  }
+  .bumi {
+    width: 1000%;
+    margin-left: -450%;
+    margin-top: 10%;
+    /* transform: perspective(400px) rotateY(45deg); */
+    animation: bumi-muter infinite 80s linear;
+    z-index: -1;
+    position: absolute;
+  }
+  @keyframes planet-kiri {
+    0% {
+      margin-left: -200%;
+      margin-top:-20%;
+      position: absolute;
+      width: 150%;
+    }
+    100% {
+      margin-left: 50%;
+      margin-top:90%;
+      position: absolute;
+      width: 30%;
+      opacity: 0;
+    }
+  }
+  /* @keyframes planet-kanan1 {
+    0% {
+      width: 100%;
+      height: auto;
+      margin-left: -90%;
+      margin-top:50%;
+      position: absolute;
+    }
+    100% {
+      width: 50%;
+      height: auto;
+      margin-left: 40%;
+      margin-top:85%;
+      position: absolute;
+      opacity: 0;
+    }
+  } */
+  .planet_orange_home {
+    animation: planet-orange-about 1.5s infinite;
+    margin-left: -230%;
+    margin-top: 50%;
+    position: absolute;
+    width: 150% !important;
+  }
+  @keyframes planet-kiri1 {
+    0% {
+      margin-left: 40%;
+      margin-top:80%;
+      position: absolute;
+      width: 50%;
+      opacity: 1;
+    }
+    50% {
+      margin-left: 80%;
+      margin-top:100%;
+      position: absolute;
+      width: 20%;
+      opacity: 0;
+    }
+    100% {
+      width: 50%;
+      height: auto;
+      margin-left: 40%;
+      margin-top:85%;
+      z-index: -1;
+      position: absolute;
+      opacity: 0;
+    }
+  }
+  .planet_kiri1 {
+    animation: planet-kiri1 linear infinite 2s;
+    /* margin-left: 40%;
+      margin-top:80%;
+      position: absolute;
+      width: 50%;
+      opacity: 1; */
+  }
+  /* @keyframes planet-kanan {
+    0% {
+      width: 150%;
+      height: auto;
+      margin-left: 100%;
+      margin-top:20%;
+      z-index: -1;
+      position: absolute;
+      opacity: 1;
+    }
+    100% {
+      width: 50%;
+      height: auto;
+      margin-left: -10%;
+      margin-top:80%;
+      z-index: -1;
+      position: absolute;
+      opacity: 0;
+    }
+  } */
+  .planet_ungu_home {
+    animation: planet-ungu-about 3s infinite;
+    width: 150% !important;
+    height: auto;
+    margin-left: 0%;
+    margin-top:0%;
+    position: absolute;
+  }
+  @keyframes awan_front {
+    from {
+      width: 100%;
+      height: auto;
+      margin-left: -220%;
+      margin-top: 100%;
+      /* animation-delay: 2s; */
+      position: absolute;
+      z-index: -1;
+    }
+    to {
+      width: 70%;
+      height: auto;
+      margin-left: 10%;
+      margin-top: 100%;
+      opacity: 0;
+      position: absolute;
+      z-index: -1;
+    }
+  }
+  .awan_front {
+    animation: awan-about-kiri 10s infinite;
+    width: 150% !important;
+    height: auto;
+    margin-left: -270%;
+    margin-top: 100%;
+    position: absolute;
+  }
+  @keyframes awan_front1 {
+    from {
+      width: 30%;
+      height: auto;
+      margin-left: -120%;
+      margin-top: 200%;
+      /* animation-delay: 2s; */
+      position: absolute;
+      z-index:-1;
+    }
+    to {
+      width: 10%;
+      height: auto;
+      margin-left:50%;
+      margin-top: 140%;
+      /* animation-delay: 2s; */
+      position: absolute;
+      z-index:-1;
+      opacity: 0;
+    }
+  }
+  .hafiz_home {
+    width: 150% !important;
+    margin-top: 95%;
+    margin-left: -70%;
+    margin-right: auto;
+    /* background: yellow; */
+    position: absolute;
+  }
+  @keyframes hafiz-countingdown {
+    0% {
+    }
+    50% {
+      -webkit-transform: translate(0, 15px); 
+      -moz-transform: translate(0, 15px); 
+      -ms-transform: translate(0, 15px); 
+      -o-transform: translate(0, 15px); 
+      transform: translate(0, 15px); 
+    }
+  }
+  
+  .hafiz_countingdown {
+    width: 80% !important;
+    margin-top: 40%;
+    margin-left: -70%;
+    margin-right: auto;
+    /* background: yellow; */
+    position: absolute;
+    animation: hafiz-countingdown 2s infinite;
+  }
+  @keyframes hafiz-desc-title {
+    0%{
+      opacity: 0;
+      margin-left: -110%;
+    }
+    50%{
+      opacity: 0;
+      margin-left: -150%;
+    }
+    100%{
+      margin-left: -110%;
+    }
+  }
+  .hafiz_desc_tittle {
+    width: 130%;
+    font-size: 40px;
+    color: #007bff;
+    margin-top: 80%;
+    margin-left: -110%;
+    position: absolute;
+    font-weight: 600;
+    text-align: justify !important;
+    animation: hafiz-desc-title 5s;
+  }
+  .hafiz_desc {
+    width: 130%;
+    color: #007bff;
+    margin-top: 100%;
+    margin-left: -110%;
+    position: absolute;
+    text-align: justify !important;
+    animation: hafiz-desc-title 10s;
+  }
+  .hafiz_about {
+    width: 170% !important;
+    margin-top: 63%;
+    margin-left: -73%;
+    margin-right: auto;
+    /* background: yellow; */
+    position: absolute;
+  }
+  .hafiz_baling_baling {
+    width:125% !important;
+    height: auto;
+    margin-top: 140%;
+    margin-left:-57%;
+    z-index: 2;
+    position: absolute;
+    animation: balingbaling-muter infinite 0.2s linear;
+  }
+  .hafiz_baling_about {
+    width:125% !important;
+    height: auto;
+    margin-top: 121%;
+    margin-left:-50%;
+    position: absolute;
+    animation: balingbaling-muter infinite 0.2s linear;
+  }
+  .center_baling{
+    width: 146%;
+    height: auto; 
+    margin-top: 155%;
+    z-index:3;
+    position: absolute;
+    margin-left: -45%;
+   }
+   @keyframes cloud-transit-2 {
+    0% {
+      margin-left: 200%;
+      margin-top:-50%;
+      z-index:-1;
+      width: 100%;
+      position: absolute;
+      /* background: red; */
+    }
+    100% {
+     
+    }
+  }
+   .awan_back {
+    animation: awan-about-kiri 10s infinite;
+    margin-left: 100%;
+    margin-top:100%;
+    width: 100% !important;
+    position: absolute;
+  }
+  @keyframes awan_back_atas {
+    0% {
+      width: 70%;
+      height: auto;
+      margin-top: 0%;
+      margin-bottom: 15%;
+      margin-left: 250%;
+      position: absolute;  
+    }
+    100% {
+      width: 30%;
+      height: auto;
+      margin-top: 80%;
+      margin-bottom: 15%;
+      margin-left: 100%;
+      position: absolute;  
+      opacity: 0;
+    }
+  }
+  .awan_back_atas {
+    /* animation: awan_back_atas infinite ease-in-out 2s; */
+    width: 70%;
+      height: auto;
+      margin-top: 0%;
+      margin-bottom: 15%;
+      margin-left: 250%;
+      z-index:-1;
+      position: absolute;  
+      background: blue;
+  }
+   
+}
+@media (min-width: 1368px) and (max-width:1919px){
+  .row_bumi {
+    width: 200%;
+    margin-top: -115%;
+    margin-left: -50%; 
+  }
+  .bumi_muter {
+    width: 500%;
+    height: 1000px;
+    background:  url('./images/BUMI-DATAR.png') center center repeat;
+    /* background: url(https://1.bp.blogspot.com/-UUXaK5GCj-k/UcsKJRMgkVI/AAAAAAAACfM/sePP_H08JTQ/s1600/1.jpg); */
+    border-radius: 50%;
+    background-size: 100%;
+    margin-top: 73%;
+    animation: spin 10s infinite linear !important;
+  }
+  .center_baling{
+    width: 100%;
+    height: auto; 
+    margin-top: -102%;
+    z-index:1;
+    position: inherit;
+   }
+
+  .planet_orange_home {
+    position: absolute;
+    width: 100% !important;
+    margin-left: -100%;
+    margin-top: 20%;
+  }
+  .planet_ungu_about {
+    width: 100% !important;
+    height: auto;
+    margin-left: 30%;
+    margin-top:0%;
+    position: absolute;
+    animation: planet-ungu-about 3s infinite;
+  }
+  .planet_orange_about {
+    margin-left: 0%;
+    margin-top:130%;
+    position: absolute;
+    width: 100% !important;
+    animation: planet-orange-about 1.5s infinite;
+  }
+  .center_baling2_about {
+    width: 146%;
+    height: auto; 
+    margin-top: 110%;
+    z-index:3;
+    position: absolute;
+    margin-left: -48%;
+  }
+  .hafiz_baling_about {
+    width:125% !important;
+    height: auto;
+    margin-top: 95%;
+    margin-left: -60%;
+    position: absolute;
+    animation: balingbaling-muter infinite 0.2s linear;
+  }
+  .hafiz_about {
+    width: 130% !important;
+    margin-top: 63%;
+    margin-left: -64%;
+    margin-right: auto;
+    position: absolute;
+  }
+  .hafiz_desc_tittle {
+    width: 130%;
+    font-size: 40px;
+    color: #007bff;
+    margin-top: 30%;
+    margin-left: -50%;
+    position: absolute;
+    font-weight: 600;
+    text-align: justify !important;
+    animation: hafiz-desc-title 5s;
+  }
+  .hafiz_desc {
+    width: 100%;
+    color: #007bff;
+    margin-top: 45%;
+    margin-left: -50%;
+    position: absolute;
+    text-align: justify !important;
+    animation: hafiz-desc-title 10s;
+  }
+  .planet_kiri {
+    animation: planet-kiri infinite ease-out 2s;
+    width: 150%;
+    height: auto;
+    margin-left: -110%;
+    margin-top: -90%;
+    /* background-color: purple !important; */
+  }
+  .planet_kanan {
+    /* animation: planet-kanan infinite ease-out 4s; */
+    width: 150% !important;
+    height: auto;
+    margin-left: 0%;
+    margin-top:0%;
+    position: absolute;
+  }
+  .awan_front {
+    /* animation: cloud-transit infinite ease-in-out 6s; */
+    width: 130% !important;
+    height: auto;
+    margin-left: -200%;
+    margin-top: 40%;
+    position: absolute;
+  }
+  .hafiz_home {
+    width:100% !important;
+    height: auto;
+    margin-top: 50%;
+    margin-left: 0%;
+    position: absolute;
+  }
+  .hafiz_baling_baling {
+    width:100% !important;
+    height: auto;
+    margin-top: 72%;
+    margin-left: -0%;
+    position: absolute;
+    animation: balingbaling-muter infinite 0.2s linear;
+  }
+  .awan_back {
+    animation: cloud-transit-2 infinite ease-in-out 4s;
+    width: 100%;
+    height: auto;
+    margin-left: 100%;
+    margin-top:0%;
+  }
+  .awan_back_atas {
+    animation: cloud-transit-3 infinite ease-in-out 8s;
+    width: 140%;
+    height: auto;
+    margin-top: -50%;
+  }
+}
+@media (min-width: 1281px) and (max-width: 1367px){
 /* ##more than 1281*/
-  /* .alice-carousel{
-    margin-top: -461px !important;
+  /* .planet_kiri {
+    animation: planet-kiri infinite ease-out 2s;
+    width: 150%;
+    height: auto;
+    margin-left: -110%;
+    margin-top: -90%;
+    background-color: yellow !important;
   } */
 }
 @media (min-width: 1025px) and (max-width: 1280px) {
   /* ##Device = Tablets, Ipads (portrait) */
-  /* .alice-carousel{
-    margin-top: -500px !important;
+  /* .planet_kiri {
+    animation: planet-kiri infinite ease-out 2s;
+    width: 150%;
+    height: auto;
+    margin-left: -110%;
+    margin-top: -90%;
+    background-color: blue !important;
   } */
 }
 @media (min-width: 768px) and (max-width: 1024px) {
    /* ##Device = Low Resolution Tablets, Mobiles (Landscape) */
+   .bumi {
+    width: 450%;
+    margin-top: 66%;
+    margin-left: -175%;
+    animation: bumi-muter infinite 80s linear;
+  }
+   /* .planet_kiri {
+    animation: planet-kiri infinite ease-out 2s;
+    width: 150%;
+    height: auto;
+    margin-left: -110%;
+    margin-top: -90%;
+    background-color: yellow;
+  } */
  }
 @media (min-width: 481px) and (max-width: 767px) {
    /* ##Device = Most of the Smartphones Mobiles (Portrait) */
+  .bumi {
+    width: 450%;
+    margin-top: 66%;
+    margin-left: -175%;
+    animation: bumi-muter infinite 80s linear;
+  }
+  .backgroundImageMobile {
+    background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/background_mobile.png') center center no-repeat;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  /* .planet_kiri {
+    animation: planet-kiri infinite ease-out 2s;
+    width: 180%;
+    height: auto;
+    margin-left: -50%;
+    margin-top: 20%;
+  } */
+  .planet_kanan {
+    /* animation: planet-kiri infinite ease-out 4s; */
+    /* width: 150%;
+    height: auto;
+    margin-left: -20%;
+    margin-top:20%; */
+  }
+  .awan_front {
+    animation: cloud-transit infinite ease-in-out 6s;
+    width: 150%;
+    height: auto;
+    margin-left: -0%;
+    margin-top: 0%;
+  }
+  /* .hafiz_home {
+    width:172%;
+    height: auto;
+    margin-top: -50%;
+    margin-left: -39%;
+  } */
+  .hafiz_baling_baling {
+    z-index:-1;
+    width:125%;
+    height: auto;
+    margin-top: -88%;
+    margin-left:-15%;
+    animation: balingbaling-muter infinite 0.2s linear;
+  }
+  .center_baling{
+    width: 146% !important;
+    height: auto; 
+    margin-top: 0%;
+    z-index:2;
+    position: absolute;
+    margin-left: 0%;
+   }
+   .awan_back {
+    animation: cloud-transit-2 infinite ease-in-out 4s;
+    width: 150%;
+    height: auto;
+    margin-left: 200%;
+    margin-top:0%;
+  }
+  .awan_back_atas {
+    animation: cloud-transit-3 infinite ease-in-out 8s;
+    width: 100%;
+    height: auto;
+    margin-top: -30%;
+    margin-bottom: 15%;
+    margin-left: 150%;
+  }
  }
  @media only screen and (min-width: 320px) and (max-width: 480px) {
-    .HAFIZAI_Talk_Page {
-      width:97%;
+    .bumi {
+      width: 450%;
+      margin-top: 66%;
+      margin-left: -175%;
+      animation: bumi-muter infinite 80s linear;
+    }
+    .backgroundImageMobile {
+      background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/background_mobile.png') center center no-repeat;
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    /* .planet_kiri {
+      animation: planet-kiri infinite ease-out 2s;
+      width: 150%;
+      height: auto;
+      margin-left: -50%;
+      margin-top: -20%;
+    } */
+    .planet_kanan {
+      /* animation: planet-kiri infinite ease-out 4s; */
+      /* width: 150%;
+      height: auto;
+      margin-left: -20%;
+      margin-top:20%; */
+    }
+    .awan_front {
+      animation: cloud-transit infinite ease-in-out 6s;
+      width: 150%;
+      height: auto;
+      margin-left: -80%;
+      margin-top: 0%;
+    }
+    /* .hafiz_home {
+      width:200%;
+      height: auto;
+      margin-top: 40%;
+      margin-left: -70%;
+      margin-right: 50%;
+    } */
+    .hafiz_baling_baling {
+      z-index:-1;
+      width:150%;
+      height: auto;
+      margin-top: -105%;
+      margin-left:-45%;
+      animation: balingbaling-muter infinite 0.2s linear;
+    }
+    .center_baling{
+      width: 146%;
+      height: auto; 
+      margin-top: -170%;
+      z-index:1;
+      position: inherit;
+      margin-left: -43%;
+     }
+     .awan_back {
+      animation: cloud-transit-2 infinite ease-in-out 4s;
+      width: 150%;
+      height: auto;
+      margin-left: 200%;
+      margin-top:0%;
+    }
+    .awan_back_atas {
+      animation: cloud-transit-3 infinite ease-in-out 8s;
+      width: 100%;
+      height: auto;
+      margin-top: -30%;
+      margin-bottom: 15%;
+      margin-left: 150%;
     }
  }
