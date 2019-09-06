@@ -1,0 +1,362 @@
+/* FONT FACE */
+  @font-face {
+    font-family: "digital";
+    src: url('./images/digital-7.ttf');
+  }
+
+/* KEYFRAMES FOR ALL DEVICE */
+  @keyframes cloud-animation {
+    0%{}
+    50%{ 
+      opacity: 0.5;
+      transform: translate(40px, 0px); 
+      -o-transform: translate(40px, 0px); 
+      -ms-transform: translate(40px, 0px);
+      -moz-transform: translate(40px, 0px);
+      -webkit-transform: translate(40px, 0px);
+    }
+  }
+  @keyframes bounce {
+    0%{}
+    50%{ 
+      -webkit-transform: translate(0, 15px); 
+      -moz-transform: translate(0, 15px); 
+      -ms-transform: translate(0, 15px); 
+      -o-transform: translate(0, 15px); 
+      transform: translate(0, 15px); 
+    }
+  }
+  @keyframes balingbaling-animation {
+    from {
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(359deg);
+      -moz-transform: rotate(359deg);
+      -ms-transform: rotate(359deg);
+      -o-transform: rotate(359deg);
+    }
+  }
+
+  @media (min-width: 1920px){
+      /* (1920x1080) Full HD Display */
+      /* KEYFRAMES FOR min-width: 1920px */
+
+    /* ========== HOME STYLE ============*/
+    .backgroundLayout {
+        background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/new_bghome.png') center center no-repeat;
+        height: 100%;
+        width: 100% !important;
+        position: absolute;
+        background-size: cover;
+        z-index: 0;
+    }
+    .planet_orange {
+        animation: bounce 1.5s infinite;
+        margin-left: -230%;
+        margin-top: 50%;
+        position: absolute;
+        width: 150% !important;
+    }
+    .left_cloud {
+        animation: cloud-animation 10s infinite;
+        width: 150% !important;
+        height: auto;
+        margin-left: -270%;
+        margin-top: 100%;
+        position: absolute;
+    }
+    .hafiz_home {
+        width: 150% !important;
+        margin-top: 95%;
+        margin-left: -70%;
+        margin-right: auto;
+        /* background: black; */
+        position: absolute;
+        animation: bounce 3s infinite; 
+    }
+    .hafiz_baling_baling {
+        width:125% !important;
+        height: auto;
+        margin-top: 140%;
+        margin-left:-57%;
+        z-index: 2;
+        position: absolute;
+        animation: balingbaling-animation infinite 0.2s linear;
+    }
+    .center_baling{
+        width: 146%;
+        height: auto; 
+        margin-top: 155%;
+        z-index:3;
+        position: absolute;
+        margin-left: -45%;
+        animation: bounce 3s infinite
+    }
+    .right_cloud {
+        width: 150% !important;
+        position: absolute;
+        margin-top: 90%;
+        margin-left: 50%;
+        animation: cloud-animation 10s infinite;
+    }
+    .planet_ungu {
+        position: absolute;
+        width: 150% !important;
+        margin-left: 10%;
+        margin-top: 10%;
+        animation: bounce 2s infinite;
+    }
+    /* ========== END HOME STYLE ============*/
+  }
+
+  @media (min-width: 1368px) and (max-width:1919px){
+      /* KEYFRAMES FOR (min-width: 1368px) and (max-width:1919px) */
+    /* ========== SLIDE STYLE ============*/
+        .carousel.carousel-slider{
+            height: 100% !important;
+            position: absolute !important;
+        }
+        .carousel .slider-wrapper {
+            height: 100% !important;
+        }
+        .carousel.slide{
+            height: 100% !important;
+        }
+    /* ========== END SLIDE STYLE ============*/
+
+    /* ========== HOME STYLE ============*/
+    .backgroundLayout {
+        background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/new_bghome.png') center center no-repeat;
+        height: 18%;
+        width: 100% !important;
+        position: absolute;
+        background-size: cover;
+        z-index: 0;
+    }
+    .planet_orange {
+        animation: bounce 1.5s infinite;
+        margin-left: -80%;
+        margin-top: 30%;
+        position: absolute;
+        width: 100% !important;
+    }
+    .left_cloud {
+        animation: cloud-animation 10s infinite;
+        width: 150% !important;
+        height: auto;
+        margin-left: -180%;
+        margin-top: 80%;
+        position: absolute;
+    }
+    .hafiz_home {
+        width: 130% !important;
+        margin-top: 55%;
+        margin-left: -60%;
+        margin-right: auto;
+        position: absolute;
+        /* background: green; */
+        animation: bounce 3s infinite; 
+    }
+    .hafiz_baling_baling {
+        width:105% !important;
+        height: auto;
+        margin-top: 95%;
+        margin-left:-47%;
+        z-index: 2;
+        position: absolute;
+        animation: balingbaling-animation infinite 0.2s linear;
+    }
+    .center_baling{
+        width: 146%;
+        height: auto; 
+        margin-top: 100%;
+        z-index:3;
+        position: absolute;
+        margin-left: -45%;
+        animation: bounce 3s infinite
+    }
+    .right_cloud {
+        width: 100% !important;
+        position: absolute;
+        margin-top: 90%;
+        margin-left: 20%;
+        animation: cloud-animation 10s infinite;
+    }
+    .planet_ungu {
+        position: absolute;
+        width: 100% !important;
+        margin-left: 10%;
+        margin-top: 10%;
+        animation: bounce 2s infinite;
+    }
+
+    /* ========== END HOME STYLE ============*/
+  }
+  @media (min-width: 481px) and (max-width: 768px) {
+    /* ##Device = Most of the Smartphones Mobiles (Portrait) */
+    /* KEYFRAMES FOR (min-width: 481px) and (max-width: 767px)*/
+
+    /* ========== SLIDE STYLE ============*/
+    .carousel.carousel-slider{
+        height: 100% !important;
+        position: absolute !important;
+    }
+    .carousel .slider-wrapper {
+        height: 100% !important;
+    }
+    .carousel.slide{
+        height: 100% !important;
+    }
+    /* ========== END SLIDE STYLE ============*/
+
+    .backgroundLayout {
+        background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/background_mobile.png') center center no-repeat;
+        height: 40%;
+        width: 100% !important;
+        position: absolute;
+        background-size: cover;
+        z-index: 0;
+    }
+    .planet_orange {
+        animation: bounce 1.5s infinite;
+        margin-left: -120%;
+        margin-top: 0%;
+        position: absolute;
+        width: 200% !important;
+    }
+    .left_cloud {
+        animation: cloud-animation 10s infinite;
+        width: 150% !important;
+        height: auto;
+        margin-left: -90%;
+        margin-top: 250%;
+        position: absolute;
+    }
+    .hafiz_home {
+        width: 220% !important;
+        margin-top: 120%;
+        margin-left: -110%;
+        margin-right: auto;
+        position: absolute;
+        /* background: red; */
+        animation: bounce 3s infinite; 
+    }
+    .hafiz_baling_baling {
+        width:170% !important;
+        height: auto;
+        margin-top: 195%;
+        margin-left:-85%;
+        z-index: 2;
+        position: absolute;
+        animation: balingbaling-animation infinite 0.2s linear;
+    }
+    .center_baling{
+        width: 150% !important;
+        height: auto; 
+        margin-top: 210%;
+        z-index:3;
+        position: absolute;
+        margin-left: -75%;
+        animation: bounce 3s infinite
+    }
+    .right_cloud {
+        width: 200% !important;
+        position: absolute;
+        margin-top: 200%;
+        margin-left: -50%;
+        animation: cloud-animation 10s infinite;
+    }
+    .planet_ungu {
+        position: absolute;
+        width: 200% !important;
+        margin-left: -100%;
+        margin-top: 10%;
+        animation: bounce 2s infinite;
+    }
+  }
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    /* KEYFRAMES FOR (min-width: 320px) and (max-width: 480px)*/
+    /* ========== SLIDE STYLE ============*/
+    .carousel.carousel-slider{
+        height: 100% !important;
+        position: absolute !important;
+    }
+    .carousel .slider-wrapper {
+        height: 100% !important;
+    }
+    .carousel.slide{
+        height: 100% !important;
+    }
+    /* ========== END SLIDE STYLE ============*/
+
+    /* ========== HOME STYLE ============*/
+    .backgroundLayout {
+        background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/background_mobile.png') center center no-repeat;
+        height: 57%;
+        width: 100% !important;
+        position: absolute;
+        background-size: cover;
+        z-index: 0;
+    }
+    .planet_orange {
+        animation: bounce 1.5s infinite;
+        margin-left: -100%;
+        margin-top: 30%;
+        position: absolute;
+        width: 200% !important;
+    }
+    .hafiz_home {
+        width: 220% !important;
+        margin-top: 160%;
+        margin-left: -110%;
+        margin-right: auto;
+        position: absolute;
+        /* background: red; */
+        animation: bounce 3s infinite; 
+    }
+    .left_cloud {
+        animation: cloud-animation 10s infinite;
+        width: 150% !important;
+        height: auto;
+        margin-left: -90%;
+        margin-top: 180%;
+        position: absolute;
+    }
+    .hafiz_baling_baling {
+        width:170% !important;
+        height: auto;
+        margin-top: 235%;
+        margin-left:-85%;
+        z-index: 2;
+        position: absolute;
+        animation: balingbaling-animation infinite 0.2s linear;
+    }
+    .center_baling{
+        width: 150% !important;
+        height: auto; 
+        margin-top: 250%;
+        z-index:3;
+        position: absolute;
+        margin-left: -75%;
+        animation: bounce 3s infinite
+    }
+    .planet_ungu {
+        position: absolute;
+        width: 200% !important;
+        margin-left: -110%;
+        margin-top: 10%;
+        animation: bounce 2s infinite;
+    }
+    .right_cloud {
+        width: 100% !important;
+        position: absolute;
+        margin-top: 300%;
+        margin-left: -50%;
+        animation: cloud-animation 10s infinite;
+    }
+    /* ========== END HOME STYLE ============*/
+  }

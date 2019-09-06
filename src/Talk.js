@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
 import './App.css';
+import { Container } from 'react-bootstrap';
+// import planet_ungu from './images/planet-ungu.png';
+// import planet_orange from './images/planet-orange.png';
+// import awan_depan from './images/awan_tengah.png';
+// import awan_tengah from './images/awan_depan.png';
+// import hafiz from './images/hafiz_3d.png';
+// import button from './images/button_hafiz.png';
+// import hand from './images/hand.png';
+// import hafiznew from './images/hafiz_new.png';
+// import bg_awan from './images/bg_cloud.png';
 // import HAFIZAI from './images/HAFIZAI_hand.png';
-import { Row, Container, Col } from 'react-bootstrap';
-import bg_awan from './images/bg_cloud.png';
-import planet_ungu from './images/planet-ungu.png';
-import planet_orange from './images/planet-orange.png';
 // import Sound from 'react-sound';
 // import palaHafiz from './images/kepala-hafiz.png';
 // import chat1 from './images/chat1.png';
@@ -13,23 +19,36 @@ import planet_orange from './images/planet-orange.png';
 // import chat4 from './images/chat4.png';
 
 class Talk extends Component{
+  // constructor(props) {
+  //   super(props); 
+  // }
+  
   render() {
     // console.log(Sound.status.PLAYING)
+    // const imageClick = () => {
+    //   console.log('Click');
+    // } 
     return (
       <Container>
+        {/* <Row className="row_title">
+          <Col></Col>
+          <Col>
+          </Col>
+          <Col></Col>
+        </Row>
         <Row>
           <Col>
-            <img src={planet_ungu} className="planet_ungu_talk" alt="purple planet in page about"/>
-            <img src={planet_orange} className="planet_orange_talk" alt="orange planet in page about"/>
+            <img src={hafiznew} className="hafiz_talk" alt="orange planet in page about"/>
+            <img src={button} className="button_talk" alt="orange planet in page about" onClick={() => imageClick()} style={{"pointer-events": "all"}}/>
+            <img src={hand} className="hand_talk" alt="orange planet in page about" />
           </Col>
           <Col>
           <div className="talk_text">
-            <h1>Halaman ngobrol bareng superhafiz</h1><br/>
-            <h1>in progress</h1>
+            
           </div>
           </Col>
           <Col>
-          </Col>
+          </Col> */}
           {/* <Sound
             url="./SoundEffect.mp3"
             playStatus={Sound.status.PLAYING}
@@ -59,13 +78,13 @@ class Talk extends Component{
             <img src={palaHafiz} style={{width:10+'%', height:'auto'}} alt="chat 1" className="palaHafiz4"/>
             <img src={chat4} style={{width:30+'%', height:'auto'}} alt="chat 4" className="textHafiz4"/><br/>
           </Col>   */}
-        </Row>
-        <Row className="row_bg_awan">
-          <img src={bg_awan} className="bg_awan" alt="cloud in page about"/>
-        </Row>
+        {/* </Row> */}
+        {/* <Row className="bg_awan_talk">
+					<img src={awan_depan} className="bg_awan" alt="cloud in page contact"/>
+					<img src={awan_tengah} className="bg_awan_tengah" alt="cloud in page contact"/>
+				</Row> */}
       </Container>
     );
   }
 }
-
 export default Talk;

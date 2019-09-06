@@ -1,57 +1,60 @@
 import React, { Component } from 'react';
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import './App.css';
+import './Style.css';
 // import AliceCarousel from 'react-alice-carousel';
 // import "react-alice-carousel/lib/alice-carousel.css";
 import Home from './Home';
 import About from './About';
-import Features from './Features';
+// import Features from './Features';
 import Talk from './Talk';
 import CountingDown from './CountingDown';
-// import Contact from './Contact';
+import Contact from './Contact';
 import ParticlesPage from './ParticlesPage';
-// import Game from './Game';
 import bg from './images/background.png';
-// import bg_about from './images/bg_about1.png';
 class App extends Component {
 
   render(){ 
     return (
-    
-  <div>
-    <ParticlesPage></ParticlesPage>
-    <Carousel  showArrows={false} showStatus={false} showThumbs={false} width='100%' useKeyboardArrows={true} infiniteLoop={true}>
-    <div>      
-      <div className="backgroundLayout">
-        <Home/> 
-      </div>
-    </div>
     <div>
-      <div className="backgroundAbout">
-        <About/>
+      <ParticlesPage></ParticlesPage>
+      <Carousel  showArrows={true} showStatus={false} showThumbs={false} width='100%' useKeyboardArrows={true} infiniteLoop={true} emulateTouch={true}>
+      <div>      
+        <div className="backgroundLayout">
+          <Home/> 
+        </div>
       </div>
-    </div>
-    <div>
-      <div className="backgroundLayout">
-        <Features/>
-      </div>
-    </div>
-    <div>
-      <div className="backgroundTalk1">
-        <Talk/>
-      </div>
-    </div>
-    <div>
-      <div className="backgroundLayout">
-        <CountingDown/>
-      </div>
-    </div>
-    <div>
       <div>
-        <img src={bg} alt="contact"/>
+        <div className="backgroundAbout">
+          <About/>
+        </div>
       </div>
-    </div>
+      {/* <div>
+        <div className="backgroundFeatures1">
+          <Features/>
+        </div>
+      </div> */}
+      <div>
+        <div className="backgroundTalk1">
+        <Talk/>
+        </div>
+      </div>
+      <div>
+        <div className="backgroundCounting">
+          <CountingDown/>
+        </div>
+      </div>
+      {/* <div>
+        <div className="backgroundContact">
+          <Contact/>
+        </div>
+      </div>       */}
+      <div>
+        <div>
+          <img src={bg} alt="contact"/>
+            <Contact/>
+        </div>
+      </div>
   </Carousel>
     {/* <AliceCarousel  
       duration={400}
