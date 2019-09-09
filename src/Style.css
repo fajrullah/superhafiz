@@ -3,8 +3,16 @@
     font-family: "digital";
     src: url('./images/digital-7.ttf');
   }
+  @font-face {
+    font-family: "acumin";
+    src: url('./images/Acumin-RPro.otf');
+  }
 
 /* KEYFRAMES FOR ALL DEVICE */
+    @keyframes fading {
+        from { opacity: 1 }
+        to { opacity: 0 }
+    }
   @keyframes cloud-animation {
     0%{}
     50%{ 
@@ -44,7 +52,17 @@
   @media (min-width: 1920px){
       /* (1920x1080) Full HD Display */
       /* KEYFRAMES FOR min-width: 1920px */
-
+    .bi{
+        width: 100% !important;
+        height: 100% !important;
+        z-index: 2;
+        position: absolute;
+    }
+    .layout_about {
+        height: 100% !important;
+        z-index: 4;
+        position: absolute;
+    }
     /* ========== HOME STYLE ============*/
     .backgroundLayout {
         background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/new_bghome.png') center center no-repeat;
@@ -67,6 +85,15 @@
         height: auto;
         margin-left: -270%;
         margin-top: 100%;
+        position: absolute;
+    }
+    .title_home {
+        color: #fff;
+        font-size: 2em;
+        font-weight: 600;
+        margin-top: 50% !important;
+        margin-left: -30% !important;
+        font-family: acumin;
         position: absolute;
     }
     .hafiz_home {
@@ -95,6 +122,13 @@
         position: absolute;
         margin-left: -45%;
         animation: bounce 3s infinite
+    }
+    .navigation {
+        width: 150% !important;
+        position: absolute;
+        margin-left: -70%;
+        margin-top: 260%;
+        animation: fading 3s infinite linear;
     }
     .right_cloud {
         width: 150% !important;
@@ -152,10 +186,19 @@
         margin-top: 80%;
         position: absolute;
     }
+    .title_home {
+        color: #fff;
+        font-size: 1.5em;
+        font-weight: 600;
+        margin-top: 40% !important;
+        margin-left: 20% !important;
+        font-family: acumin;
+        position: absolute;
+    }
     .hafiz_home {
-        width: 130% !important;
+        width: 110% !important;
         margin-top: 55%;
-        margin-left: -60%;
+        margin-left: -50%;
         margin-right: auto;
         position: absolute;
         /* background: green; */
@@ -164,7 +207,7 @@
     .hafiz_baling_baling {
         width:105% !important;
         height: auto;
-        margin-top: 95%;
+        margin-top: 82%;
         margin-left:-47%;
         z-index: 2;
         position: absolute;
@@ -173,11 +216,18 @@
     .center_baling{
         width: 146%;
         height: auto; 
-        margin-top: 100%;
+        margin-top: 85%;
         z-index:3;
         position: absolute;
         margin-left: -45%;
         animation: bounce 3s infinite
+    }
+    .navigation {
+        position: absolute;
+        margin-left: -45%;
+        margin-top: 150%;
+        width: 100% !important;
+        animation: fading infinite 3s linear;
     }
     .right_cloud {
         width: 100% !important;
@@ -213,6 +263,7 @@
     }
     /* ========== END SLIDE STYLE ============*/
 
+    /* ========== HOME STYLE ============*/
     .backgroundLayout {
         background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/background_mobile.png') center center no-repeat;
         height: 40%;
@@ -277,6 +328,7 @@
         margin-top: 10%;
         animation: bounce 2s infinite;
     }
+    /* ========== HOME STYLE ============*/
   }
   @media only screen and (min-width: 320px) and (max-width: 480px) {
     /* KEYFRAMES FOR (min-width: 320px) and (max-width: 480px)*/
@@ -304,10 +356,19 @@
     }
     .planet_orange {
         animation: bounce 1.5s infinite;
-        margin-left: -100%;
+        margin-left: -110%;
         margin-top: 30%;
         position: absolute;
         width: 200% !important;
+    }
+    .title_home {
+        color: #fff;
+        font-size: 1em;
+        font-weight: 600;
+        margin-top: 80% !important;
+        margin-left: -30% !important;
+        font-family: acumin;
+        position: absolute;
     }
     .hafiz_home {
         width: 220% !important;
@@ -344,11 +405,18 @@
         margin-left: -75%;
         animation: bounce 3s infinite
     }
+    .navigation {
+        position: absolute;
+        margin-left: -100%;
+        margin-top: 400%;
+        width: 200% !important;
+        animation: fading infinite 3s linear;
+    }
     .planet_ungu {
         position: absolute;
         width: 200% !important;
-        margin-left: -110%;
-        margin-top: 10%;
+        margin-left: -90%;
+        margin-top: 30%;
         animation: bounce 2s infinite;
     }
     .right_cloud {

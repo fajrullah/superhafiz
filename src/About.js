@@ -7,7 +7,9 @@ import './App.css';
 // import planet_ungu from './images/planet-ungu.png';
 // import awan from './images/awan.png';
 // import bg_awan from './images/bg_cloud.png';
-// import {  Row, Col, Button } from 'react-bootstrap';
+import {  Row, Col, Button } from 'react-bootstrap';
+import bi from './images/bi.png';
+import layout_about from './images/layout_about.png';
 // import background from './images/backgroundabout2.png';
 // import hafiz from './images/hafiz_new.JPG';
 // import hafizslide1 from './images/IMG_7703.JPG';
@@ -30,7 +32,11 @@ class About extends Component{
 	  	// } 
     	return (
     	<div>
-			<h5>About slide</h5>
+			<Row>
+				<img src={bi} className="bi" alt="awan home"/>
+				<img src={layout_about} className="layout_about" alt="awan home"/>
+			</Row>
+			
     		{/* <Row> */}
     			{/* <Col> */}
 					{/* <img src={hafizslide1} className="hafiz_about" alt="awan home"/>

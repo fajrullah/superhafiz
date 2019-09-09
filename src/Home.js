@@ -7,6 +7,7 @@ import planet_ungu_home from './images/planet-ungu.png';
 import hafiz from './images/hafiz.png';
 import baling2 from './images/baling2.png';
 import center from './images/center.png';
+import navigation from './images/navigation.png';
 
 class Home extends Component{
   render() {
@@ -19,9 +20,11 @@ class Home extends Component{
                 <img src={awan} className="left_cloud" alt="awan kiri di halaman home"/>
               </Col>
               <Col>
+                <p className="title_home">#JelajahiImajinasimu</p>
                 <img src={hafiz} className="hafiz_home" alt="hafiz di halaman home"/>
                 <img src={baling2} className="hafiz_baling_baling" alt="baling baling hafiz di home"/>
                 <img src={center} className="center_baling" alt="baling baling hafiz di halaman home"/>
+                <img src={navigation} className="navigation" alt="navigation di halaman home" />
               </Col>
               <Col>
                 <img src={awan} alt="awan kanan di halaman home" className="right_cloud"/>

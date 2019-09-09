@@ -1,7 +1,7 @@
-@font-face {
+/* @font-face {
   font-family: "starguard";
   src: url('./images/starguard.ttf');
-}
+} */
 @font-face {
   font-family: "digital";
   src: url('./images/digital-7.ttf');
@@ -1002,7 +1002,7 @@
     position: absolute;
   }
   .title {
-    font-family: "starguard" !important;
+    /* font-family: "starguard" !important; */
     color: white;
     position: absolute;
     font-size: 60px;
@@ -1012,7 +1012,7 @@
     animation: opacity 10s;
   }
   .title_features {
-    font-family: "starguard" !important;
+    /* font-family: "starguard" !important; */
     color: white;
     position: absolute;
     font-size: 110px;
@@ -1022,7 +1022,7 @@
     animation: opacity 10s;
   }
   .title_talk {
-    font-family: "starguard" !important;
+    /* font-family: "starguard" !important; */
     color: white;
     position: absolute;
     font-size: 110px;
@@ -1567,7 +1567,7 @@
     font-weight: 600;
     text-align: justify !important;
     animation: hafiz-desc-title 5s;
-    font-family: "starguard" !important;
+    /* font-family: "starguard" !important; */
   }
   .hafiz_desc {
     width: 130%;
@@ -1582,7 +1582,7 @@
     color: white;
     margin-top: 20%;
     position: absolute;
-    font-family: 'starguard';
+    /* font-family: 'starguard'; */
     font-size: 50px;
   }
   @keyframes hafiz-fade {
