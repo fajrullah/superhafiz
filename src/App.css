@@ -102,14 +102,14 @@
   z-index: 1;
 }
 
-.backgroundTalk1 {
+/* .backgroundTalk1 {
   background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/empty_bg.png') center center no-repeat;
   height: 100%;
   width: 100%;
   position: absolute;
   background-size: cover;
   z-index: 2 !important;
-}
+} */
 .backgroundHome {
   background: blue;
   position: absolute;
@@ -847,13 +847,13 @@
     z-index: 4;
     animation: button-talk 5s infinite;
   }
-  .hafiz_talk {
+  /* .hafiz_talk {
     position: absolute;
     width: 90% !important;
     margin-left: 55%;
     margin-top: 70%;
     z-index: 3;
-  }
+  } */
   .alquran_feature {
     width: 70% !important;
     position: absolute;
@@ -1141,14 +1141,14 @@
     position: absolute;
     margin-left: -28%;
   }
-  .bg_awan_talk {
+  /* .bg_awan_talk {
     width: 101% !important;
     z-index: 2;
     margin-top:22%;
     height: 20px;
     position: absolute;
     margin-left: -28%;
-  }
+  } */
   .bg_awan_counting {
     width: 100% !important;
     z-index: 2;
@@ -1173,20 +1173,20 @@
     margin-left: -1%;
     animation: awan-about-kiri 10s infinite;
   }
-  .bg_awan {
+  /* .bg_awan {
     width: 100% !important;
     z-index: 2;
     position: absolute;
     margin-top: -20%;
     animation: awan-about-kiri 10s infinite;
-  }
-  .bg_awan_tengah {
+  } */
+  /* .bg_awan_tengah {
     width: 100% !important;
     z-index: 2;
     position: absolute;
     margin-top: -20%;
     animation: awan-tengah 5s infinite;
-  }
+  } */
   @keyframes awan-belakang-roket {
     0%{}
     50%{ margin-top: 30%; }

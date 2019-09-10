@@ -9,6 +9,7 @@
   }
 
 /* KEYFRAMES FOR ALL DEVICE */
+
     @keyframes fading {
         from { opacity: 1 }
         to { opacity: 0 }
@@ -48,21 +49,380 @@
       -o-transform: rotate(359deg);
     }
   }
+  @keyframes fade-in {
+        0% {
+            opacity: 1;
+        }
+        80% {
+            transform: translateY(-70px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0px);
+            opacity: 0;
+        }
+    }
+    @keyframes fade-in-desc{
+        0% {
+            opacity: 0;
+        }
+        50% {
+            transform: translateY(-70px);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    }
+    @keyframes fade-in-mobile {
+        0% {
+            opacity: 1;
+        }
+        80% {
+            transform: translateY(-10%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(10%);
+            opacity: 0;
+        }
+    }
+    @keyframes scale { 
+        0% {
+            transform: scale(0);
+        }
+        50%{
+            transform: scale(1.5);
+        }
+        100%{
+            transform: scale(1);
+        }
+    }
+    @keyframes cube {
+        from {
+          transform: scale(0) rotate(0deg) translate(-50%, -50%);
+          opacity: 1;
+        }
+        to {
+          transform: scale(20) rotate(960deg) translate(-50%, -50%);
+          opacity: 0;
+        }
+      }
+      
+    .absolute{
+        position: absolute;
+    }
 
   @media (min-width: 1920px){
       /* (1920x1080) Full HD Display */
       /* KEYFRAMES FOR min-width: 1920px */
+    .backgroundTalk1 {
+        background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/empty_bg.png') center center no-repeat;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background-size: cover;
+        z-index: 2 !important;
+    }
+    .column {
+        margin-top: 0%;
+        position: absolute;
+        width: 15% !important;
+        margin-left: 35%;
+    }
+    .hafiz_talk {
+        position: absolute;
+        width: 90% !important;
+        margin-left: -70%;
+        margin-top: 70%;
+        z-index: 3;
+      }
+    .head_hafiz {
+        width: 35% !important;
+        margin-left: -50%;
+        margin-top: 30%;
+    }
+    .head_hafiz1 {
+        width: 35% !important;
+        margin-left: -50%;
+        margin-top: 90%;
+    }
+    .head_hafiz2 {
+        width: 35% !important;
+        margin-left: -50%;
+        margin-top: 140%;
+    }
+    .head_hafiz3 {
+        width: 35% !important;
+        margin-left: -50%;
+        margin-top: 195%;
+    }
+    .head_user {
+        width: 40% !important;
+        margin-left: 100%;
+    }
+    .head_user1 {
+        width: 40% !important;
+        margin-left: 100%;
+        margin-top: 60%;
+    }
+    .head_user2 {
+        width: 40% !important;
+        margin-left: 100%;
+        margin-top: 115%;
+    }
+    .head_user3 {
+        width: 40% !important;
+        margin-left: 100%;
+        margin-top: 165%;
+    }
+    .balon_user {
+        width: 100% !important;
+        margin-left: 28%;
+        margin-top: -30%;
+    }
+    .balon_user1 {
+        width: 100% !important;
+        margin-left:20%;
+        margin-top: 30%;
+    }
+    .balon_user2 {
+        width: 100% !important;
+        margin-left:28%;
+        margin-top: 85%;
+    }
+    .balon_user3 {
+        width: 100% !important;
+        margin-left:20%;
+        margin-top: 135%;
+    }
+    .balon_hafiz {
+        width: 100% !important;
+        margin-left:-30%;
+        margin-top: 0%;
+    }
+    .balon_hafiz1 {
+        width: 100% !important;
+        margin-left:-43%;
+        margin-top: 60%;
+    }
+    .balon_hafiz2 {
+        width: 100% !important;
+        margin-left:-43%;
+        margin-top: 110%;
+    }
+    .balon_hafiz3 {
+        width: 100% !important;
+        margin-left:-25%;
+        margin-top: 165%;
+    }
+    .bg_awan_talk {
+        width: 99% !important;
+        z-index: 2;
+        margin-top:22%;
+        height: 20px;
+        position: absolute;
+        margin-left: -27%;
+    }
+    .bg_awan {
+        width: 100% !important;
+        z-index: 2;
+        position: absolute;
+        margin-top: -20%;
+        animation: cloud-animation 10s infinite;
+    }
+    .bg_awan_tengah {
+        width: 100% !important;
+        z-index: 2;
+        position: absolute;
+        margin-top: -20%;
+        animation: cloud-animation 5s infinite;
+    }
+    /* ========== About STYLE ============*/
+    .cube {
+        top: 10vh;
+        left: 90vw;
+        width: 10px;
+        height: 10px;
+        border: solid 0.5px #769be6;
+        transform-origin: top left;
+        transform: scale(0) rotate(0deg) translate(-50%, -50%);
+        animation: cube 12s ease-in forwards infinite;
+        z-index: 8;
+    }
+    .cube:nth-child(2) {
+        animation-delay: 2s;
+        left: 10vw;
+        top: 10vh;
+        width: 5px;
+        height: 5px;
+    }
     .bi{
         width: 100% !important;
         height: 100% !important;
         z-index: 2;
-        position: absolute;
+        margin-top: -5%;
+        margin-left: 5%;
+        opacity: 1;
+        /* animation: fade-in 10s infinite; */
+        animation-name: fade-in;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+    .bi2{
+        width: 100% !important;
+        height: 100% !important;
+        z-index: 2;
+        margin-top: -5%;
+        margin-left: 5%;
+        opacity: 1;
+        /* animation: fade-in 5s infinite; */
+        animation-name: fade-in;
+        animation-duration: 5s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+    }
+    .description {
+        width: 50% !important;
+        z-index: 4;
+        font-family: acumin;
+        color: #fff;
+        margin-top: 10%;
+        text-align: left;
+        font-size: 2em;
+        margin-left: 40%;
+        animation-name: fade-in;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        opacity: 1;
+    }
+    .wifi_about{
+        width: 6% !important;
+        z-index: 4;
+        margin-top: 25%;
+        margin-left: 42%;
+        animation-name: scale;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+    .talk_about{
+        width: 6% !important;
+        z-index: 4;
+        margin-top: 25%;
+        margin-left: 48%;
+        animation-name: scale;
+        animation-delay: 3s;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+    .onlinecontent_about {
+        width: 6% !important;
+        z-index: 4;
+        margin-top: 25%;
+        margin-left: 54%;
+        animation-name: scale;
+        animation-delay: 6s;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+    .offlinecontent_about {
+        width: 6% !important;
+        z-index: 4;
+        margin-top: 25%;
+        margin-left: 60%;
+        animation-name: scale;
+        animation-delay: 9s;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+    .bilingual_about {
+        width: 6% !important;
+        z-index: 4;
+        margin-top: 25%;
+        margin-left: 66%;
+        animation-name: scale;
+        animation-delay: 12s;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+    .kontenislami_about {
+        width: 6% !important;
+        z-index: 4;
+        margin-top: 25%;
+        margin-left: 72%;
+        animation-name: scale;
+        animation-delay: 15s;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+    .AI_about {
+        width: 6% !important;
+        z-index: 4;
+        margin-top: 35%;
+        margin-left: 57%;
+        animation-name: scale;
+        animation-delay: 18s;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+    .song_about {
+        width: 6% !important;
+        z-index: 4;
+        margin-top: 35%;
+        margin-left: 63%;
+        animation-name: scale;
+        animation-delay: 21s;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+    .alquran_about {
+        width: 6% !important;
+        z-index: 4;
+        margin-top: 35%;
+        margin-left: 69%;
+        animation-name: scale;
+        animation-delay: 24s;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+    .funemoticon_about {
+        width: 6% !important;
+        z-index: 4;
+        margin-top: 35%;
+        margin-left: 75%;
+        animation-name: scale;
+        animation-delay: 27s;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+    .ensiklopedia_about {
+        width: 6% !important;
+        z-index: 4;
+        margin-top: 35%;
+        margin-left: 81%;
+        animation-name: scale;
+        animation-delay: 30s;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+    .matdas_about {
+        width: 6% !important;
+        z-index: 4;
+        margin-top: 35%;
+        margin-left: 87%;
+        animation-name: scale;
+        animation-delay: 33s;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
     }
     .layout_about {
         height: 100% !important;
         z-index: 4;
-        position: absolute;
+        margin-left:5%;
     }
+    /* ========== END About STYLE ============*/
+
     /* ========== HOME STYLE ============*/
     .backgroundLayout {
         background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/new_bghome.png') center center no-repeat;
@@ -161,7 +521,196 @@
             height: 100% !important;
         }
     /* ========== END SLIDE STYLE ============*/
-
+    
+    .cube {
+        top: 10vh;
+        left: 90vw;
+        width: 10px;
+        height: 10px;
+        border: solid 0.5px #769be6;
+        transform-origin: top left;
+        transform: scale(0) rotate(0deg) translate(-50%, -50%);
+        animation: cube 12s ease-in forwards infinite;
+        z-index: 8;
+    }
+    .cube:nth-child(2) {
+        animation-delay: 2s;
+        left: 10vw;
+        top: 10vh;
+        width: 5px;
+        height: 5px;
+    }
+    .bi{
+        width: 120% !important;
+        height: 25% !important;
+        z-index: 2;
+        position: absolute;
+        margin-top: -20%;
+        margin-left: 3%;
+        animation: fade-in 10s infinite;
+    }
+    .bi2{
+        width: 120% !important;
+        height: 25% !important;
+        z-index: 2;
+        position: absolute;
+        margin-top: -20%;
+        margin-left: 3%;
+        animation: fade-in 5s infinite;
+    }
+    .description {
+        width: 50% !important;
+        z-index: 4;
+        font-family: acumin;
+        color: #fff;
+        margin-top: 5%;
+        text-align: left;
+        font-size: 1.5em;
+        margin-left: 40%;
+        position: absolute;
+        animation-name: fade-in;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        opacity: 1;
+    }
+    .wifi_about{
+        width: 7% !important;        
+        position: absolute;
+        z-index: 4;
+        margin-top: 25%;
+        margin-left: 45%;
+        animation-name: scale;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+    .talk_about{
+        width: 7% !important;
+        position: absolute;
+        z-index: 4;
+        margin-top: 25%;
+        margin-left: 52%;
+        animation-name: scale;
+        animation-delay: 3s;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+    .onlinecontent_about {
+        width: 7% !important;
+        position: absolute;
+        z-index: 4;
+        margin-top: 25%;
+        margin-left: 59%;
+        animation-name: scale;
+        animation-delay: 6s;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+    .offlinecontent_about {
+        width: 7% !important;
+        position: absolute;
+        z-index: 4;
+        margin-top: 25%;
+        margin-left: 66%;
+        animation-name: scale;
+        animation-delay: 9s;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+    .bilingual_about {
+        width: 7% !important;
+        position: absolute;
+        z-index: 4;
+        margin-top: 25%;
+        margin-left: 73%;
+        animation-name: scale;
+        animation-delay: 12s;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+    .kontenislami_about {
+        width: 7% !important;
+        position: absolute;
+        z-index: 4;
+        margin-top: 25%;
+        margin-left: 80%;
+        animation-name: scale;
+        animation-delay: 15s;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+    .AI_about {
+        width: 7% !important;
+        position: absolute;
+        z-index: 4;
+        margin-top: 35%;
+        margin-left: 59%;
+        animation-name: scale;
+        animation-delay: 18s;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+    .song_about {
+        width: 7% !important;
+        position: absolute;
+        z-index: 4;
+        margin-top: 35%;
+        margin-left: 66%;
+        animation-name: scale;
+        animation-delay: 21s;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+    .alquran_about {
+        width: 7% !important;
+        position: absolute;
+        z-index: 4;
+        margin-top: 35%;
+        margin-left: 73%;
+        animation-name: scale;
+        animation-delay: 24s;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+    .funemoticon_about {
+        width: 7% !important;
+        position: absolute;
+        z-index: 4;
+        margin-top: 35%;
+        margin-left: 80%;
+        animation-name: scale;
+        animation-delay: 27s;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+    .ensiklopedia_about {
+        width: 7% !important;
+        position: absolute;
+        z-index: 4;
+        margin-top: 35%;
+        margin-left: 87%;
+        animation-name: scale;
+        animation-delay: 30s;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+    .matdas_about {
+        width: 7% !important;
+        position: absolute;
+        z-index: 4;
+        margin-top: 35%;
+        margin-left: 94%;
+        animation-name: scale;
+        animation-delay: 33s;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+    .layout_about {
+        height: 17% !important;
+        width: 100% !important;
+        z-index: 4;
+        position: absolute;
+        margin-left:5%;
+    }
     /* ========== HOME STYLE ============*/
     .backgroundLayout {
         background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/new_bghome.png') center center no-repeat;
@@ -263,6 +812,117 @@
     }
     /* ========== END SLIDE STYLE ============*/
 
+    .bi{
+        width: 120% !important;
+        height: 20% !important;
+        z-index: 2;
+        position: absolute;
+        margin-top: -13%;
+        margin-left: 3%;
+    }
+    .description {
+        width: 60% !important;
+        z-index: 4;
+        font-family: acumin;
+        color: #fff;
+        margin-top: 15%;
+        text-align: left;
+        font-size: 1em;
+        margin-left: 35%;
+        position: absolute;
+    }
+    .wifi_about{
+        width: 20% !important;
+        position: absolute;
+        z-index: 4;
+        margin-top: 65%;
+        margin-left: 5%;
+    }
+    .talk_about{
+        width: 20% !important;
+        position: absolute;
+        z-index: 4;
+        margin-top: 65%;
+        margin-left: 28%;
+    }
+    .onlinecontent_about {
+        width: 20% !important;
+        position: absolute;
+        z-index: 4;
+        margin-top: 65%;
+        margin-left: 53%;
+    }
+    .offlinecontent_about {
+        width: 20% !important;
+        position: absolute;
+        z-index: 4;
+        margin-top: 65%;
+        margin-left: 76%;
+    }
+    .bilingual_about {
+        width: 20% !important;
+        position: absolute;
+        z-index: 4;
+        margin-top: 88%;
+        margin-left: 5%;
+    }
+    .kontenislami_about {
+        width: 20% !important;
+        position: absolute;
+        z-index: 4;
+        margin-top: 88%;
+        margin-left: 28%;
+    }
+    .AI_about {
+        width: 20% !important;
+        position: absolute;
+        z-index: 4;
+        margin-top: 88%;
+        margin-left: 53%;
+    }
+    .song_about {
+        width: 20% !important;
+        position: absolute;
+        z-index: 4;
+        margin-top: 88%;
+        margin-left: 76%;
+    }
+    .alquran_about {
+        width: 20% !important;
+        position: absolute;
+        z-index: 4;
+        margin-top: 110%;
+        margin-left: 5%;
+    }
+    .funemoticon_about {
+        width: 20% !important;
+        position: absolute;
+        z-index: 4;
+        margin-top: 110%;
+        margin-left: 28%;
+    }
+    .ensiklopedia_about {
+        width: 20% !important;
+        position: absolute;
+        z-index: 4;
+        margin-top: 110%;
+        margin-left: 53%;
+    }
+    .matdas_about {
+        width: 20% !important;
+        position: absolute;
+        z-index: 4;
+        margin-top: 110%;
+        margin-left: 76%;
+    }
+    .layout_about {
+        height: 17% !important;
+        width: 100% !important;
+        z-index: 4;
+        position: absolute;
+        margin-left:5%;
+    }
+
     /* ========== HOME STYLE ============*/
     .backgroundLayout {
         background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/background_mobile.png') center center no-repeat;
@@ -344,6 +1004,197 @@
         height: 100% !important;
     }
     /* ========== END SLIDE STYLE ============*/
+    .background_about {
+        background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/about_mobile.png') center center no-repeat;
+        height: 60%;
+        width: 100% !important;
+        position: absolute;
+        background-size: cover;
+        z-index: 4;
+        margin-left:4%;
+        margin-top:-35%;
+    }
+    .bi{
+        width: 150% !important;
+        height: 20% !important;
+        z-index: 2;
+        position: absolute;
+        margin-top: -33%;
+        margin-left: 5%;
+        animation-name: fade-in-mobile;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        /* display: none !important; */
+    }
+    .bi2{
+        width: 150% !important;
+        height: 20% !important;
+        z-index: 2;
+        position: absolute;
+        margin-top: -33%;
+        margin-left: 5%;
+        animation-name: fade-in-mobile;
+        animation-duration: 5s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        /* display: none !important; */
+    }
+    .description {
+        width: 90% !important;
+        z-index: 4;
+        font-family: acumin;
+        color: #fff;
+        margin-top: 53%;
+        text-align: left;
+        font-size: 0.8em;
+        margin-left: 10%;
+        margin-right: 5%;
+        position: absolute;
+        animation-name: fade-in-desc;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+    }
+    .wifi_about{
+        width: 25% !important;
+        position: absolute;
+        z-index: 4;
+        margin-top: 95%;
+        margin-left: 5%;
+        animation-name: bounce;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+    .talk_about{
+        width: 25% !important;
+        position: absolute;
+        z-index: 4;
+        margin-top: 95%;
+        margin-left: 28%;
+        animation-name: bounce;
+        animation-delay: 3s;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+    .onlinecontent_about {
+        width: 25% !important;
+        position: absolute;
+        z-index: 4;
+        margin-top: 95%;
+        margin-left: 53%;
+        animation-name: bounce;
+        animation-delay: 6s;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+    .offlinecontent_about {
+        width: 25% !important;
+        position: absolute;
+        z-index: 4;
+        margin-top: 95%;
+        margin-left: 76%;
+        animation-name: bounce;
+        animation-delay: 9s;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+    .bilingual_about {
+        width: 25% !important;
+        position: absolute;
+        z-index: 4;
+        margin-top: 120%;
+        margin-left: 5%;
+        animation-name: bounce;
+        animation-delay: 12s;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+    .kontenislami_about {
+        width: 25% !important;
+        position: absolute;
+        z-index: 4;
+        margin-top: 120%;
+        margin-left: 28%;
+        animation-name: bounce;
+        animation-delay: 15s;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+    .AI_about {
+        width: 25% !important;
+        position: absolute;
+        z-index: 4;
+        margin-top: 120%;
+        margin-left: 53%;
+        animation-name: bounce;
+        animation-delay: 18s;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+    .song_about {
+        width: 25% !important;
+        position: absolute;
+        z-index: 4;
+        margin-top: 120%;
+        margin-left: 76%;
+        animation-name: bounce;
+        animation-delay: 21s;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+    .alquran_about {
+        width: 25% !important;
+        position: absolute;
+        z-index: 4;
+        margin-top: 145%;
+        margin-left: 5%;
+        animation-name: bounce;
+        animation-delay: 24s;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+    .funemoticon_about {
+        width: 25% !important;
+        position: absolute;
+        z-index: 4;
+        margin-top: 145%;
+        margin-left: 28%;
+        animation-name: bounce;
+        animation-delay: 27s;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+    .ensiklopedia_about {
+        width: 25% !important;
+        position: absolute;
+        z-index: 4;
+        margin-top: 145%;
+        margin-left: 53%;
+        animation-name: bounce;
+        animation-delay: 30s;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        /* display : none !important; */
+    }
+    .matdas_about {
+        width: 25% !important;
+        position: absolute;
+        z-index: 4;
+        margin-top: 145%;
+        margin-left: 76%;
+        animation-name: bounce;
+        animation-delay: 33s;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+    .layout_about {
+        height: 17% !important;
+        width: 100% !important;
+        z-index: 4;
+        position: absolute;
+        margin-left:5%;
+        display: none !important;
+        background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/background_mobile.png') center center no-repeat;
+    }
 
     /* ========== HOME STYLE ============*/
     .backgroundLayout {
@@ -363,7 +1214,7 @@
     }
     .title_home {
         color: #fff;
-        font-size: 1em;
+        font-size: 1.2em;
         font-weight: 600;
         margin-top: 80% !important;
         margin-left: -30% !important;
@@ -408,7 +1259,7 @@
     .navigation {
         position: absolute;
         margin-left: -100%;
-        margin-top: 400%;
+        margin-top: 456%;
         width: 200% !important;
         animation: fading infinite 3s linear;
     }
