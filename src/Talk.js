@@ -13,12 +13,13 @@ import balon_user1 from './images/dialog-user-long.png';
 import balon_hafiz from './images/dialog-hafiz-long.png';
 import balon_hafiz1 from './images/dialog-hafiz.png';
 import hafiz from './images/hafiz_3d.png';
+import background from './images/backgroundblack.png';
+import talk_button from './images/talk_button.png';
+import hand from './images/hand.png';
 // import Sound from 'react-sound';
 
 class Talk extends Component{
-  // constructor(props) {
-  //   super(props); 
-  // }
+  
   
   render() {
     // console.log(Sound.status.PLAYING)
@@ -27,6 +28,7 @@ class Talk extends Component{
     // } 
     return (
       <Container>
+        <img src={background} className="backgroundblack absolute"/>
         <Row>
           {/* <Sound
             url="./SoundEffect.mp3"
@@ -37,7 +39,9 @@ class Talk extends Component{
             {/* <img src={planet_ungu} className="planet_ungu" alt="planet ungu di halaman talk"/> */}
           </Col>
           <Col>
-            <img src={hafiz} className="hafiz_talk" alt="planet ungu di halaman talk"/>
+            <img src={hafiz} className="hafiz_talk" alt="planet ungu di halaman talk" onMouseOver={this.handleMouseOver}/>
+            <img src={talk_button} className="talk_button absolute" alt="planet ungu di halaman talk" onMouseOver={this.handleMouseOver}/>
+            <img src={hand} className="hand absolute" alt="planet ungu di halaman talk" onMouseOver={this.handleMouseOver}/>
           </Col>
           <Col className="column">
             <img src={kepala_hafiz} className="head_hafiz absolute" alt="planet orange di halaman talk"/>
