@@ -1,24 +1,26 @@
 import React, { Component } from 'react';
 import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import './Style.css';
+import "react-responsive-carousel/lib/styles/carousel.min.css"
 // import AliceCarousel from 'react-alice-carousel';
 // import "react-alice-carousel/lib/alice-carousel.css";
+// import Features from './Features';
 import Home from './Home';
 import About from './About';
-// import Features from './Features';
 import Talk from './Talk';
 import CountingDown from './CountingDown';
 import Contact from './Contact';
 import ParticlesPage from './ParticlesPage';
-import bg from './images/background.png';
+import bg from './images/bg_features.png';
+import './Style.css';
+
+
 class App extends Component {
 
   render(){ 
     return (
     <div>
       <ParticlesPage></ParticlesPage>
-      <Carousel  showArrows={true} showStatus={false} showThumbs={false} width='100%' useKeyboardArrows={true} infiniteLoop={true} emulateTouch={true}>
+      <Carousel  showArrows={true} showStatus={false} showThumbs={false} swipeScrollTolerance={20} width='100%' useKeyboardArrows={true} transitionTime={200} infiniteLoop={true} emulateTouch={true}>
       <div>      
         <div className="backgroundLayout">
           <Home/> 
@@ -49,9 +51,10 @@ class App extends Component {
           <Contact/>
         </div>
       </div>       */}
+      
       <div>
         <div>
-          <img src={bg} alt="contact"/>
+          <img src={bg} alt="contact" style={{height: 100+'%'}}/>
             <Contact/>
         </div>
       </div>

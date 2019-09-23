@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import './App.css';
 import {  Row } from 'react-bootstrap';
 import bi from './images/bi.png';
@@ -29,7 +29,7 @@ import matdas from './images/about_matdasmobile.png';
 // import hafizslide2 from './images/IMG_7702.JPG';
 // import hafizslide3 from './images/IMG_7704.JPG';
 
-class About extends Component{
+class About extends PureComponent{
 	constructor(props) {
 		super(props); 
 		this.state = {
@@ -47,12 +47,15 @@ class About extends Component{
     	return (
     	<div>
 			<Row>
-				<div class="cube absolute"></div>
-				<div class="cube absolute"></div>
+				<div className="cube absolute"></div>
+				<div className="cube absolute version1"></div>
+				<div className="cube absolute"></div>
 				<img src={bi} className="bi absolute" alt="bi"/>
 				<img src={bi2} className="bi2 absolute" alt="bi"/>
 				<img src={layout_about} className="layout_about absolute" alt="layout about"/>				
 				<div className="background_about"></div>
+				<h1 className="title_about absolute">This is Title About Page</h1>
+				<hr className="hr_title"/>
 				<p className="description absolute">
 					Superhafiz adalah produk edukasi terbaru dari Al-Qolam yang menggunakan teknologi tinggi. Yang dapat di hubungkan dengan aplikasi Hafiz-Hafizah di Android yang bisa di download di Google Play, Icon anak soleh ini bisa mengajarkan banyak hal positif kepada anak-anak dengan cara menyenangkan dan tidak membosankan.
 				</p>

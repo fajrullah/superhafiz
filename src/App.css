@@ -175,21 +175,21 @@
   margin-top: -45%;
   margin-left: 38%;  
 }
-.countdown_h5 {
+/* .countdown_h5 {
   color: white;
   font-size: 40px;
   font-weight: 600;
   margin-top: 57%;
   position: absolute;
-}
-.countdown_h5_jam {
+} */
+/* .countdown_h5_jam {
   color: white;
   font-size: 40px;
   font-weight: 600;
   position: absolute;
   margin-top: 63%;
   margin-left: 4%;
-}
+} */
 .countdown h2{
   font-size: 60px;
   /* color: lightblue; */
@@ -605,13 +605,6 @@
     height: 100% !important;
     z-index: 8;
   }
-  /* .awan_home {
-    width: 150% !important;
-    position: absolute;
-    margin-top: 90%;
-    margin-left: 50%;
-    animation: awan-about-kiri 10s infinite;
-  } */
   @keyframes hand-move {
     from{}
     to{
@@ -624,7 +617,7 @@
     margin-top: 260%;
     z-index: 4;
     margin-left: 100%;
-    /* animation: hand-move 5s ease-in infinite; */
+   
   }
   @keyframes arus-roket{
     0%{ margin-top: 90%; }
@@ -807,22 +800,22 @@
     margin-left: 0%;
     position: absolute;
   }
-  .countdown_h5 {
+  /* .countdown_h5 {
     color: white;
     font-size: 40px;
     font-weight: 600;
     margin-top: 70%;
     position: absolute;
     margin-left: 40%;
-  }
-  .countdown_h5_jam {
+  } */
+  /* .countdown_h5_jam {
     color: white;
     font-size: 40px;
     font-weight: 600;
     position: absolute;
     margin-top: 78%;
     margin-left: 44%;
-  }
+  } */
   .countdown h2{
     position: absolute;
     font-size: 60px;
@@ -839,21 +832,6 @@
       -webkit-transform: scale(1.5);
     }
   }
-  /* .button_talk {
-    position: absolute;
-    width: 60% !important;
-    margin-top: 120%;
-    margin-left: 70%;
-    z-index: 4;
-    animation: button-talk 5s infinite;
-  } */
-  /* .hafiz_talk {
-    position: absolute;
-    width: 90% !important;
-    margin-left: 55%;
-    margin-top: 70%;
-    z-index: 3;
-  } */
   .alquran_feature {
     width: 70% !important;
     position: absolute;
@@ -976,12 +954,6 @@
     margin-top: -20%;
     animation: planet-orange-about 1.5s infinite;
   }
-  /* .form-custom{
-    animation: bounce 1.5s infinite;
-    margin-left: -20%;
-    width: 100%;
-    position: absolute;
-  } */
   @keyframes opacity{
     from{}
     to{ opacity: 0; }
@@ -1002,7 +974,6 @@
     position: absolute;
   }
   .title {
-    /* font-family: "starguard" !important; */
     color: white;
     position: absolute;
     font-size: 60px;
@@ -1012,7 +983,6 @@
     animation: opacity 10s;
   }
   .title_features {
-    /* font-family: "starguard" !important; */
     color: white;
     position: absolute;
     font-size: 110px;
@@ -1022,7 +992,7 @@
     animation: opacity 10s;
   }
   .title_talk {
-    /* font-family: "starguard" !important; */
+  
     color: white;
     position: absolute;
     font-size: 110px;
@@ -1033,7 +1003,6 @@
     width: 100% !important;
   }
   .hafiz-contact {
-    /* background: #282c34; */
     position: absolute;
     margin-top: 30%;
   }
@@ -1069,7 +1038,6 @@
   }
   .paper-plane-image1 {
     width:25% !important;
-    /* background: #007bff; */
     opacity: 0;
     margin-top: 80%;
     margin-left: -250%;
@@ -1078,7 +1046,6 @@
   }
   .paper-plane-image2 {
     width:15% !important;
-    /* background: #007bff; */
     margin-top: 25%;
     margin-left: -130%;
     position: absolute;
@@ -1090,7 +1057,6 @@
     margin-top: 40%;
     margin-left: 0%;
     position: absolute;
-    /* background: yellow; */
     animation: paper-plane-animation 15s infinite;
   }
   .form-custom {
@@ -1107,17 +1073,6 @@
     color: #fff;
     margin-top: 20%;
   }
-  /* .planet_ungu_talk {
-    position: absolute;
-    width: 150% !important;
-    margin-left: -180%;
-  } */
-  /* .planet_orange_talk {
-    position: absolute;
-    width: 150% !important;
-    margin-left: -200%;
-    margin-top: 150%;
-  } */
   .row_awan_contact {
     width: 209%;
     margin-top: -85%;
@@ -1141,14 +1096,6 @@
     position: absolute;
     margin-left: -28%;
   }
-  /* .bg_awan_talk {
-    width: 101% !important;
-    z-index: 2;
-    margin-top:22%;
-    height: 20px;
-    position: absolute;
-    margin-left: -28%;
-  } */
   .bg_awan_counting {
     width: 100% !important;
     z-index: 2;
@@ -1163,7 +1110,6 @@
     position: absolute;
     margin-top: 60%;
     margin-left: 0%;
-    /* animation: awan-tengah 5s infinite; */
   }
   .bg_awan_features {
     width: 100% !important;
@@ -1173,45 +1119,10 @@
     margin-left: -1%;
     animation: awan-about-kiri 10s infinite;
   }
-  /* .bg_awan {
-    width: 100% !important;
-    z-index: 2;
-    position: absolute;
-    margin-top: -20%;
-    animation: awan-about-kiri 10s infinite;
-  } */
-  /* .bg_awan_tengah {
-    width: 100% !important;
-    z-index: 2;
-    position: absolute;
-    margin-top: -20%;
-    animation: awan-tengah 5s infinite;
-  } */
   @keyframes awan-belakang-roket {
     0%{}
     50%{ margin-top: 30%; }
   }
-  /* .bg_awan_belakang_roket {
-    width: 100% !important;
-    z-index: 2;
-    position: absolute;
-    margin-top: -20%;
-    animation: awan-belakang-roket 15s infinite;
-  } */
-  /* .bg_awan_tengah_roket {
-    width: 100% !important;
-    z-index: 2;
-    position: absolute;
-    margin-top: -27%;
-    animation: awan-belakang-roket 14.9s infinite;
-  } */
-  /* .bg_awan_roket {
-    width: 100% !important;
-    z-index: 2;
-    position: absolute;
-    margin-top: -14%;
-    animation: awan-belakang-roket 14.8s infinite;
-  } */
   @keyframes dust_awan_roket {
     0% {}
     50% { 
@@ -1222,25 +1133,11 @@
       -webkit-transform: translate(0, 25px);
     }
   }
-  /* .dust_awan_roket {
-    width: 100% !important;
-    z-index: 2;
-    position: absolute;
-    margin-top: -20%;
-  } */
   .awan_depan {
     width: 200%;
     z-index: 2;
     margin-top: -50%;
   }
-  /* @keyframes spin {
-    0%{
-     background-position-y: 380px;
-    }
-    100%{
-      background-position-y: 0;
-    }
-  } */
   .row_bumi {
     width: 241%;
     margin-top: -111%;
@@ -1251,7 +1148,6 @@
     width: 500%;
     height: 1000px;
     background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/BUMI-DATAR.png') center center;
-    /* background: url(https://1.bp.blogspot.com/-UUXaK5GCj-k/UcsKJRMgkVI/AAAAAAAACfM/sePP_H08JTQ/s1600/1.jpg); */
     border-radius: 50%;
     background-size: 100%;
     margin-top: 80%;
@@ -1266,17 +1162,6 @@
     position: absolute;
     margin-left: -38%;
   }
-  /* @keyframes awan-about-kiri {
-    0%{}
-    50%{ 
-      opacity: 0.5;
-      transform: translate(50px, 0px); 
-      -o-transform: translate(50px, 0px); 
-      -ms-transform: translate(50px, 0px);
-      -moz-transform: translate(50px, 0px);
-      -webkit-transform: translate(50px, 0px);
-    }
-  } */
   @keyframes awan-tengah {
     0%{}
     50%{ 
@@ -1334,7 +1219,6 @@
     width: 1000%;
     margin-left: -450%;
     margin-top: 10%;
-    /* transform: perspective(400px) rotateY(45deg); */
     animation: bumi-muter infinite 80s linear;
     z-index: -1;
     position: absolute;
@@ -1354,37 +1238,6 @@
       opacity: 0;
     }
   }
-  /* @keyframes planet-kanan1 {
-    0% {
-      width: 100%;
-      height: auto;
-      margin-left: -90%;
-      margin-top:50%;
-      position: absolute;
-    }
-    100% {
-      width: 50%;
-      height: auto;
-      margin-left: 40%;
-      margin-top:85%;
-      position: absolute;
-      opacity: 0;
-    }
-  } */
-  /* .planet_orange_home {
-    animation: planet-orange-about 1.5s infinite;
-    margin-left: -230%;
-    margin-top: 50%;
-    position: absolute;
-    width: 150% !important;
-  } */
-  /* .planet_ungu_home {
-    position: absolute;
-    width: 150% !important;
-    margin-left: 10%;
-    margin-top: 10%;
-    animation: planet-orange-about 1.5s infinite;
-  } */
   @keyframes planet-kiri1 {
     0% {
       margin-left: 40%;
@@ -1413,26 +1266,6 @@
   .planet_kiri1 {
     animation: planet-kiri1 linear infinite 2s;
   }
-  /* @keyframes planet-kanan {
-    0% {
-      width: 150%;
-      height: auto;
-      margin-left: 100%;
-      margin-top:20%;
-      z-index: -1;
-      position: absolute;
-      opacity: 1;
-    }
-    100% {
-      width: 50%;
-      height: auto;
-      margin-left: -10%;
-      margin-top:80%;
-      z-index: -1;
-      position: absolute;
-      opacity: 0;
-    }
-  } */  
   @keyframes awan_front {
     from {
       width: 100%;
@@ -1453,21 +1286,12 @@
       z-index: -1;
     }
   }
-  /* .awan_front {
-    animation: awan-about-kiri 10s infinite;
-    width: 150% !important;
-    height: auto;
-    margin-left: -270%;
-    margin-top: 100%;
-    position: absolute;
-  } */
   @keyframes awan_front1 {
     from {
       width: 30%;
       height: auto;
       margin-left: -120%;
       margin-top: 200%;
-      /* animation-delay: 2s; */
       position: absolute;
       z-index:-1;
     }
@@ -1476,7 +1300,6 @@
       height: auto;
       margin-left:50%;
       margin-top: 140%;
-      /* animation-delay: 2s; */
       position: absolute;
       z-index:-1;
       opacity: 0;
