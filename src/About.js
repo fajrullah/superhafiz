@@ -1,8 +1,8 @@
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import {  Row } from 'react-bootstrap';
-import bi from './images/bi.png';
-import bi2 from './images/bi2.png';
+import bi from './images/bi-about.png';
+import bi2 from './images/bi-about1.png';
 import layout_about from './images/layout_about.png';
 import wifi from './images/about_wifimobile.png';
 import talk from './images/about_talkmobile.png';
@@ -28,22 +28,38 @@ import matdas from './images/about_matdasmobile.png';
 // import hafizslide1 from './images/IMG_7703.JPG';
 // import hafizslide2 from './images/IMG_7702.JPG';
 // import hafizslide3 from './images/IMG_7704.JPG';
+const ImageLoader = () => {
+	return (<div>Loading ...</div>)
+  }
 
-class About extends PureComponent{
+class About extends Component{
 	constructor(props) {
 		super(props); 
 		this.state = {
-			alert: "ini di klik"
+			isLoading : true,
 		}
+	  }
+	  static getDerivedStateFromProps(props, state) {
+		if (props.isrender !== state.isLoading) {
+		  return {isLoading: props.isrender }
+		}
+		// Return null if the state hasn't changed
+		return null;
+	  }
+
+	  componentDidMount(){
+		const { isrender } = this.props
+		this.setState({
+		  isLoading : isrender
+		})
 	  }
 
   	render() {
-	  this.setState = {
-		  alert: "testing"
+	const { isLoading } = this.state
+	// console.log(isLoading)
+		if(isLoading){
+		  return <ImageLoader/>
 		}
-		// const imageClick = () => {
-		// 	alert(this.setState.alert)
-		  // } 
     	return (
     	<div>
 			<Row>

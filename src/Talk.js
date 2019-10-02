@@ -23,31 +23,50 @@ import klikdisini from './images/klikdisini.png';
 // import hand from './images/hand.png';
 import Sound from 'react-sound';
 
+const ImageLoader = () => {
+  return (<div>Loading ...</div>)
+}
+
 class Talk extends PureComponent{
   constructor(props) {
     super(props) 
       this.state = {
         show: false,
+        isLoading : true,
       }
   }
+  static getDerivedStateFromProps(props, state) {
+      if (props.isrender !== state.isLoading) {
+        return {isLoading: props.isrender }
+      }
+
+    // Return null if the state hasn't changed
+    return null;
+  }
+  componentDidMount(){
+    const { isrender } = this.props
+    this.setState({
+      isLoading : isrender
+    })
+  }
+  
   changeStyle()  {
     this.setState({show: !this.state.show})
-    console.log('change style')
+    // console.log('change style')
   }
+
   render() {
-    console.log(Sound.status.PLAYING)
-    // const columnstyle = this.state.show ? "column" : "column_hide";
+    const { isLoading } = this.state
+    // console.log(Sound.status.PLAYING)
+    // const columnstyle = this.state.show ? "column" : "hide";
     const backgroundblack = this.state.show ? "hide" : "whiteButton";
     const klikdisinistyle = this.state.show ? "hide" : "klik-style";
     const buttonclass = this.state.show ? "hide" : "talk_button";
     const hafizstyle = this.state.show ? "hafiz_talk_left" : "hafiz_talk";
     const headhafizstyle = this.state.show ? "head_hafiz" : "hide";
     const headhafizstyle2 = this.state.show ? "head_hafiz2" : "hide";
-    const headhafizstyle3 = this.state.show ? "head_hafiz3" : "hide";
     const headuserstyle = this.state.show ? "head_user" : "hide";
     const balonuserstyle = this.state.show ? "balon_user" : "hide";
-    const balonuserstyle2 = this.state.show ? "balon_user2" : "hide";
-    const balonuserstyle3 = this.state.show ? "balon_user3" : "hide";
     const balonhafizstyle = this.state.show ? "balon_hafiz" : "hide";
     const headuserstyle1 = this.state.show ? "head_user1" : "hide";
     const balonuserstyle1 = this.state.show ? "balon_user1" : "hide";
@@ -55,18 +74,20 @@ class Talk extends PureComponent{
     const balonhafizstyle1 = this.state.show ? "balon_hafiz1" : "hide";
     const balonhafizstyle11 = this.state.show ? "balon_hafiz11" : "hide";
     const balonhafizstyle2 = this.state.show ? "balon_hafiz2" : "hide";
-    const balonhafizstyle3 = this.state.show ? "balon_hafiz3" : "hide";
-    const headuserstyle2 = this.state.show ? "head_user2" : "hide";
-    const headuserstyle3 = this.state.show ? "head_user3" : "hide";
+    const headuserstyle2 = this.state.show ? "head_user2" : "hide";    
     const descriptionstyle = this.state.show ? "description_talk" : "hide";
     const balonusercustom = this.state.show ? "balon_user_custom" : "hide";
-    const balonhafizcustom = this.state.show ? "balon_hafiz_custom" : "hide";
+
+    // console.log(isLoading)
+    if(isLoading){
+      return <ImageLoader/>
+    }
     return (
       <Container>
         <Button className={buttonclass} onClick={this.changeStyle.bind(this)}> TALK </Button>
         <img src={background} className={backgroundblack} alt="background-black"/>
         <img src={klikdisini} className={klikdisinistyle} alt="background-black"/>
-        <p className={descriptionstyle}>ini kalimat untuk deskripsi produk, misalkan contohnya, superhafiz ini bisa di ajak ngobrol, belajar ngaji, curhat, dll</p>
+        <p className={descriptionstyle}>Ini Kalimat Untuk Deskripsi Produk, Misalkan Contohnya, Superhafiz Ini Bisa di Ajak Ngobrol, Belajar Ngaji, Curhat, dll</p>
         <Row>
           <Sound
             url="./Belajar.mp3"
@@ -96,12 +117,12 @@ class Talk extends PureComponent{
             <img src={ kepala_hafiz } className={headhafizstyle1} alt="kepala hafiz di bagian animasi chat di halaman talk"/>
             <img src={ balon_hafiz_custom2 } className={balonhafizstyle2} alt="balon dialog hafiz di halaman talk"/>
             <img src={ balon_hafiz_custom } className={balonhafizstyle1} alt="balon dialog hafiz di halaman talk"/>
-            <img src={ balon_hafiz_custom1 } className={balonhafizstyle11} alt="balon dialog hafiz di halaman talk"/>
 
             <img src={ kepala_user  } className={headuserstyle2} alt="kepala user di halaman talk"/>
             <img src={ balon_user_custom  } className={balonusercustom} alt="balon dialog user di halaman talk"/>
             
             <img src={ kepala_hafiz } className={headhafizstyle2} alt="kepala hafiz di bagian animasi chat di halaman talk"/>
+            <img src={ balon_hafiz_custom1 } className={balonhafizstyle11} alt="balon dialog hafiz di halaman talk"/>
           </Col>
         </Row>
         <Row className="bg_awan_talk">

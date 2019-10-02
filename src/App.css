@@ -165,11 +165,6 @@
   background:#6b84e1;
   font-size:15px;
 }
-.button-kirim:hover{
-  background-color: lightblue;
-  border: 2px solid #007bff;
-  color: #007bff;
-}
 .countdown {
   position: absolute;
   margin-top: -45%;
@@ -958,21 +953,21 @@
     from{}
     to{ opacity: 0; }
   }
-  .digital {
+  /* .digital {
     font-family: 'digital';
     font-weight: bold;
     color: white !important;
     margin-top: 74%;
     margin-left: 45%;
-  }
-  .digital_after {
+  } */
+  /* .digital_after {
     font-family: 'digital';
     font-weight: bold;
     margin-top: 78%;
     margin-left: 45%;
     color: white !important;
     position: absolute;
-  }
+  } */
   .title {
     color: white;
     position: absolute;
@@ -982,7 +977,7 @@
     margin-left: 8%;
     animation: opacity 10s;
   }
-  .title_features {
+  /* .title_features {
     color: white;
     position: absolute;
     font-size: 110px;
@@ -990,7 +985,7 @@
     text-align: center;
     margin-left: 8%;
     animation: opacity 10s;
-  }
+  } */
   .title_talk {
   
     color: white;

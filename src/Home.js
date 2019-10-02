@@ -9,8 +9,36 @@ import center from './images/center.png';
 import navigation from './images/navigation.png';
 import './Style.css';
 
+const ImageLoader = () => {
+  return (<div>Loading ...</div>)
+}
+
 class Home extends PureComponent{
+  constructor(props) {
+    super(props) 
+      this.state = {
+        isLoading : true,
+      }
+  }
+  static getDerivedStateFromProps(props, state) {
+    if (props.isrender !== state.isLoading) {
+      return {isLoading: props.isrender }
+    }
+    // Return null if the state hasn't changed
+    return null;
+  }
+  componentDidMount(){
+    const { isrender } = this.props
+    this.setState({
+      isLoading : isrender
+    })
+  }
+
   render() {
+    const { isLoading } = this.state
+    if(isLoading){
+      return <ImageLoader/>
+    }
     return (
       <div>
         <Container>
@@ -20,8 +48,8 @@ class Home extends PureComponent{
                 <img src={awan} className="left_cloud" alt="awan kiri di halaman home"/>
                 <img src={awan} className="left_cloud_blur" alt="awan kiri di halaman home"/>
               </Col>
-              <Col>
-                <p className="title_home">#JelajahiImajinasimu</p>
+              <Col className="col-xs-12">
+                <p className="title_home">Yuk Teman!, Jelajahi Imajinasimu Bersama</p>
                 <img src={hafiz} className="hafiz_home" alt="hafiz di halaman home"/>
                 <img src={baling2} className="hafiz_baling_baling" alt="baling baling hafiz di home"/>
                 <img src={center} className="center_baling" alt="baling baling hafiz di halaman home"/>

@@ -14,7 +14,73 @@
         from { opacity: 1 }
         to { opacity: 0 }
     }
+    @-webkit-keyframes fading {
+        from { opacity: 1 }
+        to { opacity: 0 }
+    }
+    @-moz-keyframes fading {
+        from { opacity: 1 }
+        to { opacity: 0 }
+    }
+    @-ms-keyframes fading {
+        from { opacity: 1 }
+        to { opacity: 0 }
+    }
+    @-o-keyframes fading {
+        from { opacity: 1 }
+        to { opacity: 0 }
+    }
+
+    @keyframes hafiz-roket {
+        0% {opacity: 0;}
+        100%{opacity: 1;}
+    }
+    @-webkit-keyframes hafiz-roket {
+        0% {opacity: 0;}
+        100%{opacity: 1;}
+    }
+    @-moz-keyframes hafiz-roket {
+        0% {opacity: 0;}
+        100%{opacity: 1;}
+    }
+    @-ms-keyframes hafiz-roket {
+        0% {opacity: 0;}
+        100%{opacity: 1;}
+    }
+    @-o-keyframes hafiz-roket {
+        0% {opacity: 0;}
+        100%{opacity: 1;}
+    }
+
   @keyframes cloud-animation {
+    0%{}
+    50%{ 
+      opacity: 0.5;
+      transform: translate(0px, 40px); 
+    }
+  }
+  @-webkit-keyframes cloud-animation {
+    0%{}
+    50%{ 
+      opacity: 0.5;
+      transform: translate(0px, 40px); 
+    }
+  }
+  @-moz-keyframes cloud-animation {
+    0%{}
+    50%{ 
+      opacity: 0.5;
+      transform: translate(0px, 40px); 
+    }
+  }
+  @-ms-keyframes cloud-animation {
+    0%{}
+    50%{ 
+      opacity: 0.5;
+      transform: translate(0px, 40px); 
+    }
+  }
+  @-o-keyframes cloud-animation {
     0%{}
     50%{ 
       opacity: 0.5;
@@ -28,47 +94,95 @@
       transform: translate(20px, 0px); 
     }
   }
-  @keyframes bounce {
+  @-webkit-keyframes cloud-above-animation {
     0%{}
     50%{ 
-      -webkit-transform: translate(0, 15px); 
-      -moz-transform: translate(0, 15px); 
-      -ms-transform: translate(0, 15px); 
-      -o-transform: translate(0, 15px); 
-      transform: translate(0, 15px); 
+      opacity: 0.5;
+      transform: translate(20px, 0px); 
     }
   }
+  @-moz-keyframes cloud-above-animation {
+    0%{}
+    50%{ 
+      opacity: 0.5;
+      transform: translate(20px, 0px); 
+    }
+  }
+  @-ms-keyframes cloud-above-animation {
+    0%{}
+    50%{ 
+      opacity: 0.5;
+      transform: translate(20px, 0px); 
+    }
+  }
+  @-o-keyframes cloud-above-animation {
+    0%{}
+    50%{ 
+      opacity: 0.5;
+      transform: translate(20px, 0px); 
+    }
+  }
+  /* ======BOUNCE===== */
+  @keyframes bounce {
+    0%{}
+    50%{ transform: translate(0, 15px); }
+  }
+  @-webkit-keyframes bounce {
+    0%{}
+    50%{ transform: translate(0, 15px); }
+  }
+  @-moz-keyframes bounce {
+    0%{}
+    50%{ transform: translate(0, 15px); }
+  }
+  @-ms-keyframes bounce {
+    0%{}
+    50%{ transform: translate(0, 15px); }
+  }
+  @-o-keyframes bounce {
+    0%{}
+    50%{ transform: translate(0, 15px); }
+  }
+  /* ======BOUNCE===== */
+
   @keyframes balingbaling-animation {
     from {
+       transform: rotate(0deg);  
       -webkit-transform: rotate(0deg);
       -moz-transform: rotate(0deg);
       -ms-transform: rotate(0deg);
       -o-transform: rotate(0deg);
     }
     to {
+       transform: rotate(359deg);
       -webkit-transform: rotate(359deg);
       -moz-transform: rotate(359deg);
       -ms-transform: rotate(359deg);
       -o-transform: rotate(359deg);
     }
   }
+  @keyframes fade-in22 {
+    0% { opacity: 1;}
+    50% {
+        /* transform: translateY(-70px); */
+        opacity: 1;
+    }
+    80%{
+        opacity: 1;
+    }
+    100% {
+        /* transform: translateY(0px); */
+        opacity: 0;
+    }
+}
   @keyframes fade-in {
-        0% {
-            opacity: 1;
-        }
-        80% {
-            transform: translateY(-70px);
-            opacity: 0;
-        }
-        100% {
-            transform: translateY(0px);
-            opacity: 0;
-        }
+        0% { opacity: 0;}
+        20% {opacity: 1;}
+        80%{opacity: 1;}
+        100% {opacity: 0;}
     }
     @keyframes fade-in-desktop {
-        0% {
-            opacity: 1;
-        }
+        0% { opacity: 1;}
         80% {
             transform: translateY(0px);
             opacity: 0;
@@ -76,25 +190,10 @@
         100% {
             transform: translateY(-70px);
             opacity: 0;
-        }
-    }
-    @keyframes fade-in-desc{
-        0% {
-            opacity: 0;
-        }
-        50% {
-            transform: translateY(-70px);
-            opacity: 1;
-        }
-        100% {
-            transform: translateY(0px);
-            opacity: 1;
         }
     }
     @keyframes fade-in-mobile {
-        0% {
-            opacity: 1;
-        }
+        0% { opacity: 1;}
         80% {
             transform: translateY(-10%);
             opacity: 0;
@@ -105,26 +204,54 @@
         }
     }
     @keyframes scale { 
-        0% {
-            transform: scale(0);
-        }
-        50%{
-            transform: scale(1.5);
-        }
-        100%{
-            transform: scale(1);
-        }
+        0% {transform: scale(0);}
+        50%{transform: scale(1.5);}
+        100%{transform: scale(1);}
+    }
+    @-webkit-keyframes scale { 
+        0% {transform: scale(0);}
+        50%{transform: scale(1.5);}
+        100%{transform: scale(1);}
+    }
+    @-moz-keyframes scale { 
+        0% {transform: scale(0);}
+        50%{transform: scale(1.5);}
+        100%{transform: scale(1);}
+    }
+    @-ms-keyframes scale { 
+        0% {transform: scale(0);}
+        50%{transform: scale(1.5);}
+        100%{transform: scale(1);}
+    }
+    @-o-keyframes scale { 
+        0% {transform: scale(0);}
+        50%{transform: scale(1.5);}
+        100%{transform: scale(1);}
     }
     @keyframes talk-button { 
-        0% {
-            transform: scale(1);
-        }
-        50%{
-            transform: scale(1.5);
-        }
-        100%{
-            transform: scale(1);
-        }
+        0% {transform: scale(1);}
+        50%{transform: scale(1.5);}
+        100%{transform: scale(1);}
+    }
+    @-webkit-keyframes talk-button { 
+        0% {transform: scale(1);}
+        50%{transform: scale(1.5);}
+        100%{transform: scale(1);}
+    }
+    @-moz-keyframes talk-button { 
+        0% {transform: scale(1);}
+        50%{transform: scale(1.5);}
+        100%{transform: scale(1);}
+    }
+    @-ms-keyframes talk-button { 
+        0% {transform: scale(1);}
+        50%{transform: scale(1.5);}
+        100%{transform: scale(1);}
+    }
+    @-o-keyframes talk-button { 
+        0% {transform: scale(1);}
+        50%{transform: scale(1.5);}
+        100%{transform: scale(1);}
     }
     @keyframes cube {
         from {
@@ -137,9 +264,7 @@
         }
       }
       
-    .absolute{
-        position: absolute;
-    }
+    .absolute{position: absolute !important;}
 
   @media (min-width: 1920px){
       /* (1920x1080) Full HD Display */
@@ -148,127 +273,341 @@
     /* ========== SLIDE STYLE ============*/
     .carousel.carousel-slider{
         height: 100% !important;
+        -webkit-height: 100% !important;
+        -moz-height: 100% !important;
+        -ms-height: 100% !important;
+        -o-height: 100% !important;
         position: absolute !important;
     }
     .carousel .slider-wrapper {
         height: 100% !important;
+        -webkit-height: 100% !important;
+        -moz-height: 100% !important;
+        -ms-height: 100% !important;
+        -o-height: 100% !important;
+    }
+    .carousel .slider-wrapper.axis-horizontal .slider {
+        height: 100% !important;
     }
     .carousel.slide{
         height: 100% !important;
+        -webkit-height: 100% !important;
+        -moz-height: 100% !important;
+        -ms-height: 100% !important;
+        -o-height: 100% !important;
     }
     /* ========== END SLIDE STYLE ============*/
 
-    /* ========== COUNTING DOWN STYLE ============*/
-    .title_form {
-        color: #fff;
-        font-size: 1.5em;
-        font-weight: 600;
-        margin-left: 15%;
-        margin-top: 10%;
-    }
-    .form_custom {
-        width: 100% !important;
-        margin-top: -20%;
-    }
-    .backgroundCounting {
+    .backgroundFeatures {
         background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/bg-counting.png') center center no-repeat;
-        height: 100%;
-        width: 100%;
+        height: 950px !important;
+        -webkit-height: 950px !important;
+        -moz-height: 950px !important;
+        -ms-height: 950px !important;
+        -o-height: 950px !important;
+        width: 100% !important;
+        background-size: cover;
+        z-index: 2;
+    }
+    .material{
+        width: 100% !important;
+        z-index: 3;
+        margin-top: 40%;
+    }
+    .mata{
+        width: 100% !important;
+        z-index: 3;
+        margin-top: 40%;
+        /* margin-left: -30%; */
+        /* margin-top: 10%; */
+    }
+    .tombol{
+        width: 100% !important;
+        z-index: 3;
+        margin-top: 40%;
+        /* margin-left: -30%; */
+        /* margin-top: 10%; */
+    }
+    .title_features {
+        color: white;
         position: absolute;
+        font-size: 3em;
+        margin-top: 3%;
+        text-align: center;
+        /* margin-left: 8%; */
+        /* animation: opacity 10s; */
+      }
+    .bg-detail {
+        z-index: 2;
+        margin-top: -20%;
+        height: 90% !important;
+    }
+    .judul-Detail, .Detail {
+        color: white;
+        padding-right: 20px;
+        padding-left: 20px;
+        text-align: justify;
+    }
+    .judul-Detail {
+        margin-top: -120%;
+        font-size: 3em;
+        margin-bottom:5%;
+    }
+    .Detail {
+        font-size: 1.2em;
+    }
+    /* ========== CONTACT STYLE ============*/
+    .firework_contact {
+        width: 10% !important;
+        margin-left: -20%;
+    }
+    .firework_contact1 {
+        width: 5% !important;
+        margin-left: 30%;
+        margin-top: 20%;
+        animation: fading 5s infinite;
+    }
+    .hafiz_contact {
+        width: 25% !important;
+        margin: 10% 0 0 -15%;
+        z-index: 2;
+    }
+    .title_contact {
+        position: absolute !important;
+        z-index: 2;
+        margin-top: 20%;
+        margin-left: 10%;
+        color: #fff;
+        font-size: 8em;
+        font-family: acumin;
+        opacity: 0.8;
+        font-weight: 600;
+        text-shadow: 2px 10px 14px grey;
+    }
+    .TNC_button {
+        width: 30%;
+        padding: 1%;
+        margin: 30% 0 0 35%;
+        border-radius: 300px;
+        background: #efefef;
+        color: #5bc0de;
+        font-size: 1.4em;
+        border: none !important;
+    }
+    .TNC_button:hover, .PP_button:hover, .CU_button:hover {
+        background: #5bc0de;
+        color: #efefef;
+        border: none !important;
+    }
+    .PP_button {
+        width: 30%;
+        padding: 1%;
+        margin: 38% 0 0 35%;
+        border-radius: 300px;
+        background: #efefef;
+        color: #5bc0de;
+        font-size: 1.4em;
+        border: none !important;
+    }
+    .CU_button {
+        width: 30%;
+        padding: 1%;
+        margin: 47% 0 0 35%;
+        border-radius: 300px;
+        background: #efefef;
+        color: #5bc0de;
+        font-size: 1.4em;
+        border: none !important;
+    }
+    .backgroundContact {
+        background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/bg_features.png') center center no-repeat;
+        height: 950px !important;
+        -webkit-height: 950px !important;
+        -moz-height: 950px !important;
+        -ms-height: 950px !important;
+        -o-height: 950px !important;
+        width: 100% !important;
         background-size: cover;
     }
+    .awan_contact {
+        width: 100% !important;
+        margin-left: -20%;
+        z-index: 1;
+        animation: cloud-animation 14s infinite;
+    }
+    /* ========== END CONTACT STYLE ============*/
+
+    /* ========== COUNTING DOWN STYLE ============*/
+    .arus_roket {
+     width: 100% !important;
+     margin-left: -50%;
+     margin-top: -50%;
+    }
+    .dust_awan_roket {
+        margin-left: -50%;
+        animation: cloud-animation 10s infinite;
+    }    
+    .countdown_h5 {
+        color: white;
+        font-size: 2em;
+        margin-top: 16.6%;
+        margin-left: 70%;
+    }
+    .countdown_h5_jam {
+        color: white;
+        font-size: 2em;
+        margin-top: 27%;
+        margin-left: 73%;
+    }
+    .title_form {
+        color: #fff;
+        font-size: 1.8em;
+        font-weight: 600;
+        margin: 17% 0 0 8%;
+    }
+    .form-custom {
+        width: 25% !important;
+        margin-top: 22% !important;
+        margin-left: 7% !important;
+        animation: bounce 5s infinite;
+    }
+    .backgroundCounting {
+        background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/contact_bg.png') center center no-repeat;
+        height: 100% !important;
+        -webkit-height: 100% !important;
+        -moz-height: 100% !important;
+        -ms-height: 100% !important;
+        -o-height: 100% !important;
+        width: 100% !important;
+        background-size: cover;
+    }
+    .button-kirim:hover{
+        background-color: lightblue;
+        border: 2px solid #007bff;
+        color: #007bff;
+      }
     .bg_bumi {
         width: 100% !important;
-        height: 100% !important;
-        margin-top: -20%;
+        margin: 0;
+        margin-left: -50%;
+        animation-delay: 5s;
+        animation-name: bg-bumi-complete;
+        animation-duration: 10s;
+        animation-iteration-count: 1;
+        z-index: 3;
     }
     .hafiz_roket_before {
         width: 25% !important;
-        margin-left : 38%;
-        margin-top: 10%;
+        margin-top: 13%;
         z-index: 5;
-    }
-    @keyframes hafiz-roket {
-        0% {
-            opacity: 0;
-        }
-        100%{
-            opacity: 1;
-        }
+        margin-left: -13%;
     }
     .hafiz_roket {
         width: 25% !important;
-        margin-left : 40%;
-        margin-top: 13%;
+        margin-top:13%;
         z-index: 4;
         opacity: 1;
-        position: absolute;
-        /* animation-name: hafiz-roket;
+        margin-left: -13% !important;
+        animation-name: hafiz-roket;
         animation-duration: 2s;
-        -moz-animation-iteration-count: 1; */
+        -moz-animation-iteration-count: 1;
+    }
+    @keyframes bg-awan-belakang-roket {
+        from {opacity: 0;
+        transform: scale(1);}
+        to {opacity: 1;transform: scale(1.2)}
     }
     .bg_awan_belakang_roket {
         width: 100% !important;
-        opacity: 0;
+        opacity: 1;
+        margin-left: -50%;
+        animation-delay: 5s;
+        animation: bg-awan-belakang-roket 10s infinite;
+    }
+    .bg_awan_tengah_before {
+        margin-left: -50% !important;
+        animation: cloud-animation 10s infinite;
     }
     .bg_awan_tengah_roket {
         width: 100% !important;
-        z-index: 3;
+        z-index: 5;
         opacity: 0;
+        margin-left: -50%;
     }
     .bg_awan_roket {
         width: 100% !important;
         z-index: 2;
         margin-top: -50%;
         opacity: 0;
+        position: absolute !important;
+    }
+    @keyframes fire-roket-move {
+        from{
+            margin-top: 28%;    
+        }
+        to {
+            margin-top: 31%;
+        }
     }
     @keyframes fire-roket {
         from{
-            margin-top: -1%;    
+            transform: translate(-1px, 0px); 
         }
         to {
-            margin-top: 5%;
+            transform: translate(1px, 0px); 
         }
     }
     .fire_roket {
-        position: absolute;
+        position: absolute !important;
         width: 14% !important;
-        margin-left: 37%;
+        margin-left: -15.8%;
         margin-top: 31%;
+        animation: fire-roket 0.3s infinite,
+        fire-roket-move 2s 5;
         /* animation-name: fire-roket;
-        animation-iteration-count: 1;
-        animation-duration: 5s;
-        z-index: 3; */
-    }
-    .fire_roket1 {
-        position: absolute;
-        width: 14% !important;
-        margin-left: 54%;
-        margin-top: 31%;
-        animation-name: fire-roket;
-        animation-iteration-count: 1;
-        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-duration: 0.3s; */
         z-index: 3;
     }
+    .fire_roket1 {
+        position: absolute !important;
+        width: 14% !important;
+        margin-left: 0.6%;
+        margin-top: 31%;
+        animation: fire-roket 0.3s infinite,
+        fire-roket-move 2s 5;
+        z-index: 3;
+    }
+    @keyframes bg-bumi-complete {
+        from {margin-top: 0%;}
+        to {margin-top: 20%;}
+    }
     .bg_bumi_complete {
-        position: absolute;
         width: 100% !important;
-        margin-left: 0%;
-        margin-top: 0%;
+        margin: 0;
+        margin-left: -50%;
         animation-delay: 5s;
-        animation-name: bg-bumi-complete;
+        animation: bg-bumi-complete 10s infinite;
+        /* animation-name: bg-bumi-complete;
         animation-duration: 10s;
-        animation-iteration-count: 1;
+        animation-iteration-count: 1; */
     }
     .digital_after {
-        position: absolute;
         font-family: "digital";
         color: white;
-        /* margin-left: 47%; */
         font-weight: 600;
-        margin-top: 30% !important;
+        margin-top: 19% !important;
         font-size: 8em;
-    }
+        margin-left: 68% !important;
+    }  
+    .digital {
+        font-family: "digital";
+        font-size: 8em;
+        font-weight: 600;     
+        margin-left: 68% !important;
+        margin-top: 19% !important;
+        color: white
+    }  
     /* ========== END COUNTING DOWN STYLE ============*/
 
     /* ========== TALK STYLE ============*/
@@ -276,13 +615,13 @@
         margin-top: 10% !important;
         z-index: 6;
         width: 10% !important;
-        position: absolute;
+        position: absolute !important;
     }
     .hide{
         display: none !important;
     }
     .whiteButton{
-        position: absolute;
+        position: absolute !important;
         width: 100% !important;
         margin-left: -50%;
         z-index: 5;       
@@ -290,15 +629,16 @@
     }
     .backgroundTalk1 {
         background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/bg_features.png') center center no-repeat;
-        height: 50%;
-        width: 100%;
-        position: absolute;
+        height: 100% !important;
+        width: 100% !important;
+        position: absolute !important;
         background-size: cover;
         z-index: 2 !important;
     }
     .backgroundblack {
-        position: absolute;
+        position: absolute !important;
         width: 100% !important;
+        height: 100% !important;
         margin-left: -50%;
         z-index: 5;       
         opacity: 0.7;
@@ -307,137 +647,140 @@
         background: blue;
     }
     .klik-style {
-        position: absolute;
+        position: absolute !important;
         width: 20% !important;
         z-index:6;
-        margin-top: 22%;
+        margin-top: 28%;
         margin-left: 1%;
     }
     .talk_button {
         width: 3% !important;
-        height: 3% !important;
+        height: 6% !important;
         z-index: 6;
         margin-left: -2%;
-        margin-top: 31%;
+        margin-top: 36.5%;
         border-radius: 600px;
         background: white !important;
         color: grey !important;
         border: none !important;
-        position: absolute;
+        position: absolute !important;
         animation: talk-button 2s infinite linear;
-    }
-    .column {
-        margin-top: 0%;
-        position: absolute;
-        width: 15% !important;
-        margin-left: 35%;
-        opacity: 1;
-        /* animation-name: column-up;
-        animation-duration: 5s;
-        animation-iteration-count: 1; */
     }
     @keyframes column-up {
         0% {
-            margin-top: 50%
+            margin-top: 0;
+            -webkit-margin-top: 0;
+            -moz-margin-top: 0; 
+            -o-margin-top: 0; 
         }
         100% {
-            margin-top: 0%;
+            margin-top: -200%;
+            -webkit-margin-top: -200%;
+            -moz-margin-top: -200%;
+            -o-margin-top: -200%; 
         }
     }
-    .column_hide {
+    .column {
         margin-top: 0%;
-        position: absolute;
+        position: absolute !important;
         width: 15% !important;
-        margin-left: 35%;
-        opacity: 0;        
+        margin-left: 35%;  
+        /* animation-name : column-up;
+        animation-delay : 25s;
+        animation-fill-mode: forwards;
+        animation-duration: 30s;
+        animation-iteration-count: 1; */
     }
     .description_talk {
-        position: absolute;
         width: 30%;
         color: white !important;
         margin-top: 3%;
         font-family: acumin;
-        margin-left: -10%;
+        margin-left: -12%;
+        font-size: 1.5em;
+        position: absolute !important;
     }
     .hafiz_talk {
-        position: absolute;
+        position: absolute !important;
         width: 120% !important;
         margin-left: -110%;
-        margin-top: 20%;
+        margin-top: 40%;
         z-index: 3;
     }
     @keyframes hafiz-left {
-        0%{
-            margin-left: -125%;
-        }
-        100% {
-            margin-left: -200%;
-        }
+        0%{margin-left: -125%;}
+        100% {margin-left: -200%;}
     }
-    .hafiz_talk_left {
-        position: absolute;
+    @-webkit-keyframes hafiz-left {
+        0%{margin-left: -125%;}
+        100% {margin-left: -200%;}
+    }
+    @-moz-keyframes hafiz-left {
+        0%{margin-left: -125%;}
+        100% {margin-left: -200%;}
+    }
+    @-ms-keyframes hafiz-left {
+        0%{margin-left: -125%;}
+        100% {margin-left: -200%;}
+    }
+    @-o-keyframes hafiz-left {
+        0%{margin-left: -125%;}
+        100% {margin-left: -200%;}
+    }
+    .hafiz_talk_left {  
+        z-index: 3;      
         width: 120% !important;
         margin-left: -200%;
-        margin-top: 20%;
-        z-index: 3;
+        margin-top: 40%;
         animation-name: hafiz-left;
         animation-duration: 3s;
         animation-iteration-count: 1;
+        position: absolute !important;
     }
     @keyframes head-hafiz {
-        from{
-            margin-left: -50%;
-            position: absolute;
-            margin-top: 90%;
-            opacity: 1;
-        }
-        to{
-            margin-left: -50%;
-            position: absolute;
-            opacity: 1;
-            margin-top: 30%;
-        }
-    }
-    @keyframes balon-hafiz {
-        0%{ margin-top: 200%;}
-        100% { margin-top: 30%; }
+        from{ margin-top: 400%; }
+        to{ margin-top: 30%; }
     }
     .head_hafiz {
+        opacity: 1;
         width: 35% !important;
-        position: absolute;
+        position: absolute !important;
+        margin-top: 400%;
         margin-left: -50%;
-        margin-top: 30%;
-        animation-name : head-hafiz1;
+        animation-name : head-hafiz;
         animation-duration: 3s;
-        animation-delay: 2s;
+        animation-delay: 4s;
         animation-iteration-count: 1;
+        animation-fill-mode: forwards;
     }
-    @keyframes balon-hafiz1 {
-        0%{ margin-top: 200%;}
-        100% { margin-top: 90%; }
+    @keyframes head-hafiz1 {
+        from{ margin-top: 400%; }
+        to{ margin-top: 90%; }
     }
     .head_hafiz1 {
         width: 35% !important;
         margin-left: -50%;
-        margin-top: 90%;
-        position: absolute;
+        margin-top: 400%;
+        position: absolute !important;
         animation-name : head-hafiz1;
         animation-duration: 3s;
-        animation-delay: 6s;
+        animation-delay: 11s;
         animation-iteration-count: 1;
+        animation-fill-mode: forwards;
     }
-    @keyframes balon-hafiz2 {
-        0%{ margin-top: 200%;}
-        100% { margin-top: 140%; }
+    @keyframes head-hafiz2 {
+        0%{ margin-top: 400%;}
+        100% { margin-top: 170%}
     }
     .head_hafiz2 {
         width: 35% !important;
         margin-left: -50%;
-        margin-top: 170%;
-        position: absolute;
+        margin-top: 400%;
+        position: absolute !important;
         animation-name : head-hafiz2;
         animation-duration: 3s;
-        animation-delay: 10s;
+        animation-delay: 20s;
+        animation-fill-mode: forwards;
         animation-iteration-count: 1;
     }
     @keyframes balon-hafiz3 {
@@ -448,53 +791,55 @@
         width: 35% !important;
         margin-left: -50%;
         margin-top: 195%;
-        position: absolute;
+        position: absolute !important;
         /* animation-name : head-hafiz2;
         animation-duration: 3s;
         animation-delay: 14s;
         animation-iteration-count: 1; */
     }
     @keyframes head-user {
-        0%{ margin-top: 200%;}
+        0%{ margin-top: 400%;}
         100% { margin-top: 0%}
     }
     .head_user {
         width: 40% !important;
         margin-top: 0%;
         margin-left: 100%;
-        position: absolute;
-        /* animation-name : head-user;
+        position: absolute !important;
+        animation-name : head-user;
         animation-duration: 3s;
-        animation-iteration-count: 1; */
-        /* background: blue; */
+        animation-iteration-count: 1; 
+        /* background: blue;*/
     }
     @keyframes head-user1 {
-        0%{ margin-top: 200%;}
+        0%{ margin-top: 400%;}
         100% { margin-top: 60%; }
     }
     .head_user1 {
         width: 40% !important;
         margin-left: 100%;
-        margin-top: 60%;
-        position: absolute;
-        /* animation-name : head-user1;
-        animation-duration: 3s;
-        animation-delay: 4s;
-        animation-iteration-count: 1; */
+        margin-top: 400%;
+        position: absolute !important;
+        animation-name : head-user1;
+        animation-duration: 2s;
+        animation-delay: 8s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
     }
     @keyframes head-user2 {
-        0%{ margin-top: 200%;}
-        100% { margin-top: 115%; }
+        0%{ margin-top: 400%;}
+        100% { margin-top: 140%; }
     }
     .head_user2 {
         width: 40% !important;
         margin-left: 100%;
-        margin-top: 140%;
-        position: absolute;
-        /* animation-name : head-user2;
+        margin-top: 400%;
+        position: absolute !important;
+        animation-name : head-user2;
         animation-duration: 3s;
-        animation-delay: 8s;
-        animation-iteration-count: 1; */
+        animation-delay: 16s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
     }
     @keyframes head-user3 {
         0%{ margin-top: 200%;}
@@ -504,44 +849,54 @@
         width: 40% !important;
         margin-left: 100%;
         margin-top: 165%;
-        position: absolute;
+        position: absolute !important;
         /* animation-name : head-user3;
         animation-duration: 3s;
         animation-delay: 12s;
         animation-iteration-count: 1; */
     }
     @keyframes balon-user {
-        0%{ margin-top: 200%;}
+        0%{ margin-top: 400%;}
         100% { margin-top: -30%;}
     }
     .balon_user {
         width: 100% !important;
         margin-left: 28%;
         margin-top: -30%;
-        position: absolute;
+        position: absolute !important;
+        animation-name : balon-user;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+    @keyframes balon-user-custom {
+        from {margin-top:400%;}
+        to {margin-top:110%;}
     }
     .balon_user_custom {
         width: 100% !important;
         margin-left: 28%;
-        margin-top: 110%;
-        position: absolute;
-        /* animation-name : balon-user;
+        margin-top: 400%;
+        position: absolute !important;
+        animation-name : balon-user-custom;
         animation-duration: 3s;
-        animation-iteration-count: 1; */
+        animation-delay: 16s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
     }
     @keyframes balon-user1 {
-        0%{ margin-top: 200%;}
+        0%{ margin-top: 400%;}
         100% { margin-top: 30%;}
     }
     .balon_user1 {
         width: 100% !important;
         margin-left:20%;
-        margin-top: 30%;
-        position: absolute;
-        /* animation-name : balon-user1;
-        animation-duration: 3s;
-        animation-delay: 2s;
-        animation-iteration-count: 1; */
+        margin-top: 400%;
+        position: absolute !important;
+        animation-name : balon-user1;
+        animation-duration: 2s;
+        animation-delay: 8s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
     }
     @keyframes balon-user2 {
         0%{ margin-top: 200%;}
@@ -551,7 +906,7 @@
         width: 100% !important;
         margin-left:28%;
         margin-top: 85%;
-        position: absolute;
+        position: absolute !important;
         animation-name : balon-user2;
         animation-duration: 3s;
         animation-delay: 6s;
@@ -561,75 +916,111 @@
         width: 100% !important;
         margin-left:20%;
         margin-top: 135%;
-        position: absolute;
+        position: absolute !important;
         animation-name : balon-user3;
         animation-duration: 3s;
         animation-delay: 10s;
         animation-iteration-count: 1;
     }
+    @keyframes balon-hafiz {
+        0%{ margin-top: 400%;opacity: 0;}
+        100% { margin-top: 0%; 
+            opacity: 1;
+        }
+    }
     .balon_hafiz {
         width: 100% !important;
         margin-left:-45%;
-        margin-top: 0%;
-        position: absolute;
+        margin-top: 400%;
+        position: absolute !important;
+        animation-name : balon-hafiz;
+        animation-duration: 3s;
+        animation-delay: 4s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
         /*    */
     }
     .balon_hafiz_custom {
         width: 100% !important;
         margin-left:-45%;
         margin-top: 60%;
-        position: absolute;               
+        position: absolute !important;
         /* background: blue; */
+    }
+    @keyframes balon-hafiz1 {
+        0%{ margin-top: 400%;}
+        100% { margin-top: 85%; }
     }
     .balon_hafiz1 {
         width: 100% !important;
         margin-left:-30%;
-        margin-top: 85%;
-        position: absolute;               
+        margin-top: 400%;
+        position: absolute !important;    
+        animation-name: balon-hafiz1;
+        animation-delay: 12s;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes balon-hafiz11 {
+        0%{ margin-top: 400%;}
+        100% { margin-top: 140%; }
     }
     .balon_hafiz11 {
         width: 100% !important;
         margin-left:-30%;
-        margin-top: 140%;
-        position: absolute;
+        margin-top: 400%;
+        position: absolute !important;
+        animation-name: balon-hafiz11;
+        animation-delay: 20s;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes balon-hafiz2 {
+        0%{ margin-top: 400%;}
+        100% { margin-top: 60%; }
     }
     .balon_hafiz2 {
         width: 100% !important;
         margin-left:-43%;
-        margin-top: 110%;
-        position: absolute;
+        margin-top: 4000%;
+        position: absolute !important;
+        animation-name: balon-hafiz2;
+        animation-delay: 11s;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
     }
     .balon_hafiz3 {
         width: 100% !important;
         margin-left:-25%;
         margin-top: 165%;
-        position: absolute;
+        position: absolute !important;
     }
     .bg_awan_talk {
         width: 100% !important;
         z-index: 2;
         margin-top:22%;
         height: 20px;
-        position: absolute;
+        position: absolute !important;
         margin-left: -21%;
     }
     .bg_awan {
         width: 100% !important;
         z-index: 2;
-        position: absolute;
+        position: absolute !important;
         margin-top: -20%;
         animation: cloud-animation 10s infinite;
     }
     .bg_awan_tengah {
         width: 100% !important;
         z-index: 2;
-        position: absolute;
+        position: absolute !important;
         margin-top: -20%;
         animation: cloud-animation 5s infinite;
     }
     /* ========== END TALK STYLE ============*/
 
-    /* ========== About STYLE ============*/
+    /* ========== About STYLE ============*/    
     .cube {
         top: 10vh;
         left: 90vw;
@@ -640,6 +1031,7 @@
         transform: scale(0) rotate(0deg) translate(-50%, -50%);
         animation: cube 12s ease-in forwards infinite;
         z-index: 8;
+        position: absolute !important;
     }
     .cube:nth-child(2) {
         animation-delay: 2s;
@@ -647,6 +1039,7 @@
         top: 10vh;
         width: 5px;
         height: 5px;
+        position: absolute !important;
     }
     .title_about {
         z-index: 4;
@@ -656,38 +1049,40 @@
         text-align: left;
         margin-left:40%;
         margin-right: 20%;
+        position: absolute !important;
     }
     .hr_title {
         z-index: 4;
         margin-top: 6%;
-        margin-left: 39%;
+        margin-left: 40%;
         border: 2px solid white;
         width: 22%;
         border-radius: 5px;
+        position: absolute !important;
     }
     .bi{
+        position: absolute !important;
         width: 100% !important;
-        height: 45% !important;
+        height: 100% !important;
         z-index: 2;
-        margin-top: -5%;
-        margin-left: 3%;
         opacity: 1;
         /* animation: fade-in 10s infinite; */
         animation-name: fade-in;
-        animation-duration: 5s;
+        animation-duration: 7s;
+        /* animation-fill-mode: forwards; */
         animation-iteration-count: infinite;
     }
     .bi2{
+        position: absolute !important;
         width: 100% !important;
-        height: 45% !important;
+        height: 100% !important;
         z-index: 2;
-        margin-top: -5%;
-        margin-left: 3%;
         opacity: 1;
         /* animation: fade-in 5s infinite; */
+        /* animation-fill-mode: forwards; */
         animation-name: fade-in;
-        animation-duration: 5s;
-        animation-delay: 2s;
+        animation-duration: 7s;
+        animation-delay: 3s;
         animation-iteration-count: infinite;
     }
     .description {
@@ -703,6 +1098,7 @@
         animation-duration: 5s;
         animation-iteration-count: 1;
         opacity: 1;
+        position: absolute !important;
     }
     .wifi_about{
         width: 7% !important;
@@ -712,6 +1108,7 @@
         animation-name: scale;
         animation-duration: 3s;
         animation-iteration-count: 1;
+        position: absolute !important;
     }
     .talk_about{
         width: 7% !important;
@@ -722,6 +1119,7 @@
         animation-delay: 3s;
         animation-duration: 3s;
         animation-iteration-count: 1;
+        position: absolute !important;
     }
     .onlinecontent_about {
         width: 7% !important;
@@ -732,6 +1130,7 @@
         animation-delay: 6s;
         animation-duration: 3s;
         animation-iteration-count: 1;
+        position: absolute !important;
     }
     .offlinecontent_about {
         width: 7% !important;
@@ -742,6 +1141,7 @@
         animation-delay: 9s;
         animation-duration: 3s;
         animation-iteration-count: 1;
+        position: absolute !important;
     }
     .bilingual_about {
         width: 7% !important;
@@ -752,6 +1152,7 @@
         animation-delay: 12s;
         animation-duration: 3s;
         animation-iteration-count: 1;
+        position: absolute !important;
     }
     .kontenislami_about {
         width: 7% !important;
@@ -762,6 +1163,7 @@
         animation-delay: 15s;
         animation-duration: 3s;
         animation-iteration-count: 1;
+        position: absolute !important;
     }
     .AI_about {
         width: 7% !important;
@@ -772,6 +1174,7 @@
         animation-delay: 18s;
         animation-duration: 3s;
         animation-iteration-count: 1;
+        position: absolute !important;
     }
     .song_about {
         width: 7% !important;
@@ -782,6 +1185,7 @@
         animation-delay: 21s;
         animation-duration: 3s;
         animation-iteration-count: 1;
+        position: absolute !important;
     }
     .alquran_about {
         width: 7% !important;
@@ -792,6 +1196,7 @@
         animation-delay: 24s;
         animation-duration: 3s;
         animation-iteration-count: 1;
+        position: absolute !important;
     }
     .funemoticon_about {
         width: 7% !important;
@@ -802,6 +1207,7 @@
         animation-delay: 27s;
         animation-duration: 3s;
         animation-iteration-count: 1;
+        position: absolute !important;
     }
     .ensiklopedia_about {
         width: 7% !important;
@@ -812,6 +1218,7 @@
         animation-delay: 30s;
         animation-duration: 3s;
         animation-iteration-count: 1;
+        position: absolute !important;
     }
     .matdas_about {
         width: 7% !important;
@@ -822,21 +1229,25 @@
         animation-delay: 33s;
         animation-duration: 3s;
         animation-iteration-count: 1;
+        position: absolute !important;
     }
     .layout_about {
-        height: 50% !important;
+        height: 950px !important;
         z-index: 4;
         width: 100% !important;
         margin-left:5%;
+        position: absolute !important;
     }
     /* ========== END About STYLE ============*/
 
     /* ========== HOME STYLE ============*/
     .backgroundLayout {
         background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/new_bghome.png') center center no-repeat;
-        height: 50% !important;
+        height: 100% !important;
+        -o-height: 100% !important;
+        -moz-height: 100% !important;
         width: 100% !important;
-        position: absolute;
+        position: absolute !important;
         background-size: cover;
         z-index: 0;
     }
@@ -844,8 +1255,9 @@
         animation: bounce 1.5s infinite;
         margin-left: -180%;
         margin-top: 20%;
-        position: absolute;
+        position: absolute !important;
         width: 150% !important;
+        
     }
     .left_cloud {
         animation: cloud-animation 10s infinite;
@@ -853,14 +1265,14 @@
         height: auto;
         margin-left: -200%;
         margin-top: 100%;
-        position: absolute;
+        position: absolute !important;
     }
     .left_cloud_blur {
         width: 100% !important;
         height: auto;
         margin-left: -20%;
         margin-top: 80%;
-        position: absolute;
+        position: absolute !important;
         filter: blur(3px);
         -webkit-filter: blur(3px);
         animation: cloud-animation 15s infinite;
@@ -870,19 +1282,20 @@
         height: auto;
         margin-left: -80%;
         margin-top: 80%;
-        position: absolute;
+        position: absolute !important;
         filter: blur(3px);
         -webkit-filter: blur(3px);
         animation: cloud-animation 20s infinite;
     }
     .title_home {
         color: #fff;
+        width: 200% !important;
         font-size: 2em;
         font-weight: 600;
         margin-top: 40% !important;
-        margin-left: -30% !important;
+        margin-left: -55% !important;
         font-family: acumin;
-        position: absolute;
+        position: absolute !important;
     }
     .hafiz_home {
         width: 150% !important;
@@ -890,7 +1303,7 @@
         margin-left: -73%;
         margin-right: auto;
         /* background: black; */
-        position: absolute;
+        position: absolute !important;
         animation: bounce 3s infinite; 
     }
     .hafiz_baling_baling {
@@ -899,7 +1312,7 @@
         margin-top: 110%;
         margin-left:-60%;
         z-index: 2;
-        position: absolute;
+        position: absolute !important;
         animation: balingbaling-animation infinite 0.2s linear;
     }
     .center_baling{
@@ -907,26 +1320,26 @@
         height: auto; 
         margin-top: 125%;
         z-index:3;
-        position: absolute;
+        position: absolute !important;
         margin-left: -48%;
         animation: bounce 3s infinite
     }
     .navigation {
         width: 150% !important;
-        position: absolute;
+        position: absolute !important;
         margin-left: -70%;
         margin-top: 200%;
         animation: fading 3s infinite linear;
     }
     .right_cloud {
         width: 150% !important;
-        position: absolute;
+        position: absolute !important;
         margin-top: 90%;
         margin-left: 50%;
         animation: cloud-animation 10s infinite;
     }
     .planet_ungu {
-        position: absolute;
+        position: absolute !important;
         width: 150% !important;
         margin-left: 10%;
         margin-top: 10%;
@@ -936,13 +1349,17 @@
   }
 
   @media (min-width: 1368px) and (max-width:1919px){
-      /* KEYFRAMES FOR (min-width: 1368px) and (max-width:1919px) */
+    /* KEYFRAMES FOR (min-width: 1368px) and (max-width:1919px) */
+
     /* ========== SLIDE STYLE ============*/
         .carousel.carousel-slider{
             height: 100% !important;
             position: absolute !important;
         }
         .carousel .slider-wrapper {
+            height: 100% !important;
+        }
+        .carousel .slider-wrapper.axis-horizontal .slider {
             height: 100% !important;
         }
         .carousel.slide{
@@ -953,9 +1370,9 @@
     /* ========== TALK STYLE ============*/
     .backgroundTalk1 {
         background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/empty_bg.png') center center no-repeat;
-        height: 100%;
-        width: 100%;
-        position: absolute;
+        height: 100% !important;
+        width: 100% !important;
+        position: absolute !important;
         background-size: cover;
         z-index: 2 !important;
     }
@@ -970,15 +1387,17 @@
         margin-left: -58%;
         margin-top: 72%;
         animation: talk-button 2s infinite linear;
+        position: absolute !important;
     }
     .hand {
         width: 50% !important;
         z-index: 6;
         margin-top:60%;
         margin-left: -65%;
+        position: absolute !important;
     }
     .hafiz_talk {
-        position: absolute;
+        position: absolute !important;
         width: 150% !important;
         margin-left: -125%;
         margin-top: 0%;
@@ -986,7 +1405,7 @@
     }
     .column {
         margin-top: 0%;
-        position: absolute;
+        position: absolute !important;
         width: 18% !important;
         margin-left: 35%;
         opacity: 1;
@@ -995,105 +1414,116 @@
         width: 35% !important;
         margin-left: -50%;
         margin-top: 30%;
+        animation-fill-mode: forwards;
     }
     .head_hafiz1 {
         width: 35% !important;
         margin-left: -50%;
         margin-top: 90%;
-        position: absolute;
+        animation-fill-mode: forwards;
     }
     .head_hafiz2 {
         width: 35% !important;
         margin-left: -50%;
         margin-top: 140%;
+        animation-fill-mode: forwards;
     }
     .head_hafiz3 {
         width: 35% !important;
         margin-left: -50%;
         margin-top: 195%;
+        position: absolute !important;
     }
     .head_user {
         width: 40% !important;
         margin-left: 100%;
-        position: absolute;
+        position: absolute !important;
     }
     .head_user1 {
         width: 40% !important;
         margin-left: 100%;
         margin-top: 60%;
-        position: absolute;
+        position: absolute !important;
     }
     .head_user2 {
         width: 40% !important;
         margin-left: 100%;
         margin-top: 115%;
-        position: absolute;
+        position: absolute !important;
     }
     .head_user3 {
         width: 40% !important;
         margin-left: 100%;
         margin-top: 165%;
-        position: absolute;
+        position: absolute !important;
     }
     .balon_user {
         width: 100% !important;
         margin-left: 28%;
         margin-top: -30%;
+        position: absolute !important;
     }
     .balon_user1 {
         width: 100% !important;
         margin-left:20%;
         margin-top: 30%;
+        position: absolute !important;
     }
     .balon_user2 {
         width: 100% !important;
         margin-left:28%;
         margin-top: 85%;
+        position: absolute !important;
     }
     .balon_user3 {
         width: 100% !important;
         margin-left:20%;
         margin-top: 135%;
+        position: absolute !important;
     }
     .balon_hafiz {
         width: 100% !important;
         margin-left:-30%;
         margin-top: 0%;
+        position: absolute !important;
     }
     .balon_hafiz1 {
         width: 100% !important;
         margin-left:-43%;
         margin-top: 60%;
+        position: absolute !important;
     }
     .balon_hafiz2 {
         width: 100% !important;
         margin-left:-43%;
         margin-top: 110%;
+        position: absolute !important;
     }
     .balon_hafiz3 {
         width: 100% !important;
         margin-left:-25%;
         margin-top: 165%;
+        position: absolute !important;
     }
     .bg_awan_talk {
         width: 100% !important;
         z-index: 2;
         margin-top:22%;
         height: 20px;
-        position: absolute;
+        position: absolute !important;
         margin-left: -18%;
     }
     .bg_awan {
         width: 100% !important;
         z-index: 2;
-        position: absolute;
+        position: absolute !important;
         margin-top: -20%;
         animation: cloud-animation 10s infinite;
     }
     .bg_awan_tengah {
         width: 100% !important;
         z-index: 2;
-        position: absolute;
+        position: absolute !important;
         margin-top: -20%;
         animation: cloud-animation 5s infinite;
     }
@@ -1111,6 +1541,7 @@
         transform: scale(0) rotate(0deg) translate(-50%, -50%);
         animation: cube 12s ease-in forwards infinite;
         z-index: 8;
+        position: absolute !important;
     }
     .cube:nth-child(2) {
         animation-delay: 2s;
@@ -1118,12 +1549,13 @@
         top: 10vh;
         width: 5px;
         height: 5px;
+        position: absolute !important;
     }
     .bi{
         width: 120% !important;
         height: 25% !important;
         z-index: 2;
-        position: absolute;
+        position: absolute !important;
         margin-top: -10%;
         margin-left: 3%;
         animation: fade-in 10s infinite;
@@ -1132,7 +1564,7 @@
         width: 120% !important;
         height: 25% !important;
         z-index: 2;
-        position: absolute;
+        position: absolute !important;
         margin-top: -10%;
         margin-left: 3%;
         animation: fade-in 5s infinite;
@@ -1146,7 +1578,7 @@
         text-align: left;
         font-size: 1.5em;
         margin-left: 40%;
-        position: absolute;
+        position: absolute !important;
         animation-name: fade-in;
         animation-duration: 5s;
         animation-iteration-count: 1;
@@ -1154,7 +1586,7 @@
     }
     .wifi_about{
         width: 7% !important;        
-        position: absolute;
+        position: absolute !important;
         z-index: 4;
         margin-top: 25%;
         margin-left: 45%;
@@ -1164,7 +1596,7 @@
     }
     .talk_about{
         width: 7% !important;
-        position: absolute;
+        position: absolute !important;
         z-index: 4;
         margin-top: 25%;
         margin-left: 52%;
@@ -1175,7 +1607,7 @@
     }
     .onlinecontent_about {
         width: 7% !important;
-        position: absolute;
+        position: absolute !important;
         z-index: 4;
         margin-top: 25%;
         margin-left: 59%;
@@ -1186,7 +1618,7 @@
     }
     .offlinecontent_about {
         width: 7% !important;
-        position: absolute;
+        position: absolute !important;
         z-index: 4;
         margin-top: 25%;
         margin-left: 66%;
@@ -1197,7 +1629,7 @@
     }
     .bilingual_about {
         width: 7% !important;
-        position: absolute;
+        position: absolute !important;
         z-index: 4;
         margin-top: 25%;
         margin-left: 73%;
@@ -1208,7 +1640,7 @@
     }
     .kontenislami_about {
         width: 7% !important;
-        position: absolute;
+        position: absolute !important;
         z-index: 4;
         margin-top: 25%;
         margin-left: 80%;
@@ -1219,7 +1651,7 @@
     }
     .AI_about {
         width: 7% !important;
-        position: absolute;
+        position: absolute !important;
         z-index: 4;
         margin-top: 35%;
         margin-left: 59%;
@@ -1230,7 +1662,7 @@
     }
     .song_about {
         width: 7% !important;
-        position: absolute;
+        position: absolute !important;
         z-index: 4;
         margin-top: 35%;
         margin-left: 66%;
@@ -1241,7 +1673,7 @@
     }
     .alquran_about {
         width: 7% !important;
-        position: absolute;
+        position: absolute !important;
         z-index: 4;
         margin-top: 35%;
         margin-left: 73%;
@@ -1252,7 +1684,7 @@
     }
     .funemoticon_about {
         width: 7% !important;
-        position: absolute;
+        position: absolute !important;
         z-index: 4;
         margin-top: 35%;
         margin-left: 80%;
@@ -1263,7 +1695,7 @@
     }
     .ensiklopedia_about {
         width: 7% !important;
-        position: absolute;
+        position: absolute !important;
         z-index: 4;
         margin-top: 35%;
         margin-left: 87%;
@@ -1274,7 +1706,7 @@
     }
     .matdas_about {
         width: 7% !important;
-        position: absolute;
+        position: absolute !important;
         z-index: 4;
         margin-top: 35%;
         margin-left: 94%;
@@ -1287,7 +1719,7 @@
         height: 100% !important;
         width: 100% !important;
         z-index: 4;
-        position: absolute;
+        position: absolute !important;
         margin-left:5%;
     }
     /* ========== About STYLE ============*/
@@ -1297,7 +1729,7 @@
         background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/new_bghome.png') center center no-repeat;
         height: 100% !important;
         width: 100% !important;
-        position: absolute;
+        position: absolute !important;
         background-size: cover;
         z-index: 0;
     }
@@ -1305,7 +1737,7 @@
         animation: bounce 1.5s infinite;
         margin-left: -80%;
         margin-top: 30%;
-        position: absolute;
+        position: absolute !important;
         width: 100% !important;
     }
     .left_cloud {
@@ -1314,7 +1746,7 @@
         height: auto;
         margin-left: -180%;
         margin-top: 80%;
-        position: absolute;
+        position: absolute !important;
     }
     .title_home {
         color: #fff;
@@ -1323,14 +1755,14 @@
         margin-top: 40% !important;
         margin-left: 20% !important;
         font-family: acumin;
-        position: absolute;
+        position: absolute !important;
     }
     .hafiz_home {
         width: 110% !important;
         margin-top: 55%;
         margin-left: -50%;
         margin-right: auto;
-        position: absolute;
+        position: absolute !important;
         /* background: green; */
         animation: bounce 3s infinite; 
     }
@@ -1340,7 +1772,7 @@
         margin-top: 82%;
         margin-left:-47%;
         z-index: 2;
-        position: absolute;
+        position: absolute !important;
         animation: balingbaling-animation infinite 0.2s linear;
     }
     .center_baling{
@@ -1348,12 +1780,12 @@
         height: auto; 
         margin-top: 85%;
         z-index:3;
-        position: absolute;
+        position: absolute !important;
         margin-left: -45%;
         animation: bounce 3s infinite
     }
     .navigation {
-        position: absolute;
+        position: absolute !important;
         margin-left: -45%;
         margin-top: 150%;
         width: 100% !important;
@@ -1361,13 +1793,13 @@
     }
     .right_cloud {
         width: 100% !important;
-        position: absolute;
+        position: absolute !important;
         margin-top: 90%;
         margin-left: 20%;
         animation: cloud-animation 10s infinite;
     }
     .planet_ungu {
-        position: absolute;
+        position: absolute !important;
         width: 100% !important;
         margin-left: 10%;
         margin-top: 10%;
@@ -1389,34 +1821,97 @@
         .carousel .slider-wrapper {
             height: 100% !important;
         }
+        .carousel .slider-wrapper.axis-horizontal .slider {
+            height: 100% !important;
+        }
         .carousel.slide{
             height: 100% !important;
         }
         /* ========== END SLIDE STYLE ============*/
+
+        .backgroundFeatures {
+            background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/empty_bg.png') center center no-repeat;
+            z-index: 2;
+            height: 100% !important;
+            width: 100% !important;
+            position: absolute !important;
+            background-size: cover;
+        }
+        .material {
+            width: 100% !important;
+            z-index: 3;
+        }
+        .mata {
+            width: 100% !important;
+            z-index: 3;
+        }
+        .title_features {
+            color: white;
+            font-family: acumin;
+            font-weight: 600;
+            padding: 20px 0;
+        }
+        .bg-detail {
+            z-index: 2;
+            margin-top: -20%;
+        }
+        .judul-Detail, .Detail {
+            color: white;
+            padding-right: 20px;
+            padding-left: 20px;
+            text-align: justify;
+        }
+        .judul-Detail {
+            margin-top: -80%;
+            font-size: 2em;
+            margin-bottom:5%;
+        }
+        /* ========== CONTACT SLIDE STYLE ============*/
+        .modalclose {
+            background: black;
+            border: none;
+            color: white;
+            border-radius: 300px;
+            float: right;
+        }
+        .awan_contact {
+            width: 100% !important;
+            margin-left: -8%;
+            animation: cloud-animation 10s infinite;
+            /* background: blue; */
+        }
+        .firework_contact {
+            width: 10% !important;
+            margin-left: 50%;
+        }
+        .firework_contact1 {
+            width: 10% !important;
+            margin-left: 50%;
+        }
         .planet_orange_contact {
             animation: bounce 1.5s infinite;
-            margin-left: -15%;
-            margin-top: -50%;
-            position: absolute;
+            margin-left: -10%;
+            margin-top: 0%;
+            position: absolute !important;
             width: 30% !important;
-            z-index:2;
         }
         .TNC_button {
-            position: absolute;
+            position: absolute !important;
             z-index: 2;
-            margin-top: -35%;
+            margin-top: 22%;
             width: 20%;
-            margin-left: -10%;
+            margin-left: 30%;
             border-radius: 300px;
             border: none !important;
             background: white !important;
             color: #007bff !important;
+            font-size: 1.3em;
         }
         .PP_button {
-            position: absolute;
-            z-index: 2;
-            margin-top: -30%;
-            margin-left: -10%;
+            position: absolute !important;            
+            margin-top: 28%;
+            font-size: 1.3em;
+            margin-left: 30%;
             border-radius: 300px;
             width: 20%;
             border: none !important;
@@ -1424,56 +1919,92 @@
             color: #007bff !important;
         }
         .CU_button {
-            position: absolute;
-            z-index: 2;
-            margin-top: -25%;
-            margin-left: -10%;
+            position: absolute !important;
+            margin-top:34%;
+            margin-left: 30%;
+            font-size: 1.3em;
             width: 20%;
             border-radius: 300px;
             border: none !important;
             background: white !important;
             color: #007bff !important;
         }
+        .TNC_button:hover, .PP_button:hover, .CU_button:hover {
+            background: #5bc0de;
+            color: #efefef;
+            border: none !important;
+        }
         .title_contact {
-            position: absolute;
+            position: absolute !important;
             z-index: 2;
-            margin-top: -40%;
-            margin-left: 25%;
+            margin-top: 20%;
+            margin-left: 24%;
             color: #fff;
-            font-size: 2em;
+            font-size: 6em;
             font-family: acumin;
+            opacity: 0.5;
+            font-weight: 600;
+            text-shadow: 2px 10px 14px grey;
         }
         .hafiz_contact {
-            position: absolute;
-            z-index: 2;
-            width: 30% !important;
-            margin-top: -35%;
-            margin-left: 0%;
+            position: absolute !important;
+            z-index: 3;
+            width: 28% !important;
+            margin-top: 7%;
+            margin-left: -3%;
         }
-
         .backgroundContact {
-            background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/layout.png') center center no-repeat;
-            height: 100%;
-            width: 100%;
-            position: absolute;
+            background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/bg-counting.png') center center no-repeat;
+            height: 700px !important;
+            width: 100% !important;
+            position: absolute !important;
             background-size: cover;
         }
+        /* ========== END CONTACT SLIDE STYLE ============*/
 
+        /* ========== COUNTING SLIDE STYLE ============*/
+        .arus_roket {
+            width: 15% !important;
+            margin-left: -33%;
+            margin-top: 10%;
+            z-index:5;
+           }
+        .arus_roket1 {
+            width: 15% !important;
+            margin-left: -17%;
+            margin-top: 10%;
+            z-index:5;
+            }
         .backgroundCounting {
             background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/bg-counting.png') center center no-repeat;
-            height: 100%;
-            width: 100%;
-            position: absolute;
+            height: 100% !important;
+            width: 100% !important;
+            position: absolute !important;
             background-size: cover;
         }
         @keyframes bg-awan-belakang-roket {
-            from {
-                margin-top: -20%;opacity:1;}
+            from { margin-top: -20%;opacity:1;}
+            to {margin-top: 6%;opacity:0;}
+        }
+        @-webkit-keyframes bg-awan-belakang-roket {
+            from { margin-top: -20%;opacity:1;}
+            to {margin-top: 6%;opacity:0;}
+        }
+        @-moz-keyframes bg-awan-belakang-roket {
+            from { margin-top: -20%;opacity:1;}
+            to {margin-top: 6%;opacity:0;}
+        }
+        @-ms-keyframes bg-awan-belakang-roket {
+            from { margin-top: -20%;opacity:1;}
+            to {margin-top: 6%;opacity:0;}
+        }
+        @-o-keyframes bg-awan-belakang-roket {
+            from { margin-top: -20%;opacity:1;}
             to {margin-top: 6%;opacity:0;}
         }
         .bg_awan_belakang_roket {
             /* margin-top: -20%; */
-            position: absolute;
+            position: absolute !important;
             width: 100% !important;
             margin-left: -69%;
             animation-name: bg-awan-belakang-roket;
@@ -1487,20 +2018,37 @@
             font-weight: 600;
             margin-left: 10%;
             margin-top: 10%;
+            position: absolute !important;
         }
         .bg_bumi {
             width: 100% !important;
             height: 1000% !important;
             margin-top: -14%;
             margin-left: -70%;
-            position: absolute;
+            position: absolute !important;
         }
         @keyframes bg-bumi-complete {
             from {margin-top: -25%;}
             to {margin-top: 5%;}
         }
+        @-webkit-keyframes bg-bumi-complete {
+            from {margin-top: -25%;}
+            to {margin-top: 5%;}
+        }
+        @-moz-keyframes bg-bumi-complete {
+            from {margin-top: -25%;}
+            to {margin-top: 5%;}
+        }
+        @-ms-keyframes bg-bumi-complete {
+            from {margin-top: -25%;}
+            to {margin-top: 5%;}
+        }
+        @-o-keyframes bg-bumi-complete {
+            from {margin-top: -25%;}
+            to {margin-top: 5%;}
+        }
         .bg_bumi_complete {
-            position: absolute;
+            position: absolute !important;
             width: 100% !important;
             margin-left: -69%;
             margin-top: -25%;
@@ -1510,15 +2058,27 @@
             animation-iteration-count: 1;
         }
         @keyframes fire-roket {
-            from{
-                margin-top: -1%;    
-            }
-            to {
-                margin-top: 5%;
-            }
+            from{margin-top: -1%;}
+            to {margin-top: 5%;}
+        }
+        @-webkit-keyframes fire-roket {
+            from{margin-top: -1%;}
+            to {margin-top: 5%;}
+        }
+        @-moz-keyframes fire-roket {
+            from{margin-top: -1%;}
+            to {margin-top: 5%;}
+        }
+        @-ms-keyframes fire-roket {
+            from{margin-top: -1%;}
+            to {margin-top: 5%;}
+        }
+        @-o-keyframes fire-roket {
+            from{margin-top: -1%;}
+            to {margin-top: 5%;}
         }
         .fire_roket {
-            position: absolute;
+            position: absolute !important;
             width: 14% !important;
             margin-left: -16%;
             margin-top: 5%;
@@ -1528,7 +2088,7 @@
             z-index: 3;
         }
         .fire_roket1 {
-            position: absolute;
+            position: absolute !important;
             width: 14% !important;
             margin-left: -33%;
             margin-top: 5%;
@@ -1538,21 +2098,32 @@
             z-index: 3;
         }
         @keyframes hafiz-roket {
-            0% {
-                opacity: 0;
-            }
-            100%{
-                opacity: 1;
-            }
+            0% {opacity: 0;}
+            100%{opacity: 1;}
+        }
+        @-webkit-keyframes hafiz-roket {
+            0% {opacity: 0;}
+            100%{opacity: 1;}
+        }
+        @-moz-keyframes hafiz-roket {
+            0% {opacity: 0;}
+            100%{opacity: 1;}
+        }
+        @-ms-keyframes hafiz-roket {
+            0% {opacity: 0;}
+            100%{opacity: 1;}
+        }
+        @-o-keyframes hafiz-roket {
+            0% {opacity: 0;}
+            100%{opacity: 1;}
         }
         .hafiz_roket {
             width: 25% !important;
             margin-left : -30%;
             margin-top: -13%;
             z-index: 4;
-            opacity: 1;
-            position: absolute;
-            animation-name: hafiz-roket;
+            position: absolute !important;
+            animation-name: fading;
             animation-duration: 2s;
             -moz-animation-iteration-count: 1;
         }
@@ -1563,14 +2134,14 @@
             z-index: 5;
         }
         .form-custom {
-            position: absolute;
+            position: absolute !important;
             margin-top: 17%;
             width: 30%;
             margin-left: 8%;
             animation : bounce 5s infinite;
         }
         .counting-down {
-            position: absolute;
+            position: absolute !important;
             margin-top: 20%;
             margin-left: 20%;
             font-family: "digital";
@@ -1578,7 +2149,6 @@
             font-weight: 600;
         }
         .digital_after {
-            position: absolute;
             font-family: "digital";
             color: white;
             margin-left: 47%;
@@ -1589,19 +2159,19 @@
             font-family: "digital";
             font-size: 5em;
             font-weight: 600;
-            position: absolute;
+            position: absolute !important;
             margin-left: 47%;
             margin-top: -5%;
         }
         .countdown_h5 {
-            position: absolute;
+            position: absolute !important;
             font-family: acumin;
             font-size: 1em;
             margin-top: -5%;
             margin-left: 50%;
         }
         .countdown_h5_jam {
-            position: absolute;
+            position: absolute !important;
             font-family: acumin;
             font-size: 1em;
             margin-top: 2%;
@@ -1609,31 +2179,34 @@
 
         }
         .dust_awan_roket {
-            position: absolute;
+            position: absolute !important;
+            /* background: blue; */
             width: 100%;
             z-index: 2;
             margin-top: -20%;
             margin-left: -70%;
             animation: cloud-animation 10s infinite;
         }
+        /* ========== END COUNTING STYLE ============*/
+
         /* ========== TALK STYLE ============*/
         .balon_user_custom {
             width: 100% !important;
             margin-left: 28%;
             margin-top: 110%;
-            position: absolute;
+            position: absolute !important;
         }
         .balon_hafiz11 {
             width: 100% !important;
             margin-left:-30%;
             margin-top: 140%;
-            position: absolute;
+            position: absolute !important;
         }
     .btn_class {
         margin-top: 10% !important;
         z-index: 6;
         width: 10% !important;
-        position: absolute;
+        position: absolute !important;
     }
     .hide{
         display: none !important;
@@ -1644,10 +2217,10 @@
         color: white;
         width: 30%;
         margin-top: 3%;
-
+        position: absolute !important;
     }
     .whiteButton{
-        position: absolute;
+        position: absolute !important;
         width: 100% !important;
         margin-left: -50%;
         z-index: 5;       
@@ -1655,15 +2228,16 @@
       }
     .backgroundTalk1 {
         background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/bg_features.png') center center no-repeat;
-        height: 100%;
-        width: 100%;
-        position: absolute;
+        height: 100% !important;
+        width: 100% !important;
+        position: absolute !important;
         background-size: cover;
         z-index: 2 !important;
     }
     .backgroundblack {
-        position: absolute;
+        position: absolute !important;
         width: 100% !important;
+        height: 100% !important;
         margin-left: -50%;
         z-index: 5;       
         opacity: 0.7;
@@ -1672,7 +2246,7 @@
         background: blue;
     }
     .klik-style {
-        position: absolute;
+        position: absolute !important;
         width: 20% !important;
         z-index:6;
         margin-top: 19%;
@@ -1688,19 +2262,13 @@
         background: white !important;
         color: grey !important;
         border: none !important;
-        position: absolute;
+        position: absolute !important;
         font-size:0.8em !important;
         animation: talk-button 2s infinite linear;
     }
-    .hand {
-        width: 50% !important;
-        z-index: 6;
-        margin-top: 105%;
-        margin-left: -65%;
-    }
     .column {
         margin-top: 0%;
-        position: absolute;
+        position: absolute !important;
         width: 20% !important;
         margin-left: 40%;
         opacity: 1;
@@ -1714,13 +2282,13 @@
     }
     .column_hide {
         margin-top: 0%;
-        position: absolute;
+        position: absolute !important;
         width: 15% !important;
         margin-left: 35%;
         opacity: 0;        
     }
     .hafiz_talk {
-        position: absolute;
+        position: absolute !important;
         width: 80% !important;
         margin-left: -89%;
         margin-top: 20%;
@@ -1731,10 +2299,11 @@
         100% {margin-left: -160%;}
     }
     .hafiz_talk_left {
-        position: absolute;
+        position: absolute !important;
         width: 80% !important;
         margin-left: -160%;
         margin-top: 20%;
+        /* background: blue; */
         z-index: 3;
         animation-name: hafiz-left;
         animation-duration: 3s;
@@ -1746,7 +2315,7 @@
     }
     .head_hafiz {
         width: 35% !important;
-        position: absolute;
+        position: absolute !important;
         margin-left: -50%;
         margin-top: 30%;
         animation-name: head-hafiz;
@@ -1759,7 +2328,7 @@
         width: 35% !important;
         margin-left: -50%;
         margin-top: 30%;
-        position: absolute;
+        position: absolute !important;
         opacity: 0;
     }
     @keyframes head-hafiz1 {
@@ -1770,7 +2339,7 @@
         width: 35% !important;
         margin-left: -50%;
         margin-top: 90%;
-        position: absolute;
+        position: absolute !important;
         animation-name: head-hafiz1;
         animation-duration: 2s;
         animation-delay: 8s;
@@ -1784,7 +2353,7 @@
         width: 35% !important;
         margin-left: -50%;
         margin-top: 170%;
-        position: absolute;
+        position: absolute !important;
         animation-name: head-hafiz2;
         animation-duration: 2s;
         animation-delay: 12s;
@@ -1798,40 +2367,35 @@
         width: 35% !important;
         margin-left: -50%;
         margin-top: 195%;
-        position: absolute;
+        position: absolute !important;
         animation-name: head-hafiz3;
         animation-duration: 2s;
         animation-delay: 16s;
         animation-iteration-count: 1;
     }
     @keyframes head-user {
-        0%{ margin-top: 200%;}
+        0%{ margin-top: 400%;}
         100% { margin-top: 0%}
     }
     .head_user {
         width: 40% !important;
-        margin-top: 0%;
+        margin-top: 400%;
         margin-left: 100%;
-        position: absolute;
+        position: absolute !important;
         animation-name : head-user;
-        animation-delay: 2s;
         animation-duration: 3s;
         animation-iteration-count: 1;
+        animation-fill-mode: forwards;
     }
     @keyframes head-user1 {
-        from {
-            margin-top: 200%;
-        }
-        to
-        {
-            margin-top: 60%;    
-        }
+        from { margin-top: 200%;}
+        to { margin-top: 60%;}
     }
     .head_user1 {
         width: 40% !important;
         margin-left: 100%;
         margin-top: 60%;
-        position: absolute;
+        position: absolute !important;
         animation-name: head-user1;
         animation-delay: 6s;
         animation-duration: 2s;
@@ -1845,7 +2409,7 @@
         width: 40% !important;
         margin-left: 100%;
         margin-top: 138%;
-        position: absolute;
+        position: absolute !important;
         /* animation-name: head-user2;
         animation-delay: 10s;
         animation-iteration-count: 1;
@@ -1859,25 +2423,25 @@
         width: 40% !important;
         margin-left: 100%;
         margin-top: 165%;
-        position: absolute;
+        position: absolute !important;
         animation-name: head-user3;
         animation-delay: 14s;
         animation-iteration-count: 1;
         animation-duration: 2s;
     }
     @keyframes balon-user {
-        0%{ margin-top: 200%}
+        0%{ margin-top: 400%}
         100% { margin-top: -30%}
     }
     .balon_user {
         width: 100% !important;
         margin-left: 28%;
-        margin-top: -30%;
-        position: absolute;
+        margin-top: 400%;
+        position: absolute !important;
         animation-name : balon-user;
-        animation-delay: 2s;
         animation-duration: 3s;
         animation-iteration-count: 1;
+        animation-fill-mode: forwards;
     }
     @keyframes balon-user1 {
         0%{
@@ -1891,7 +2455,7 @@
         width: 100% !important;
         margin-left:20%;
         margin-top: 30%;
-        position: absolute;
+        position: absolute !important;
         animation-name: balon-user1;
         animation-delay: 6s;
         animation-iteration-count: 1;
@@ -1905,7 +2469,7 @@
         width: 100% !important;
         margin-left:28%;
         margin-top: 85%;
-        position: absolute;
+        position: absolute !important;
         animation-name: balon-user2;
         animation-duration: 2s;
         animation-delay: 12s;
@@ -1919,7 +2483,7 @@
         width: 100% !important;
         margin-left:20%;
         margin-top: 135%;
-        position: absolute;
+        position: absolute !important;
         animation-name: balon-user3;
         animation-duration: 2s;
         animation-delay: 16s;
@@ -1938,7 +2502,7 @@
         width: 100% !important;
         margin-left:-43%;
         margin-top: 0%;
-        position: absolute;
+        position: absolute !important;
         animation-name: balon-hafiz;
         animation-duration: 3s;
         animation-delay: 4s;
@@ -1952,7 +2516,7 @@
         width: 100% !important;
         margin-left:-30%;
         margin-top: 85%;
-        position: absolute;
+        position: absolute !important;
         /* animation-name: balon-hafiz1;
         animation-duration: 2s;
         animation-iteration-count: 1;
@@ -1966,7 +2530,8 @@
         width: 100% !important;
         margin-left:-43%;
         margin-top: 60%;
-        position: absolute;
+        position: absolute !important;
+        
         /* animation-name: balon-hafiz2;
         animation-duration: 2s;
         animation-iteration-count: 1;
@@ -1980,7 +2545,7 @@
         width: 100% !important;
         margin-left:-25%;
         margin-top: 165%;
-        position: absolute;
+        position: absolute !important;
         animation-name: balon-hafiz3;
         animation-duration: 2s;
         animation-iteration-count: 1;
@@ -1990,7 +2555,7 @@
         width: 100% !important;
         z-index: 2;
         margin-top:22%;
-        position: absolute;
+        position: absolute !important;
         margin-left: -9%; 
         filter: blur(1px);
         -webkit-filter: blur(2px);
@@ -2022,6 +2587,7 @@
         transform: scale(0) rotate(0deg) translate(-50%, -50%);
         animation: cube 12s ease-in forwards infinite;
         z-index: 8;
+        position: absolute !important;
     }
     .cube:nth-child(2) {
         animation-delay: 2s;
@@ -2029,31 +2595,34 @@
         top: 10vh;
         width: 5px;
         height: 5px;
+        position: absolute !important;
     }
     .bi{
         width: 100% !important;
         height: 100% !important;
         z-index: 2;
-        margin-top: -5%;
-        margin-left: 5%;
+        /* margin-top: 0%; */
+        margin-left: 1%;
         opacity: 1;
         /* animation: fade-in 10s infinite; */
         animation-name: fade-in;
-        animation-duration: 5s;
+        animation-duration: 8s;
         animation-iteration-count: infinite;
+        position: absolute !important;
     }
     .bi2{
         width: 100% !important;
         height: 100% !important;
         z-index: 2;
-        margin-top: -5%;
-        margin-left: 5%;
+        /* margin-top: 5%; */
+        margin-left: 1%;
         opacity: 1;
         /* animation: fade-in 5s infinite; */
         animation-name: fade-in;
-        animation-duration: 5s;
-        animation-delay: 2s;
+        animation-duration: 8s;
+        animation-delay: 4s;
         animation-iteration-count: infinite;
+        position: absolute !important;
     }
     .title_about {
         z-index: 4;
@@ -2063,14 +2632,16 @@
         text-align: left;
         margin-left:40%;
         margin-right: 20%;
+        position: absolute !important;
     }
     .hr_title {
         z-index: 4;
         margin-top: 6%;
-        margin-left: 39%;
+        margin-left: 40%;
         border: 2px solid white;
         width: 31%;
         border-radius: 5px;
+        position: absolute !important;
     }
     .description {
         width: 50% !important;
@@ -2085,6 +2656,7 @@
         animation-duration: 5s;
         animation-iteration-count: 1;
         opacity: 1;
+        position: absolute !important;
     }
     .wifi_about{
         width: 8% !important;
@@ -2094,6 +2666,7 @@
         animation-name: scale;
         animation-duration: 3s;
         animation-iteration-count: 1;
+        position: absolute !important;
     }
     .talk_about{
         width: 8% !important;
@@ -2104,6 +2677,7 @@
         animation-delay: 3s;
         animation-duration: 3s;
         animation-iteration-count: 1;
+        position: absolute !important;
     }
     .onlinecontent_about {
         width: 8% !important;
@@ -2124,6 +2698,7 @@
         animation-delay: 9s;
         animation-duration: 3s;
         animation-iteration-count: 1;
+        position: absolute !important;
     }
     .bilingual_about {
         width: 8% !important;
@@ -2134,6 +2709,7 @@
         animation-delay: 12s;
         animation-duration: 3s;
         animation-iteration-count: 1;
+        position: absolute !important;
     }
     .kontenislami_about {
         width: 8% !important;
@@ -2144,6 +2720,7 @@
         animation-delay: 15s;
         animation-duration: 3s;
         animation-iteration-count: 1;
+        position: absolute !important;
     }
     .AI_about {
         width: 8% !important;
@@ -2154,6 +2731,7 @@
         animation-delay: 18s;
         animation-duration: 3s;
         animation-iteration-count: 1;
+        position: absolute !important;
     }
     .song_about {
         width: 8% !important;
@@ -2164,6 +2742,7 @@
         animation-delay: 21s;
         animation-duration: 3s;
         animation-iteration-count: 1;
+        position: absolute !important;
     }
     .alquran_about {
         width: 8% !important;
@@ -2174,6 +2753,7 @@
         animation-delay: 24s;
         animation-duration: 3s;
         animation-iteration-count: 1;
+        position: absolute !important;
     }
     .funemoticon_about {
         width: 8% !important;
@@ -2184,6 +2764,7 @@
         animation-delay: 27s;
         animation-duration: 3s;
         animation-iteration-count: 1;
+        position: absolute !important;
     }
     .ensiklopedia_about {
         width: 8% !important;
@@ -2194,6 +2775,7 @@
         animation-delay: 30s;
         animation-duration: 3s;
         animation-iteration-count: 1;
+        position: absolute !important;
     }
     .matdas_about {
         width: 8% !important;
@@ -2204,12 +2786,21 @@
         animation-delay: 33s;
         animation-duration: 3s;
         animation-iteration-count: 1;
+        position: absolute !important;
     }
     .layout_about {
-        height: 115% !important;
+        height: 100% !important;
         z-index: 4;
+        width: 101% !important;
+        position: absolute !important;
+    }
+    .backgroundAbout {
+        background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/backgroundabout1.png') center center no-repeat;
+        height: 100% !important;
         width: 100% !important;
-        margin-left:5%;
+        position: absolute !important;
+        background-size: cover;
+        z-index: 0;
     }
     /* ========== END About STYLE ============*/
         
@@ -2218,7 +2809,7 @@
             background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/background.png') center center no-repeat;
             height: 100% !important;
             width: 100% !important;
-            position: absolute;
+            position: absolute !important;
             background-size: cover;
             z-index: 0;
         }
@@ -2229,11 +2820,11 @@
             margin-top: 30% !important;
             margin-left: 17% !important;
             font-family: acumin;
-            position: absolute;
+            position: absolute !important;
         }
         .navigation {
             width: 100% !important;
-            position: absolute;
+            position: absolute !important;
             margin-left: -48%;
             margin-top: 130%;
             animation: fading 3s infinite linear;
@@ -2242,7 +2833,7 @@
             animation: bounce 1.5s infinite;
             margin-left: -70%;
             margin-top: 10%;
-            position: absolute;
+            position: absolute !important;
             width: 100% !important;
         }
         .left_cloud {
@@ -2251,14 +2842,14 @@
             height: auto;
             margin-left: -100%;
             margin-top: 60%;
-            position: absolute;
+            position: absolute !important;
         }
         .left_cloud_blur {
             width: 100% !important;
             height: auto;
             margin-left: -0%;
             margin-top: 40%;
-            position: absolute;
+            position: absolute !important;
             filter: blur(3px);
             -webkit-filter: blur(3px);
             animation: cloud-animation 15s infinite;
@@ -2268,7 +2859,7 @@
             height: auto;
             margin-left: -100%;
             margin-top: 55%;
-            position: absolute;
+            position: absolute !important;
             filter: blur(3px);
             -webkit-filter: blur(3px);
             animation: cloud-animation 20s infinite;
@@ -2278,7 +2869,7 @@
             margin-top: 45%;
             margin-left: -47%;
             margin-right: auto;
-            position: absolute;
+            position: absolute !important;
             /* background: red; */
             animation: bounce 3s infinite; 
         }
@@ -2288,7 +2879,7 @@
             margin-top: 78%;
             margin-left:-37%;
             z-index: 2;
-            position: absolute;
+            position: absolute !important;
             animation: balingbaling-animation infinite 0.2s linear;
         }
         .center_baling{
@@ -2296,19 +2887,19 @@
             height: auto; 
             margin-top: 85%;
             z-index:3;
-            position: absolute;
+            position: absolute !important;
             margin-left: -32%;
             animation: bounce 3s infinite
         }
         .right_cloud {
             width: 200% !important;
-            position: absolute;
+            position: absolute !important;
             margin-top: 50%;
             margin-left: -80%;
             animation: cloud-animation 10s infinite;
         }
         .planet_ungu {
-            position: absolute;
+            position: absolute !important;
             width: 100% !important;
             margin-left: -60%;
             margin-top: 10%;
@@ -2329,6 +2920,9 @@
     .carousel .slider-wrapper {
         height: 100% !important;
     }
+    .carousel .slider-wrapper.axis-horizontal .slider {
+        height: 100% !important;
+    }
     .carousel.slide{
         height: 100% !important;
     }
@@ -2337,9 +2931,9 @@
     /* ========== About STYLE ============*/
     .background_about {
         background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/about_mobile.png') center center no-repeat;
-        height: 58%;
+        height: 100% !important;
         width: 100% !important;
-        position: absolute;
+        position: absolute !important;
         background-size: cover;
         z-index: 4;
         margin-left:2%;
@@ -2349,7 +2943,7 @@
         width: 150% !important;
         height: 20% !important;
         z-index: 2;
-        position: absolute;
+        position: absolute !important;
         margin-top: -33%;
         margin-left: 5%;
         animation-name: fade-in-mobile;
@@ -2361,7 +2955,7 @@
         width: 150% !important;
         height: 20% !important;
         z-index: 2;
-        position: absolute;
+        position: absolute !important;
         margin-top: -33%;
         margin-left: 5%;
         animation-name: fade-in-mobile;
@@ -2379,6 +2973,7 @@
         font-size: 1.7em;
         margin-left: 7%;
         margin-right: 5%;
+        position: absolute !important;
     }
     .description {
         width: 90% !important;
@@ -2390,14 +2985,14 @@
         font-size: 1.7em;
         margin-left: 7%;
         margin-right: 5%;
-        position: absolute;
-        animation-name: fade-in-desc;
+        position: absolute !important;
+        animation-name: fade-in;
         animation-duration: 5s;
         animation-iteration-count: 1;
     }
     .wifi_about{
         width: 20% !important;
-        position: absolute;
+        position: absolute !important;
         z-index: 4;
         margin-top: 85%;
         margin-left: 5%;
@@ -2407,7 +3002,7 @@
     }
     .talk_about{
         width: 20% !important;
-        position: absolute;
+        position: absolute !important;
         z-index: 4;
         margin-top: 85%;
         margin-left: 20%;
@@ -2418,7 +3013,7 @@
     }
     .onlinecontent_about {
         width: 20% !important;
-        position: absolute;
+        position: absolute !important;
         z-index: 4;
         margin-top: 85%;
         margin-left: 35%;
@@ -2429,7 +3024,7 @@
     }
     .offlinecontent_about {
         width: 20% !important;
-        position: absolute;
+        position: absolute !important;
         z-index: 4;
         margin-top: 85%;
         margin-left: 50%;
@@ -2440,7 +3035,7 @@
     }
     .bilingual_about {
         width: 20% !important;
-        position: absolute;
+        position: absolute !important;
         z-index: 4;
         margin-top: 85%;
         margin-left: 65%;
@@ -2451,7 +3046,7 @@
     }
     .kontenislami_about {
         width: 20% !important;
-        position: absolute;
+        position: absolute !important;
         z-index: 4;
         margin-top: 85%;
         margin-left: 80%;
@@ -2462,7 +3057,7 @@
     }
     .AI_about {
         width: 20% !important;
-        position: absolute;
+        position: absolute !important;
         z-index: 4;
         margin-top: 110%;
         margin-left: 5%;
@@ -2473,7 +3068,7 @@
     }
     .song_about {
         width: 20% !important;
-        position: absolute;
+        position: absolute !important;
         z-index: 4;
         margin-top: 110%;
         margin-left: 20%;
@@ -2484,7 +3079,7 @@
     }
     .alquran_about {
         width: 20% !important;
-        position: absolute;
+        position: absolute !important;
         z-index: 4;
         margin-top: 110%;
         margin-left: 35%;
@@ -2495,7 +3090,7 @@
     }
     .funemoticon_about {
         width: 20% !important;
-        position: absolute;
+        position: absolute !important;
         z-index: 4;
         margin-top: 110%;
         margin-left: 50%;
@@ -2506,7 +3101,7 @@
     }
     .ensiklopedia_about {
         width: 20% !important;
-        position: absolute;
+        position: absolute !important;
         z-index: 4;
         margin-top: 110%;
         margin-left: 65%;
@@ -2518,7 +3113,7 @@
     }
     .matdas_about {
         width: 20% !important;
-        position: absolute;
+        position: absolute !important;
         z-index: 4;
         margin-top: 110%;
         margin-left: 80%;
@@ -2528,10 +3123,10 @@
         animation-iteration-count: 1;
     }
     .layout_about {
-        height: 17% !important;
+        height: 100% !important;
         width: 100% !important;
         z-index: 4;
-        position: absolute;
+        position: absolute !important;
         margin-left:5%;
         display: none !important;
         background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/background_mobile.png') center center no-repeat;
@@ -2542,9 +3137,9 @@
     /* ========== HOME STYLE ============*/
     .backgroundLayout {
         background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/background_mobile.png') center center no-repeat;
-        height: 40%;
+        height: 100% !important;
         width: 100% !important;
-        position: absolute;
+        position: absolute !important;
         background-size: cover;
         z-index: 0;
     }
@@ -2555,11 +3150,11 @@
         margin-top: 50% !important;
         margin-left: -20% !important;
         font-family: acumin;
-        position: absolute;
+        position: absolute !important;
     }
     .navigation {
         width: 150% !important;
-        position: absolute;
+        position: absolute !important;
         margin-left: -70%;
         margin-top: 370%;
         animation: fading 3s infinite linear;
@@ -2568,7 +3163,7 @@
         animation: bounce 1.5s infinite;
         margin-left: -120%;
         margin-top: 0%;
-        position: absolute;
+        position: absolute !important;
         width: 200% !important;
     }
     .left_cloud {
@@ -2577,14 +3172,14 @@
         height: auto;
         margin-left: -90%;
         margin-top: 250%;
-        position: absolute;
+        position: absolute !important;
     }
     .hafiz_home {
         width: 220% !important;
         margin-top: 120%;
         margin-left: -110%;
         margin-right: auto;
-        position: absolute;
+        position: absolute !important;
         /* background: red; */
         animation: bounce 3s infinite; 
     }
@@ -2594,7 +3189,7 @@
         margin-top: 195%;
         margin-left:-85%;
         z-index: 2;
-        position: absolute;
+        position: absolute !important;
         animation: balingbaling-animation infinite 0.2s linear;
     }
     .center_baling{
@@ -2602,19 +3197,19 @@
         height: auto; 
         margin-top: 210%;
         z-index:3;
-        position: absolute;
+        position: absolute !important;
         margin-left: -75%;
         animation: bounce 3s infinite
     }
     .right_cloud {
         width: 200% !important;
-        position: absolute;
+        position: absolute !important;
         margin-top: 200%;
         margin-left: -50%;
         animation: cloud-animation 10s infinite;
     }
     .planet_ungu {
-        position: absolute;
+        position: absolute !important;
         width: 200% !important;
         margin-left: -100%;
         margin-top: 10%;
@@ -2632,30 +3227,197 @@
     .carousel .slider-wrapper {
         height: 100% !important;
     }
+    .carousel .slider-wrapper.axis-horizontal .slider {
+        height: 100% !important;
+    }
     .carousel.slide{
         height: 100% !important;
     }
     /* ========== END SLIDE STYLE ============*/
 
-    /* ========== TALK STYLE ============*/
-    .backgroundTalk1 {
-        background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/empty_bg_mobile.png') center center no-repeat;
-        height: 100%;
-        width: 100%;
-        position: absolute;
+    /* ========== CONTACT STYLE ============*/
+    .backgroundContact {
+        background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/background_emptymobile.png') center center no-repeat;
+        height: 100% !important;
+        width: 100% !important;
+        position: absolute !important;
         background-size: cover;
         z-index: 2 !important;
     }
-    /* .backgroundblack {
+    .planet_orange_contact {
+        position: absolute;
         width: 100% !important;
-        margin-left: -50%;
-        z-index: 5;
-    } */
+    }
+    .hafiz_contact {
+        position: absolute;
+        width: 70% !important;
+        margin-top: 20%;
+        margin-left: 10%;
+    }
+    .title_contact {
+        position: absolute;
+        z-index: 2;
+        margin-top: 5%;
+        margin-left: 10%;
+        color: #fff;
+        font-size: 3.2em;
+        font-family: acumin;
+        opacity: 0.8;
+        font-weight: 600;
+        text-shadow: 2px 10px 14px grey;
+
+    }
+    .firework_contact{
+        width: 20% !important;
+        margin-top: 10%;
+    }
+    .firework_contact1{
+        width: 10% !important;
+        margin-top: 10%;
+        margin-left: 20%;
+    }
+    .TNC_button {
+        width: 50%;
+        padding: 1%;
+        margin: 120% 0 0 -25%;
+        border-radius: 300px;
+        background: #efefef;
+        color: #5bc0de;
+        font-size: 1.2em;
+        border: none !important;
+    }
+    .TNC_button:hover, .PP_button:hover, .CU_button:hover {
+        background: #5bc0de;
+        color: #efefef;
+        border: none !important;
+    }
+    .PP_button {
+        width: 50%;
+        padding: 1%;
+        margin: 135% 0 0 -25%;
+        border-radius: 300px;
+        background: #efefef;
+        color: #5bc0de;
+        font-size: 1.2em;
+        border: none !important;
+    }
+    .CU_button {
+        width: 50%;
+        padding: 1%;
+        margin: 150% 0 0 -25%;
+        border-radius: 300px;
+        background: #efefef;
+        color: #5bc0de;
+        font-size: 1.2em;
+        border: none !important;
+    }
+    .awan_contact {
+        display: none !important;
+    }
+    /* ========== END CONTACT STYLE ============*/
+
+    /* ========== COUNTING STYLE ============*/
+    .backgroundCounting {
+        background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/background_emptymobile.png') center center no-repeat;
+        height: 100% !important;
+        width: 100% !important;
+        position: absolute !important;
+        background-size: cover;
+    }
+    .fire_roket {
+        width: 45% !important;
+        margin-left: -47%;
+        margin-top: 85%;
+    }
+    .fire_roket1 {
+        width: 45% !important;
+        margin-left: 2%;
+        margin-top: 85%;
+    }
+    .hafiz_roket {
+        width: 75% !important;
+        margin-left: -37% !important;
+        margin-top: 30%;
+        animation: bounce 3s infinite;
+    }
+    .dust_awan_roket {
+        width: 140% !important;
+        margin-left: -70%;
+        margin-top: 40%;
+    }
+    .bg_bumi_complete,.bg_awan_belakang_roket, .bg_awan_tengah_roket,.bg_bumi,.bg_awan_tengah_before {
+        display: none !important;
+    }
+    .digital_after {
+        color: white;
+        font-family: digital;
+        font-size: 4.6em;
+        font-weight: 600;
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .form-custom {
+        width: 90% !important;
+        margin-left: 10%;
+        margin-top: 145%;
+    }
+    .button-kirim {
+        margin-top: 0%;
+    }
+    .button-kirim:hover {
+        background: #769be6;
+    }
+    .title_form {
+        color: white;
+        font-weight: 600;
+        font-family: acumin;
+        font-size: 1.3em;
+        margin-top: 135%;
+        margin-left: 10%;
+    }
+    .hafiz_roket_before {
+        width: 75% !important;
+        margin-left: -37% !important;
+        margin-top: 30%;
+    }
+    .digital {
+        color: white;
+        font-family: digital;
+        font-size: 4em;
+        font-weight: 600;
+        margin-top: 5%;
+        margin-left: 12%;
+        margin-right: 5%;
+    }
+    .countdown_h5 {
+        color: #fff;
+        font-size: 1.7em;
+        margin-left: 6%;
+        margin-top: 2%;
+    }
+    .countdown_h5_jam {
+        color: #fff;
+        font-size: 1.7em;
+        margin-left: 20%;
+        margin-top: 20%;
+    }
+    /* ========== END COUNTING STYLE ============*/
+
+    /* ========== TALK STYLE ============*/
+    .backgroundTalk1 {
+        background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/background_emptymobile.png') center center no-repeat;
+        height: 100% !important;
+        width: 100% !important;
+        position: absolute !important;
+        background-size: cover;
+        z-index: 2 !important;
+    }
     .hide {
         display: none !important;
     }
     .whiteButton{
-        position: absolute;
+        position: absolute !important;
         width: 101% !important;
         margin-left: -50%;
         height: 100% !important;
@@ -2663,57 +3425,49 @@
         opacity: 0.7;
       }
     .talk_button {
-        width: 10% !important;
+        width: 10% !important;        
+        height: 5% !important;
         z-index: 6;
         margin-left: -5%;
-        margin-top: 90%;
+        margin-top: 120%;
         animation: talk-button 2s infinite linear;
-        position: absolute;
+        position: absolute !important;
         background: white !important;
         border: none !important;
         color: gray !important;
         border-radius: 30px;
-        height: 3% !important;
         font-size: 10px;
     }
     .klik-style {
-        position: absolute;
+        position: absolute !important;
         width: 40% !important;
         z-index:6;
-        margin-top: 70%;
+        margin-top: 100%;
         margin-left: 1%;
     }
     .hafiz_talk {
-        position: absolute;
+        position: absolute !important;
         width: 300% !important;
-        margin-left: -200%;
+        margin-left: -197%;
         margin-top: 30%;
         z-index: 3;
-    }
-    @keyframes hafiz-blur {
-        from {}
-        to {filter: blur(3px);}
     }
     .hafiz_talk_left {
-        position: absolute;
-        width: 300% !important;
-        margin-left: -200%;
-        margin-top: 30%;
+        position: absolute !important;
+        width: 150% !important;
+        margin-left: -120%;
+        margin-top: 45%;
         z-index: 3;
-        animation-delay: 5s;
-        animation-name: hafiz-blur;
-        animation-duration: 5s;
-        animation-iteration-count: 1;
     }
     .description_talk {
-        position: absolute;
+        position: absolute !important;
         color: white !important;
         margin-top: 3%;
         font-family: acumin;
     }
     .column {
         margin-top: 0%;
-        position: absolute;
+        position: absolute !important;
         width: 50% !important;
         margin-left: 3%;
         margin-top: 50%;
@@ -2725,24 +3479,26 @@
         to {margin-top: 30%;}
     }
     .head_hafiz {
-        width: 35% !important;
+        opacity: 1;
+        width: 45% !important;
         margin-left: -50%;
-        margin-top: 30%;
-        position: absolute;
+        margin-top: 130%;
+        position: absolute !important;
         animation-name: head-hafiz;
         animation-duration: 2s;
         animation-delay: 7s;
-        animation-iteration-count: 1;
+        animation-iteration-count: 1;        
     }
     @keyframes head-hafiz1 {
         from {margin-top: 300%}
         to {margin-top: 90%;}
     }
     .head_hafiz1 {
-        width: 35% !important;
+        opacity: 0;
+        width: 45% !important;
         margin-left: -50%;
-        margin-top: 90%;
-        position: absolute;
+        margin-top: 180%;
+        position: absolute !important;
         animation-name: head-hafiz1;
         animation-duration: 2s;
         animation-delay: 11s;
@@ -2753,14 +3509,15 @@
         to {margin-top: 140%;}
     }
     .head_hafiz2 {
-        width: 35% !important;
-        margin-left: -50%;
-        margin-top: 140%;
-        position: absolute;
+        opacity: 0;
+        width: 45% !important;
+        margin-left: 0%;
+        margin-top: 180%;
+        position: absolute !important;
         animation-name: head-hafiz2;
         animation-duration: 2s;
         animation-delay: 15s;
-        animation-iteration-count: 1;
+        animation-iteration-count: 1;        
     }
     @keyframes head-hafiz3 {
         from {margin-top: 300%}
@@ -2770,62 +3527,69 @@
         width: 35% !important;
         margin-left: -50%;
         margin-top: 195%;
-        position: absolute;
+        position: absolute !important;
         animation-name: head-hafiz3;
         animation-duration: 2s;
         animation-delay: 19s;
         animation-iteration-count: 1;
     }
+    @keyframes head-user-move {
+        from {margin-top: 90%;}
+        to {margin-top: 45%;opacity: 0;}
+    }
     @keyframes head-user {
-        from {margin-top: 300%}
-        to {}
+        from {margin-top: 240%;}
+        to {margin-top: 90%}
     }
     .head_user {
-        width: 40% !important;
-        margin-left: 100%;
-        position: absolute;
-        animation-name: head-user;
-        animation-duration: 2s;
-        animation-delay: 5s;
-        animation-iteration-count: 1;
+        width: 50% !important;
+        margin-left: 95%;
+        position: absolute !important;
+        animation-name: head-user,head-user-move ;
+        animation-delay: 0s , 5s;
+        animation-duration: 3s, 3s;
+        animation-iteration-count: 1, 1;
+        animation-fill-mode: forwards, forwards;
     }
     @keyframes head-user1 {
         from {margin-top: 300%}
         to {margin-top: 60%;}
     }
     .head_user1 {
-        width: 40% !important;
-        margin-left: 100%;
-        margin-top: 60%;
-        position: absolute;
+        opacity: 1;
+        width: 50% !important;
+        margin-left: 95%;
+        margin-top: 170%;
+        position: absolute !important;
         animation-name: head-user1;
         animation-duration: 2s;
         animation-delay: 9s;
         animation-iteration-count: 1;
     }
     @keyframes head-user2 {
-        from {margin-top: 300%}
+        from {margin-top: 300%;}
         to {margin-top: 115%;}
     }
     .head_user2 {
-        width: 40% !important;
-        margin-left: 100%;
-        margin-top: 115%;
-        position: absolute;
+        opacity: 0;
+        width: 50% !important;
+        margin-left: 95%;
+        margin-top: 140%;
+        position: absolute !important;
         animation-name: head-user2;
         animation-duration: 2s;
         animation-delay: 13s;
-        animation-iteration-count: 1;
+        animation-iteration-count: 1;        
     }
     @keyframes head-user3 {
-        from {margin-top: 300%}
+        from {margin-top: 300%;}
         to {margin-top: 165%;}
     }
     .head_user3 {
         width: 40% !important;
-        margin-left: 100%;
+        margin-left: 95%;
         margin-top: 165%;
-        position: absolute;
+        position: absolute !important;
         animation-name: head-user3;
         animation-duration: 2s;
         animation-delay: 17s;
@@ -2836,41 +3600,55 @@
         to {margin-top: -30%;}
     }
     .balon_user {
-        width: 100% !important;
-        margin-left: 28%;
-        margin-top: -30%;
-        position: absolute;
+        width: 130% !important;
+        margin-left: 0%;
+        margin-top: 50%;
+        position: absolute !important;
         animation-name: balon-user;
         animation-duration: 2s;
         animation-delay: 5s;
-        animation-iteration-count: 1;
+        animation-iteration-count: 1;        
     }
     @keyframes balon-user1 {
         from {margin-top: 300%;}
         to {margin-top: 30%;}
     }
     .balon_user1 {
-        width: 100% !important;
-        margin-left:20%;
-        margin-top: 30%;
-        position: absolute;
+        opacity: 1;
+        width: 130% !important;
+        margin-left:-10%;
+        margin-top: 130%;
+        position: absolute !important;
         animation-name: balon-user1;
         animation-duration: 2s;
         animation-delay: 9s;
-        animation-iteration-count: 1;
+        animation-iteration-count: 1;        
     }
     @keyframes balon-user2 {
         from {margin-top: 300%;}
         to {margin-top: 85%;}
     }
     .balon_user2 {
+        opacity: 0;
         width: 100% !important;
         margin-left:28%;
         margin-top: 85%;
-        position: absolute;
+        position: absolute !important;
         animation-name: balon-user2;
         animation-duration: 2s;
         animation-delay: 13s;
+        animation-iteration-count: 1;
+    }
+    .balon_user_custom {
+        opacity: 0;
+        width: 120% !important;
+        margin-left: 40%;
+        margin-top: 110%;
+        position: absolute !important;
+        animation-name : balon-user-custom;
+        animation-duration: 3s;
+        animation-delay: 16s;
+        animation-fill-mode: forwards;
         animation-iteration-count: 1;
     }
     @keyframes balon-user3 {
@@ -2881,7 +3659,7 @@
         width: 100% !important;
         margin-left:20%;
         margin-top: 135%;
-        position: absolute;
+        position: absolute !important;
         animation-name: balon-user3;
         animation-duration: 2s;
         animation-delay: 17s;
@@ -2892,10 +3670,11 @@
         to {margin-top: 0%;}
     }
     .balon_hafiz {
-        width: 100% !important;
-        margin-left:-30%;
-        margin-top: 0%;
-        position: absolute;
+        opacity: 1;
+        width: 130% !important;
+        margin-left:-45%;
+        margin-top: 90%;
+        position: absolute !important;
         animation-name: balon-hafiz;
         animation-duration: 2s;
         animation-delay: 7s;
@@ -2906,24 +3685,40 @@
         to {margin-top: 60%;}
     }
     .balon_hafiz1 {
-        width: 100% !important;
-        margin-left:-43%;
-        margin-top: 60%;
-        position: absolute;
+        opacity: 0;
+        width: 120% !important;
+        margin-left:25%;
+        margin-top: 80%;
+        position: absolute !important;
         animation-name: balon-hafiz1;
         animation-duration: 2s;
         animation-delay: 11s;
         animation-iteration-count: 1;
     }
+    .balon_hafiz11 {
+        display: none !important;
+        position: absolute !important;
+    }
+    /* .balon_hafiz11 {
+        width: 100% !important;
+        margin-left:0%;
+        margin-top: 200%;
+        position: absolute !important;
+        animation-name: balon-hafiz11;
+        animation-delay: 20s;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+    } */
     @keyframes balon-hafiz2 {
         from {margin-top: 300%;}
         to {margin-top: 110%;}
     }
     .balon_hafiz2 {
-        width: 100% !important;
-        margin-left:-43%;
-        margin-top: 110%;
-        position: absolute;
+        opacity: 0;
+        width: 120% !important;
+        margin-left:10%;
+        margin-top: 55%;
+        position: absolute !important;
         animation-name: balon-hafiz2;
         animation-duration: 2s;
         animation-delay: 15s;
@@ -2937,7 +3732,7 @@
         width: 100% !important;
         margin-left:-25%;
         margin-top: 165%;
-        position: absolute;
+        position: absolute !important;
         animation-name: balon-hafiz3;
         animation-duration: 2s;
         animation-delay: 19s;
@@ -2980,23 +3775,33 @@
         transform: scale(0) rotate(0deg) translate(-50%, -50%);
         animation: cube 12s ease-in forwards infinite;
         z-index: 5;
+        position: absolute !important;
+    }
+    .cube:nth-child(2) {
+        animation-delay: 2s;
+        left: 77vw;
+        top: 10vh;
+        width: 5px;
+        height: 5px;
+        position: absolute !important;
     }
     .background_about {
         background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/about_mobile.png') center center no-repeat;
-        height: 67%;
+        height: 110% !important;
         width: 100% !important;
-        position: absolute;
+        position: absolute !important;
         background-size: cover;
         z-index: 4;
         margin-left:4%;
-        margin-top:-30%;
+        margin-top:-20%;
+        position: absolute !important;
     }
     .bi{
-        width: 150% !important;
-        height: 20% !important;
+        width: 200% !important;
+        height: 100% !important;
         z-index: 2;
-        position: absolute;
-        margin-top: -33%;
+        position: absolute !important;
+        margin-top: -50%;
         margin-left: 5%;
         animation-name: fade-in-mobile;
         animation-duration: 5s;
@@ -3004,11 +3809,11 @@
         /* display: none !important; */
     }
     .bi2{
-        width: 150% !important;
-        height: 20% !important;
+        width: 200% !important;
+        height: 100% !important;
         z-index: 2;
-        position: absolute;
-        margin-top: -33%;
+        position: absolute !important;
+        margin-top: -50%;
         margin-left: 5%;
         animation-name: fade-in-mobile;
         animation-duration: 5s;
@@ -3021,13 +3826,14 @@
         z-index: 4;
         font-family: acumin;
         color: #fff;
+        position: absolute !important;
         margin-top: 60%;
         text-align: left;
         font-size: 0.8em;
         margin-left: 10%;
         margin-right: 5%;
-        position: absolute;
-        animation-name: fade-in-desc;
+        position: absolute !important;
+        animation-name: fade-in;
         animation-duration: 5s;
         animation-iteration-count: 1;
     }
@@ -3040,15 +3846,17 @@
         font-size: 1.3em;
         margin-left: 30%;
         margin-right: 5%;
+        position: absolute !important;
     }
     .hr_title {
         z-index: 4;
-        margin-top: 52%;
-        margin-left: 28%;
+        margin-top: 57%;
+        margin-left: 30%;
         border: 1px solid white;
-        width: 53%;
+        width: 60%;
         border-radius: 5px;
         background: blue;
+        position: absolute !important;
     }
     .wifi_about{
         width: 25% !important;
@@ -3059,6 +3867,7 @@
         animation-name: bounce;
         animation-duration: 3s;
         animation-iteration-count: 1;
+        position: absolute !important;
     }
     .talk_about{
         width: 25% !important;
@@ -3070,10 +3879,11 @@
         animation-delay: 3s;
         animation-duration: 3s;
         animation-iteration-count: 1;
+        position: absolute !important;
     }
     .onlinecontent_about {
         width: 25% !important;
-        position: absolute;
+        position: absolute !important;
         z-index: 6;
         margin-top: 95%;
         margin-left: 53%;
@@ -3084,7 +3894,7 @@
     }
     .offlinecontent_about {
         width: 25% !important;
-        position: absolute;
+        position: absolute !important;
         z-index: 6;
         margin-top: 95%;
         margin-left: 76%;
@@ -3095,7 +3905,7 @@
     }
     .bilingual_about {
         width: 25% !important;
-        position: absolute;
+        position: absolute !important;
         z-index: 6;
         margin-top: 120%;
         margin-left: 5%;
@@ -3106,7 +3916,7 @@
     }
     .kontenislami_about {
         width: 25% !important;
-        position: absolute;
+        position: absolute !important;
         z-index: 6;
         margin-top: 120%;
         margin-left: 28%;
@@ -3117,7 +3927,7 @@
     }
     .AI_about {
         width: 25% !important;
-        position: absolute;
+        position: absolute !important;
         z-index: 6;
         margin-top: 120%;
         margin-left: 53%;
@@ -3128,7 +3938,7 @@
     }
     .song_about {
         width: 25% !important;
-        position: absolute;
+        position: absolute !important;
         z-index: 6;
         margin-top: 120%;
         margin-left: 76%;
@@ -3139,7 +3949,7 @@
     }
     .alquran_about {
         width: 25% !important;
-        position: absolute;
+        position: absolute !important;
         z-index: 6;
         margin-top: 145%;
         margin-left: 5%;
@@ -3150,7 +3960,7 @@
     }
     .funemoticon_about {
         width: 25% !important;
-        position: absolute;
+        position: absolute !important;
         z-index: 6;
         margin-top: 145%;
         margin-left: 28%;
@@ -3161,7 +3971,7 @@
     }
     .ensiklopedia_about {
         width: 25% !important;
-        position: absolute;
+        position: absolute !important;
         z-index: 6;
         margin-top: 145%;
         margin-left: 53%;
@@ -3173,7 +3983,7 @@
     }
     .matdas_about {
         width: 25% !important;
-        position: absolute;
+        position: absolute !important;
         z-index: 6;
         margin-top: 145%;
         margin-left: 76%;
@@ -3183,48 +3993,49 @@
         animation-iteration-count: 1;
     }
     .layout_about {
-        height: 17% !important;
+        height:100% !important;
         width: 100% !important;
         z-index: 4;
-        position: absolute;
+        position: absolute !important;
         margin-left:5%;
         display: none !important;
         background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/background_mobile.png') center center no-repeat;
     }
-
     /* ========== About STYLE ============*/
 
     /* ========== HOME STYLE ============*/
     .backgroundLayout {
         background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/background_mobile.png') center center no-repeat;
-        height: 59%;
+        height: 100% !important;
         width: 100% !important;
-        position: absolute;
+        position: absolute !important;
         background-size: cover;
         z-index: 0;
     }
     .planet_orange {
         animation: bounce 1.5s infinite;
         margin-left: -110%;
-        margin-top: 30%;
-        position: absolute;
+        margin-top: 100%;
+        position: absolute !important;
         width: 200% !important;
+        /* background: blue; */
     }
     .title_home {
         color: #fff;
-        font-size: 1.2em;
+        font-size: 0.9em;
         font-weight: 600;
         margin-top: 80% !important;
-        margin-left: -30% !important;
+        margin-left: -85%;
+        width: max-content;
         font-family: acumin;
-        position: absolute;
+        position: absolute !important;
     }
     .hafiz_home {
         width: 220% !important;
         margin-top: 160%;
         margin-left: -110%;
         margin-right: auto;
-        position: absolute;
+        position: absolute !important;
         /* background: red; */
         animation: bounce 3s infinite; 
     }
@@ -3234,7 +4045,7 @@
         height: auto;
         margin-left: -90%;
         margin-top: 300%;
-        position: absolute;
+        position: absolute !important;
     }
     .left_cloud_blur {
         animation: cloud-animation 15s infinite;
@@ -3243,7 +4054,7 @@
         margin-left: -50%;
         margin-top: 200%;
         filter:blur(1px);
-        position: absolute;
+        position: absolute !important;
     }
     .hafiz_baling_baling {
         width:170% !important;
@@ -3251,7 +4062,7 @@
         margin-top: 235%;
         margin-left:-85%;
         z-index: 2;
-        position: absolute;
+        position: absolute !important;
         animation: balingbaling-animation infinite 0.2s linear;
     }
     .center_baling{
@@ -3259,34 +4070,34 @@
         height: auto; 
         margin-top: 250%;
         z-index:3;
-        position: absolute;
+        position: absolute !important;
         margin-left: -75%;
         animation: bounce 3s infinite
     }
     .navigation {
-        position: absolute;
+        position: absolute !important;
         margin-left: -100%;
         margin-top: 456%;
         width: 200% !important;
         animation: fading infinite 3s linear;
     }
     .planet_ungu {
-        position: absolute;
+        position: absolute !important;
         width: 200% !important;
         margin-left: -90%;
-        margin-top: 30%;
+        margin-top: 100%;
         animation: bounce 2s infinite;
     }
     .right_cloud {
         width: 100% !important;
-        position: absolute;
+        position: absolute !important;
         margin-top: 300%;
         margin-left: -50%;
         animation: cloud-animation 10s infinite;
     }
     .right_cloud_blur {
         width: 100% !important;
-        position: absolute;
+        position: absolute !important;
         margin-top: 200%;
         margin-left: -50%;
         filter: blur(1px);

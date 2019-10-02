@@ -1,57 +1,102 @@
 import React, { Component } from 'react';
 import './App.css';
 // import tes from './images/tes.png';
-import { Row, Col } from 'react-bootstrap';
-import hafiz from './images/hafiz_3d.png';
-import planet_ungu from './images/planet-ungu.png';
-import planet_orange from './images/planet-orange.png';
-import arrow from './images/arrow_features.png';
-import tanya from './images/tanya_apasaja.png';
-import dengarkan from './images/dengarkan_cerita.png';
-import alquran from './images/alquran.png';
-import pengetahuan from './images/pengetahuan_ilmiah.png';
-import nyanyi from './images/nyanyi_bersama.png'; 
-import belajar from './images/belajar_inggris.png';
-import awan_belakang from './images/awan_belakang_features.png';
-import awan_tengah from './images/awan_tengah_features.png';
-import awan_depan from './images/awan_depan_features.png';
+import { Row, Container, Col } from 'react-bootstrap';
+import material from './images/Material-DetailsProduct.png';
+import mata from './images/mata-DetailProduct.png';
+import tombol from './images/Tombol-DetailProduct.png';
+import bg from './images/detail-background.png';
+
+// import hafiz from './images/3.png';
+
+const ImageLoader = () => {
+	return (<div>Loading ...</div>)
+  }
 
 class Features extends Component{
+  constructor(props) {
+		super(props) 
+		  this.state = {
+			isLoading : true,
+		  }
+	  }
+  static getDerivedStateFromProps(props, state) {
+    if (props.isrender !== state.isLoading) {
+      return {isLoading: props.isrender }
+    }
+  // Return null if the state hasn't changed
+    return null;
+  }
+  componentDidMount(){
+    const { isrender } = this.props
+    this.setState({
+      isLoading : isrender
+     })
+  }
   render() { 
+    const { isLoading } = this.state
+    if(isLoading){
+      return <ImageLoader/>
+    }
     return (
       <div>
+        <Container>
         <Row>
-          <Col></Col>
-          <Col>
-          <h5 className="title_features App">
-            features hafiz
-          </h5>
-          </Col>
-          <Col></Col>
+          <h2 className="title_features">Detail Produk</h2>
+          <Row>
+            <Col className="col-lg-4 col-xs-12">
+              <img src={mata} className="mata" alt="fire roket kiri"/>
+              <img src={bg} className="bg-detail" alt="fire roket kiri"/>
+              <h3 className="judul-Detail">Mata</h3>
+              <p className="Detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </Col>
+            <Col className="col-lg-4 col-xs-12">
+              <img src={material} className="material" alt="fire roket kiri"/>
+              <img src={bg} className="bg-detail" alt="fire roket kiri"/>
+              <h3 className="judul-Detail">Material</h3>
+              <p className="Detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </Col>
+            <Col className="col-lg-4 col-xs-12">
+              <img src={tombol} className="tombol" alt="fire roket kiri"/>
+              <img src={bg} className="bg-detail" alt="fire roket kiri"/>
+              <h3 className="judul-Detail">Tombol</h3>
+              <p className="Detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </Col>
+          </Row>
+          {/* <Col className="col-lg-4">
+            <img src={hafiz} className="hafiz-features" alt="fire roket kiri"/>
+          </Col> 
+
+          <Col className="col-lg-8 col-xs-12">
+            <Row>
+              <Col className="col-lg-6 col-xs-6">
+                <img src={material} className="material" alt="fire roket kiri"/>
+              </Col>
+              <Col className="col-lg-6 col-xs-6">
+                <p class="desc_mata">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+              </Col>
+              <Col className="col-lg-6 col-xs-6">
+                <p class="desc_mata">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+              </Col>
+              <Col className="col-lg-6 col-xs-6">
+                <img src={mata} className="mata" alt="fire roket kiri"/>
+              </Col>
+              <Col className="col-lg-6 col-xs-6">
+                <img src={tombol} className="tombol" alt="fire roket kiri"/>
+              </Col>
+              <Col className="col-lg-6 col-xs-6">
+                <p class="desc_tombol">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+              </Col>
+            </Row>
+          </Col> */}
         </Row>
-        <Row>
-          <Col>
-            <img src={tanya} className="tanya_feature" alt="planet orange counting down"/>
-            <img src={alquran} className="alquran_feature" alt="planet orange counting down"/>
-            <img src={planet_ungu} className="planet_ungu_feature" alt="planet orange counting down"/>
-            <img src={nyanyi} className="nyanyi_feature" alt="nyanyi bersama superhafiz "/>
-          </Col>
-          <Col>
-            <img src={arrow} className="arrow_features" alt="arrow features"/>
-            <img src={hafiz} className="hafiz_feature" alt="planet orange counting down"/>
-          </Col>
-          <Col>
-          <img src={planet_orange} className="planet_orange_feature" alt="planet orange counting down"/>
-            <img src={dengarkan} className="dengarkan_feature" alt="planet orange counting down"/>
-            <img src={pengetahuan} className="pengetahuan_feature" alt="planet orange counting down"/>
-            <img src={belajar} className="belajar_feature" alt="planet orange counting down"/>
-          </Col>
-        </Row>
-        <Row className="bg_awan_features">
-          <img src={awan_belakang} className="awan_belakang_features" alt="cloud in page contact"/>
-					<img src={awan_tengah} className="awan_belakang_features" alt="cloud in page contact"/>
-					<img src={awan_depan} className="awan_belakang_features" alt="cloud in page contact"/>
-        </Row>
+        </Container>
       </div>
     );
   }
