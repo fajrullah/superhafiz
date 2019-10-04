@@ -112,8 +112,7 @@ class CountingDown extends Component{
           <Col className="counting-down">
             <Countdown
               date={'Oct 04, 2019 17:39:00 GMT+7'}
-              renderer ={renderer}
-              intervalDelay = {1000}
+              // renderer ={renderer}
             />
           </Col>
         </Row>

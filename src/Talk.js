@@ -91,7 +91,7 @@ class Talk extends PureComponent{
         <p className={descriptionstyle}>Ini Kalimat Untuk Deskripsi Produk, Misalkan Contohnya, Superhafiz Ini Bisa di Ajak Ngobrol, Belajar Ngaji, Curhat, dll</p>
         <Row>
           <Sound
-            url="./Belajar.mp3"
+            url="./withoutuservoice.mp3"
             playStatus={Sound.status.PLAYING}
             playFromPosition={200}
             volume={100}

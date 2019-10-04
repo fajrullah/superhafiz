@@ -10,7 +10,7 @@ import Talk from './Talk';
 import CountingDown from './CountingDown';
 import Contact from './Contact';
 import ParticlesPage from './ParticlesPage';
-import './Style.css';
+// import './Style.css';
 
 
 class App extends Component {

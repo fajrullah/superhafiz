@@ -1572,21 +1572,21 @@
         position: absolute !important;
     }
     .bi{
-        width: 120% !important;
-        height: 25% !important;
+        width: 100% !important;
+        height: 100% !important;
         z-index: 2;
         position: absolute !important;
-        margin-top: -10%;
-        margin-left: 3%;
+        /* margin-top: -10%; */
+        /* margin-left: 3%; */
         animation: fade-in 10s infinite;
     }
     .bi2{
         width: 120% !important;
-        height: 25% !important;
+        height: 100% !important;
         z-index: 2;
         position: absolute !important;
-        margin-top: -10%;
-        margin-left: 3%;
+        /* margin-top: -10%;
+        margin-left: 3%; */
         animation: fade-in 5s infinite;
     }
     .description {
@@ -2396,13 +2396,12 @@
     .head_hafiz {
         width: 35% !important;
         position: absolute !important;
-        margin-left: -50%;
-        margin-top: 30%;
+        margin-left: -75%;
         animation-name: head-hafiz;
         animation-delay: 4s;
         animation-duration: 3s;
         animation-iteration-count: 1;
-        /* background: blue; */
+        animation-fill-mode: forwards;
     }
     .head_hafiz_hide {
         width: 35% !important;
@@ -2412,18 +2411,18 @@
         opacity: 0;
     }
     @keyframes head-hafiz1 {
-        0%{margin-top: 200%;}
+        0%{margin-top: 400%;}
         100%{margin-top: 90%;}
     }
     .head_hafiz1 {
         width: 35% !important;
-        margin-left: -50%;
-        margin-top: 90%;
+        margin-left: -75%;
         position: absolute !important;
         animation-name: head-hafiz1;
         animation-duration: 2s;
         animation-delay: 8s;
         animation-iteration-count: 1;
+        animation-fill-mode: forwards;
     }
     @keyframes head-hafiz2 {
         0%{ margin-top: 200%;}
@@ -2459,27 +2458,27 @@
     }
     .head_user {
         width: 40% !important;
-        margin-top: 400%;
         margin-left: 100%;
         position: absolute !important;
         animation-name : head-user;
         animation-duration: 3s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
+        /* background: blue; */
     }
     @keyframes head-user1 {
-        from { margin-top: 200%;}
+        from { margin-top: 400%;}
         to { margin-top: 60%;}
     }
     .head_user1 {
         width: 40% !important;
         margin-left: 100%;
-        margin-top: 60%;
         position: absolute !important;
         animation-name: head-user1;
         animation-delay: 6s;
         animation-duration: 2s;
-        animation-timing-function: 1;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
     }
     @keyframes head-user2 {
         from{margin-top: 200%;}
@@ -2488,12 +2487,12 @@
     .head_user2 {
         width: 40% !important;
         margin-left: 100%;
-        margin-top: 138%;
+        /* margin-top: 138%; */
         position: absolute !important;
-        /* animation-name: head-user2;
+        animation-name: head-user2;
         animation-delay: 10s;
         animation-iteration-count: 1;
-        animation-duration: 2s; */
+        animation-duration: 2s;
     }
     @keyframes head-user2 {
         from{margin-top: 200%;}
@@ -2515,8 +2514,7 @@
     }
     .assalamualaikum {
         width: 100% !important;
-        margin-left: 28%;
-        margin-top: 400%;
+        margin-left: 20%;
         position: absolute !important;
         animation-name : balon-user;
         animation-duration: 3s;
@@ -2524,22 +2522,18 @@
         animation-fill-mode: forwards;
     }
     @keyframes balon-user1 {
-        0%{
-            margin-top: 200%;
-        }
-        100%{
-            margin-top: 30%;
-        }
+        0%{ margin-top: 200%; }
+        100%{ margin-top: 30%; }
     }
     .apakabar {
         width: 100% !important;
-        margin-left:20%;
-        margin-top: 30%;
+        margin-left:25%;
         position: absolute !important;
         animation-name: balon-user1;
         animation-delay: 6s;
         animation-iteration-count: 1;
         animation-duration: 2s;
+        animation-fill-mode: forwards;
     }
     @keyframes balon-user2 {
         0%{margin-top: 200%;}
@@ -2572,7 +2566,7 @@
     }
     @keyframes balon-hafiz {
         from{
-            margin-top: 200%;
+            margin-top: 400%;
         }
         to{
             margin-top: 0%;
@@ -2581,12 +2575,12 @@
     .walaikumsalam {
         width: 100% !important;
         margin-left:-43%;
-        margin-top: 0%;
         position: absolute !important;
         animation-name: balon-hafiz;
         animation-duration: 3s;
         animation-delay: 4s;
         animation-iteration-count: 1;
+        animation-fill-mode: forwards;
     }
     @keyframes balon-hafiz1 {
         0%{margin-top: 200%;}
@@ -2604,18 +2598,18 @@
     }
     @keyframes balon-hafiz2 {
         0%{margin-top: 200%;}
-        100%{margin-top: 110%;}
+        100%{margin-top: 55%;}
     }
     .alhamdulillah {
         width: 100% !important;
         margin-left:-43%;
-        margin-top: 60%;
-        position: absolute !important;
-        
-        /* animation-name: balon-hafiz2;
+        margin-top: 55%;
+        position: absolute !important;        
+        animation-name: balon-hafiz2;
         animation-duration: 2s;
         animation-iteration-count: 1;
-        animation-delay: 12s; */
+        animation-fill-mode: forwards;
+        animation-delay: 12s;
     }
     @keyframes balon-hafiz3 {
         0%{margin-top: 200%;}

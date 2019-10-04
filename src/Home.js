@@ -7,7 +7,10 @@ import hafiz from './images/hafiz.png';
 import baling2 from './images/baling2.png';
 import center from './images/center.png';
 import navigation from './images/navigation.png';
-import './Style.css';
+// import './Style.css';
+import './New.css';
+import LazyLoad from 'react-lazyload';
+import { TransitionGroup } from 'react-transition-group';
 
 const ImageLoader = () => {
   return (<div>Loading ...</div>)
@@ -44,6 +47,18 @@ class Home extends PureComponent{
         <Container>
             <Row>
               <Col>
+              <LazyLoad throttle={200} height={300}>
+              <TransitionGroup key="1"
+                transitionName="fade"
+                transitionAppear
+                transitionAppearTimeout={500}
+                transitionEnter={true}
+                transitionLeave={true}
+
+                >
+                <img src={planet_orange_home} className="planet_orange" alt="planet orange di halaman home"/>
+                </TransitionGroup>
+                </LazyLoad>
                 <img src={planet_orange_home} className="planet_orange" alt="planet orange di halaman home"/>
                 <img src={awan} className="left_cloud" alt="awan kiri di halaman home"/>
                 <img src={awan} className="left_cloud_blur" alt="awan kiri di halaman home"/>

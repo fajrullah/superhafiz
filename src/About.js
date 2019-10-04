@@ -64,7 +64,7 @@ class About extends Component{
   	render() {
 	const { isLoading } = this.state
 	const style = this.state.didLoad ? {} : {visibility: 'hidden'}
-	console.log(style)
+	// console.log(style)
 	// console.log(isLoading)
 		if(isLoading){
 		  return <ImageLoader/>

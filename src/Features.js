@@ -9,12 +9,49 @@ import matamobile from './images/mata-mobile.png';
 import tombol from './images/Tombol-DetailProduct.png';
 import tombolmobile from './images/tombol-mobile.png';
 import bg from './images/detail-background.png';
+import LazyLoad from 'react-lazyload';
+import { TransitionGroup } from 'react-transition-group';
 
 // import hafiz from './images/3.png';
 
 const ImageLoader = () => {
 	return (<div>Loading ...</div>)
   }
+
+  const Mata = () =>{
+    return (
+      <div>
+      <img src={mata} className="mata absolute" alt="fire roket kiri"/>
+      <img src={matamobile} className="mata-mobile absolute" alt="fire roket kiri"/>
+      <img src={bg} className="bg-detail absolute" alt="fire roket kiri"/>
+      <h3 className="mata-judul-Detail absolute">Mata</h3>
+      <p className="Detail-mata absolute">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+      </div>
+    )
+  }
+
+const Material = () =>{
+  return (
+    <div>
+      <img src={material} className="material absolute" alt="fire roket kiri"/>
+      <img src={materialmobile} className="material-mobile absolute" alt="fire roket kiri"/>
+      <img src={bg} className="bg-detail absolute" alt="fire roket kiri"/>
+      <h3 className="material-judul-Detail absolute">Material</h3>
+      <p className="Detail-material absolute">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+    </div>
+  )
+}
+const Tombol = () => {
+  return (
+    <div>
+      <img src={tombol} className="tombol absolute" alt="fire roket kiri"/>
+      <img src={tombolmobile} className="tombol-mobile absolute" alt="fire roket kiri"/>
+      <img src={bg} className="bg-detail absolute" alt="fire roket kiri"/>
+      <h3 className="tombol-judul-Detail absolute">Tombol</h3>
+      <p className="Detail-tombol absolute">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+    </div>
+  )
+}
 
 class Features extends Component{
   constructor(props) {
@@ -41,6 +78,7 @@ class Features extends Component{
     if(isLoading){
       return <ImageLoader/>
     }
+    console.log(isLoading);
     return (
       <div>
         <Container>
@@ -48,25 +86,22 @@ class Features extends Component{
           <h2 className="title_features">Detail Produk</h2>
           {/* <Row> */}
             <Col lg={4} xs={12}>
-              <img src={mata} className="mata absolute" alt="fire roket kiri"/>
-              <img src={matamobile} className="mata-mobile absolute" alt="fire roket kiri"/>
-              <img src={bg} className="bg-detail absolute" alt="fire roket kiri"/>
-              <h3 className="mata-judul-Detail absolute">Mata</h3>
-              <p className="Detail-mata absolute">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+              <LazyLoad throttle={200} height={300}>
+              <TransitionGroup key="1"
+                transitionName="fade"
+                transitionAppear
+                transitionAppearTimeout={500}
+                transitionEnter={true}
+                transitionLeave={true}>
+                  <Mata/>
+                </TransitionGroup>
+              </LazyLoad>
             </Col>
             <Col lg={4} xs={12}>
-              <img src={material} className="material absolute" alt="fire roket kiri"/>
-              <img src={materialmobile} className="material-mobile absolute" alt="fire roket kiri"/>
-              <img src={bg} className="bg-detail absolute" alt="fire roket kiri"/>
-              <h3 className="material-judul-Detail absolute">Material</h3>
-              <p className="Detail-material absolute">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+              <Material/>
             </Col>
             <Col lg={4} xs={12}>
-              <img src={tombol} className="tombol absolute" alt="fire roket kiri"/>
-              <img src={tombolmobile} className="tombol-mobile absolute" alt="fire roket kiri"/>
-              <img src={bg} className="bg-detail absolute" alt="fire roket kiri"/>
-              <h3 className="tombol-judul-Detail absolute">Tombol</h3>
-              <p className="Detail-tombol absolute">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+              <Tombol/>
             </Col>
           {/* </Row> */}
           {/* <Col className="col-lg-4">
