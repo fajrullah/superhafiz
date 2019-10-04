@@ -47,13 +47,13 @@ const renderer = ({ hours, minutes, seconds, completed }) => {
   }
 };
 
+
 class CountingDown extends Component{
   constructor(props) {
     super(props) 
       this.state = {
         show: false,
         isLoading : true,
-        // Completionist : false,
       }
   }
   static getDerivedStateFromProps(props, state) {
@@ -65,16 +65,11 @@ class CountingDown extends Component{
     return null;
   }
   componentDidMount(){
-    const { isrender } = this.props
+    const { isrender, renderer } = this.props
     this.setState({
-      isLoading : isrender
+      isLoading : isrender,
     })
   }
-  // componentWillUnmount(){
-	// 	this.setState({
-  //     isLoading : 'false'
-  //   })
-	// }
 
   render() {
     const { isLoading } = this.state
@@ -82,7 +77,7 @@ class CountingDown extends Component{
       return <ImageLoader/>
     }
     // console.log(Date.now())
-    // console.log(renderer)
+    console.log(renderer)
     return (
     	<div>
         <Row>
@@ -116,8 +111,9 @@ class CountingDown extends Component{
 
           <Col className="counting-down">
             <Countdown
-              date={'Sept 26, 2019 17:39:00 GMT+7'}
-              renderer={renderer}
+              date={'Oct 04, 2019 17:39:00 GMT+7'}
+              renderer ={renderer}
+              intervalDelay = {1000}
             />
           </Col>
         </Row>
