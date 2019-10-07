@@ -11,6 +11,7 @@ import CountingDown from './CountingDown';
 import Contact from './Contact';
 import ParticlesPage from './ParticlesPage';
 // import './Style.css';
+import './New.css';
 
 
 class App extends Component {

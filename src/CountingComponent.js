@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+// import './App.css';
 import './New.css';
 import { Row, Col,Form, Button } from 'react-bootstrap';
 import bg_bumi from './images/background-bumi.png';
@@ -10,21 +11,6 @@ import awan_depan from './images/awan_tengah_roket.png';
 import dust from './images/dust.png';
 import fire_roket from './images/fire_roket.png';
 import arus_roket from './images/arus_roket.png';
-import Loadable from 'react-loadable';
-import Loading from './CountingComponent';
- 
-function MyLoadingComponent() {
-  return <div>Loading...</div>;
-}
-
-const LoadableAnotherComponent = Loadable({
-  loader: () => import('./CountingComponent'),
-  loading: Loading,
-});
-
-const ImageLoader = () => {
-  return (<div>Loading ...</div>)
-}
 
 const Completionist = () => {
   return (
@@ -59,39 +45,42 @@ const renderer = ({ hours, minutes, seconds, completed }) => {
 };
 
 
-class CountingDown extends Component{
-  constructor(props) {
-    super(props) 
-      this.state = {
-        show: false,
-        isLoading : true,
-      }
-  }
-  static getDerivedStateFromProps(props, state) {
-    if (props.isrender !== state.isLoading) {
-      return {isLoading: props.isrender }
-    }
-
-  // Return null if the state hasn't changed
-    return null;
-  }
-  componentDidMount(){
-    const { isrender, renderer } = this.props
-    this.setState({
-      isLoading : isrender,
-    })
-  }
+class CountingDownComponent extends Component{
 
   render() {
-    const { isLoading } = this.state
-    if(isLoading){
-      return <ImageLoader/>
-    }
-    // console.log(Date.now())
-    console.log(renderer)
     return (
-      <LoadableAnotherComponent/>
+    	<div>
+        <Row>
+          <p className="title_form absolute">Ayo Kawan Pre Order Sekarang Ya...</p>
+          <Form className="form-custom absolute">
+            <Row>
+              <Col style={{marginBottom:20+'px'}}>
+                <Form.Control placeholder='Nama Lengkap Kamu'/>
+              </Col>
+              <Col>
+                <Form.Control placeholder='Email Kamu'/>
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <Button className="button button-secondary button-kirim">
+                  <i className="fas fa-paper-plane"></i>
+                    Kirim
+                </Button>
+              </Col>
+            </Row>
+          </Form>
+
+          <Col className="counting-down">
+            <Countdown
+              date={'Oct 04, 2019 17:39:00 GMT+7'}
+              renderer ={renderer}
+            />
+          </Col>
+        </Row>
+       
+        </div>
     );
   }
 }
-export default CountingDown;
+export default CountingDownComponent;

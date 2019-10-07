@@ -1,6 +1,7 @@
 import Particles from 'react-particles-js';
 import React, { Component } from 'react';
-import './App.css';
+// import './App.css';
+import './New.css';
 
 class ParticlesPage extends Component{
   render() {

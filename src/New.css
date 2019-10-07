@@ -1,3 +1,11 @@
+.particleStyle {
+    z-index: 0;
+    height: 100% !important;
+    width: 100% !important;
+    background-size: cover;
+    position: absolute;
+  }
+
 /* FONT FACE */
 @font-face {
     font-family: "digital";
@@ -265,7 +273,12 @@
       }
       
     .absolute{position: absolute !important;}
-
+    .hide-desktop {
+        visibility: hidden !important;
+    }
+    .hide-mobile {
+        visibility: visible !important;
+    }
     
         /* (1920x1080) Full HD Display */
         /* KEYFRAMES FOR min-width: 1920px */
@@ -299,7 +312,7 @@
       /* ========== END SLIDE STYLE ============*/
   
       .backgroundFeatures {
-          background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/empty_bg.png') center center no-repeat;
+          background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/empty_bg.png') center center no-repeat !important;
           height: 100% !important;
           -webkit-height: 100% !important;
           -moz-height: 100% !important;
@@ -314,20 +327,26 @@
           z-index: 3;
           margin-top: 40%;
           margin-left: -50%;
+          padding-left: 2%;
+          padding-right: 2%;
       }
       .mata{
           width: 100% !important;
           z-index: 3;
           margin-top: 40%;
           margin-left: -50%;
+          padding-left: 2%;
+          padding-right: 2%;
           /* margin-top: 10%; */
       }
       .mata-mobile, .material-mobile, .tombol-mobile{
-          display: none !important;
+          display: none ;
       }
       .tombol{
           width: 100% !important;
           z-index: 3;
+          padding-left: 2%;
+          padding-right: 2%;
           margin-top: 40%;
           margin-left: -50%;
           /* margin-top: 10%; */
@@ -370,7 +389,7 @@
           color: white;
           font-size: 1.6em;
           font-family: acumin;
-          margin-top: 120%;
+          margin-top: 115%;
           text-align: justify;
           width: 90% !important;
       }
@@ -1308,12 +1327,12 @@
       }
       .title_home {
           color: #fff;
-          width: 200% !important;
+          width: 200% ;
           font-size: 2em;
           /* background: blue; */
           font-weight: 600;
           margin-top: 40% !important;
-          margin-left: -55% !important;
+          margin-left: -55% ;
           font-family: acumin;
           position: absolute !important;
       }
@@ -1366,4 +1385,1029 @@
           animation: bounce 2s infinite;
       }
       /* ========== END HOME STYLE ============*/
+      
+      .detail_product {
+          padding-left: 10%;
+          padding-right: 10%;
+      }
+     
+
+      @media (max-width: 768px) {
+        /* KEYFRAMES FOR (min-width: 320px) and (max-width: 480px)*/
+        /* ========== SLIDE STYLE ============*/
+        .carousel.carousel-slider{
+            height: 100% !important;
+            position: absolute !important;
+        }
+        .carousel .slider-wrapper {
+            height: 100% !important;
+        }
+        .carousel .slider-wrapper.axis-horizontal .slider {
+            height: 100% !important;
+        }
+        .carousel.slide{
+            height: 100% !important;
+        }
+        /* ========== END SLIDE STYLE ============*/
+    
+        /* ========== FEATURES STYLE ============*/
+        .hide-mobile {
+            visibility: hidden !important;
+        }
+        .hide-desktop {
+            visibility: visible !important;
+        }
+        .backgroundFeatures{
+            background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/empty_bg_mobile.png') center center no-repeat !important;
+            height: 100% !important;
+            width: 100% !important;
+            position: absolute !important;
+            background-size: cover;
+            z-index: 2 !important;
+        }
+        .title_features {
+            color: white;
+            position: absolute;
+            font-size: 2em;
+            margin-top: 3%;
+            text-align: center;
+            padding: 0% 5%;
+        }
+        .mata, .tombol, .material{
+            display: none !important;
+        }
+        .mata-mobile {
+            width: 25% !important;
+            margin-left: -48%; 
+            margin-top: 20%;
+        }
+        .material-mobile {
+            width: 25% !important;
+            margin-left: -48%; 
+            z-index: 3;
+            margin-top: 70%;
+            opacity: 1;
+        }
+        .tombol-mobile{
+            width: 25% !important;
+            z-index: 3;
+            margin-left: -48%; 
+            margin-top: 120%;
+            opacity: 1;
+        }
+        .bg-detail {
+            z-index: 2;
+            opacity: 1;
+            /* margin-top: -30%; */
+            height: 40% !important;
+            width: 55% !important;
+        }
+        .mata-judul-Detail, .material-judul-Detail, .tombol-judul-Detail,.Detail {
+            color: white;
+            padding-right: 20px;
+            padding-left: 20px;
+            text-align: justify;
+        }
+        .mata-judul-Detail {
+            margin-top: 20%;
+            margin-left: 20%;
+            font-size: 1.5em;
+            margin-bottom:5%;
+            opacity: 1;
+        }
+        .material-judul-Detail {
+            margin-top: 70%;
+            margin-left: 20%;
+            font-size: 1.5em;
+            margin-bottom:5%;
+            opacity: 1;
+        }
+        .tombol-judul-Detail {
+            margin-top: 120%;
+            margin-left: 20%;
+            font-size: 1.5em;
+            margin-bottom:5%;
+            opacity: 1;
+        }
+        /* .Detail {
+            font-size: 1em;
+            opacity: 1;
+            margin-top: 30%;
+            margin-left: 40%;
+            height: 50% !important;
+            width: 55% !important;
+        } */
+        .Detail-mata {
+            color : white;
+            margin-top: 30%;
+            margin-left: 25%;
+            text-align: justify;
+            width: 65% !important;
+            font-size: 0.9em;
+        }
+        .Detail-material {
+            color : white;
+            margin-top: 80%;
+            margin-left: 25%;
+            text-align: justify;
+            width: 65% !important;
+            font-size: 0.9em;
+        }
+        .Detail-tombol {
+            color : white;
+            margin-top: 130%;
+            margin-left: 25%;
+            font-size: 0.9em;
+            text-align: justify;
+            width: 65% !important;
+        }
+    
+        /* ========== END FEATURES STYLE ============*/
+    
+        /* ========== CONTACT STYLE ============*/
+        .backgroundContact {
+            background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/background_emptymobile.png') center center no-repeat;
+            height: 100% !important;
+            width: 100% !important;
+            position: absolute !important;
+            background-size: cover;
+            z-index: 2 !important;
+        }
+        .planet_orange_contact {
+            position: absolute;
+            width: 100% !important;
+        }
+        .hafiz_contact {
+            position: absolute;
+            width: 70% !important;
+            margin-top: 20%;
+            margin-left: 10%;
+        }
+        .title_contact {
+            position: absolute;
+            z-index: 2;
+            margin-top: 5%;
+            margin-left: 10%;
+            color: #fff;
+            font-size: 3.2em;
+            font-family: acumin;
+            opacity: 0.8;
+            font-weight: 600;
+            text-shadow: 2px 10px 14px grey;
+    
+        }
+        .firework_contact{
+            width: 20% !important;
+            margin-top: 10%;
+        }
+        .firework_contact1{
+            width: 10% !important;
+            margin-top: 10%;
+            margin-left: 20%;
+        }
+        .TNC_button {
+            width: 50%;
+            padding: 1%;
+            margin: 120% 0 0 -25%;
+            border-radius: 300px;
+            background: #efefef;
+            color: #5bc0de;
+            font-size: 1.2em;
+            border: none !important;
+        }
+        .TNC_button:hover, .PP_button:hover, .CU_button:hover {
+            background: #5bc0de;
+            color: #efefef;
+            border: none !important;
+        }
+        .PP_button {
+            width: 50%;
+            padding: 1%;
+            margin: 135% 0 0 -25%;
+            border-radius: 300px;
+            background: #efefef;
+            color: #5bc0de;
+            font-size: 1.2em;
+            border: none !important;
+        }
+        .CU_button {
+            width: 50%;
+            padding: 1%;
+            margin: 150% 0 0 -25%;
+            border-radius: 300px;
+            background: #efefef;
+            color: #5bc0de;
+            font-size: 1.2em;
+            border: none !important;
+        }
+        .awan_contact {
+            display: none !important;
+        }
+        /* ========== END CONTACT STYLE ============*/
+    
+        /* ========== COUNTING STYLE ============*/
+        .backgroundCounting {
+            background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/background_emptymobile.png') center center no-repeat;
+            height: 100% !important;
+            width: 100% !important;
+            position: absolute !important;
+            background-size: cover;
+        }
+        .fire_roket {
+            width: 45% !important;
+            margin-left: -47%;
+            margin-top: 85%;
+        }
+        .fire_roket1 {
+            width: 45% !important;
+            margin-left: 2%;
+            margin-top: 85%;
+        }
+        .hafiz_roket {
+            width: 75% !important;
+            margin-left: -37% !important;
+            margin-top: 30%;
+            animation: bounce 3s infinite;
+        }
+        .dust_awan_roket {
+            width: 140% !important;
+            margin-left: -70%;
+            margin-top: 40%;
+        }
+        .bg_bumi_complete,.bg_awan_belakang_roket, .bg_awan_tengah_roket,.bg_bumi,.bg_awan_tengah_before {
+            display: none !important;
+        }
+        .digital_after {
+            color: white;
+            font-family: digital;
+            font-size: 4.3em;
+            font-weight: 600;
+            margin-top: 5%;
+            margin-left: 8%;
+            margin-right: auto;
+            text-align: center !important;
+        }
+        .form-custom {
+            width: 90% !important;
+            margin-left: 10%;
+            margin-top: 145%;
+        }
+        .button-kirim {
+            margin-top: 0%;
+        }
+        .button-kirim:hover {
+            background: #769be6;
+        }
+        .title_form {
+            color: white;
+            font-weight: 600;
+            font-family: acumin;
+            font-size: 1.3em;
+            margin-top: 135%;
+            margin-left: 10%;
+        }
+        .hafiz_roket_before {
+            width: 75% !important;
+            margin-left: -37% !important;
+            margin-top: 30%;
+        }
+        .digital {
+            color: white;
+            font-family: digital;
+            font-size: 4em;
+            font-weight: 600;
+            margin-top: 5%;
+            margin-left: 12%;
+            margin-right: 5%;
+        }
+        .countdown_h5 {
+            color: #fff;
+            font-size: 1.7em;
+            margin-left: 6%;
+            margin-top: 2%;
+        }
+        .countdown_h5_jam {
+            color: #fff;
+            font-size: 1.7em;
+            margin-left: 20%;
+            margin-top: 20%;
+        }
+        /* ========== END COUNTING STYLE ============*/
+    
+        /* ========== TALK STYLE ============*/
+        .backgroundTalk1 {
+            background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/background_emptymobile.png') center center no-repeat;
+            height: 100% !important;
+            width: 100% !important;
+            position: absolute !important;
+            background-size: cover;
+            z-index: 2 !important;
+        }
+        .hide {
+            display: none !important;
+        }
+        .whiteButton{
+            position: absolute !important;
+            width: 101% !important;
+            margin-left: -50%;
+            height: 100% !important;
+            z-index: 5;       
+            opacity: 0.7;
+          }
+        .talk_button {
+            width: 10% !important;        
+            height: 5% !important;
+            z-index: 6;
+            margin-left: -5%;
+            margin-top: 120%;
+            animation: talk-button 2s infinite linear;
+            position: absolute !important;
+            background: white !important;
+            border: none !important;
+            color: gray !important;
+            border-radius: 30px;
+            font-size: 10px;
+        }
+        .klik-style {
+            position: absolute !important;
+            width: 40% !important;
+            z-index:6;
+            margin-top: 100%;
+            margin-left: 1%;
+        }
+        .hafiz_talk {
+            position: absolute !important;
+            width: 300% !important;
+            margin-left: -197%;
+            margin-top: 30%;
+            z-index: 3;
+        }
+        .hafiz_talk_left {
+            position: absolute !important;
+            width: 150% !important;
+            margin-left: -120%;
+            margin-top: 45%;
+            z-index: 3;
+            animation: none;
+        }
+        .description_talk {
+            position: absolute !important;
+            color: white !important;
+            margin-top: 3%;
+            margin-left: 0;
+            font-size: 1em;
+            font-family: acumin;
+            width: 90%;
+            text-align: center;
+        }
+        .column {
+            margin-top: 0%;
+            position: absolute !important;
+            width: 50% !important;
+            margin-left: 3%;
+            margin-top: 50%;
+            opacity: 1;
+            z-index: 4;
+        }
+        @keyframes head-hafiz {
+            from {margin-top: 300%}
+            to {margin-top: 90%;}
+        }
+        .head_hafiz {
+            opacity: 1;
+            width: 45% !important;
+            margin-left: -50%;
+            position: absolute !important;
+            animation-name: head-hafiz;
+            animation-duration: 2s;
+            animation-delay: 7s;
+            background: blue;
+            animation-iteration-count: 1;        
+        }
+        @keyframes head-hafiz1 {
+            from {margin-top: 300%}
+            to {margin-top: 90%;}
+        }
+        .head_hafiz1 {
+            opacity: 0;
+            width: 45% !important;
+            margin-left: -50%;
+            margin-top: 180%;
+            position: absolute !important;
+            animation-name: head-hafiz1;
+            animation-duration: 2s;
+            animation-delay: 11s;
+            animation-iteration-count: 1;
+        }
+        @keyframes head-hafiz2 {
+            from {margin-top: 300%}
+            to {margin-top: 140%;}
+        }
+        .head_hafiz2 {
+            opacity: 0;
+            width: 45% !important;
+            margin-left: 0%;
+            margin-top: 180%;
+            position: absolute !important;
+            animation-name: head-hafiz2;
+            animation-duration: 2s;
+            animation-delay: 15s;
+            animation-iteration-count: 1;        
+        }
+        @keyframes head-hafiz3 {
+            from {margin-top: 300%}
+            to {margin-top: 195%;}
+        }
+        .head_hafiz3 {
+            width: 35% !important;
+            margin-left: -50%;
+            margin-top: 195%;
+            position: absolute !important;
+            animation-name: head-hafiz3;
+            animation-duration: 2s;
+            animation-delay: 19s;
+            animation-iteration-count: 1;
+        }
+        @keyframes head-user-move {
+            from {margin-top: 90%;}
+            to {margin-top: 45%;opacity: 0;}
+        }
+        @keyframes head-user {
+            from {margin-top: 240%;}
+            to {margin-top: 90%}
+        }
+        .head_user {
+            width: 50% !important;
+            margin-left: 95%;
+            position: absolute !important;
+            /* animation-name: head-user,head-user-move ; */
+            animation-name: head-user,head-user-move ;
+            animation-delay: 0s , 5s;
+            animation-duration: 3s, 3s;
+            animation-iteration-count: 1, 1;
+            animation-fill-mode: forwards, forwards;
+        }
+        @keyframes head-user1 {
+            from {margin-top: 300%}
+            to {margin-top: 60%;}
+        }
+        .head_user1 {
+            opacity: 1;
+            width: 50% !important;
+            margin-left: 95%;
+            margin-top: 170%;
+            position: absolute !important;
+            animation-name: head-user1;
+            animation-duration: 2s;
+            animation-delay: 9s;
+            animation-iteration-count: 1;
+        }
+        @keyframes head-user2 {
+            from {margin-top: 300%;}
+            to {margin-top: 115%;}
+        }
+        @keyframes head-user2-move {
+            from {margin-top: 300%;}
+            to {margin-top: 115%;}
+        }
+        .head_user2 {
+            opacity: 0;
+            width: 50% !important;
+            margin-left: 95%;
+            margin-top: 140%;
+            position: absolute !important;
+            animation-name: head-user2;
+            animation-duration: 2s;
+            animation-delay: 13s;
+            animation-iteration-count: 1;        
+        }
+        @keyframes head-user3 {
+            from {margin-top: 300%;}
+            to {margin-top: 165%;}
+        }
+        .head_user3 {
+            width: 40% !important;
+            margin-left: 95%;
+            margin-top: 165%;
+            position: absolute !important;
+            animation-name: head-user3;
+            animation-duration: 2s;
+            animation-delay: 17s;
+            animation-iteration-count: 1;
+        }
+        @keyframes balon-user {
+            from {margin-top: 300%;}
+            to {margin-top: -30%;}
+        }
+        .assalamualaikum {
+            width: 130% !important;
+            margin-left: 0%;
+            margin-top: 50%;
+            position: absolute !important;
+            animation-name: balon-user;
+            animation-duration: 2s;
+            animation-delay: 5s;
+            animation-iteration-count: 1;        
+        }
+        @keyframes balon-user1 {
+            from {margin-top: 300%;}
+            to {margin-top: 30%;}
+        }
+        .apakabar {
+            opacity: 1;
+            width: 130% !important;
+            margin-left:-10%;
+            margin-top: 130%;
+            position: absolute !important;
+            animation-name: balon-user1;
+            animation-duration: 2s;
+            animation-delay: 9s;
+            animation-iteration-count: 1;        
+        }
+        @keyframes balon-user2 {
+            from {margin-top: 300%;}
+            to {margin-top: 85%;}
+        }
+        .balon_user2 {
+            opacity: 0;
+            width: 100% !important;
+            margin-left:28%;
+            margin-top: 85%;
+            position: absolute !important;
+            animation-name: balon-user2;
+            animation-duration: 2s;
+            animation-delay: 13s;
+            animation-iteration-count: 1;
+        }
+        .balon_user_custom {
+            opacity: 0;
+            width: 120% !important;
+            margin-left: 40%;
+            margin-top: 110%;
+            position: absolute !important;
+            animation-name : balon-user-custom;
+            animation-duration: 3s;
+            animation-delay: 16s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+        }
+        @keyframes balon-user3 {
+            from {margin-top: 300%;}
+            to {margin-top: 135%;}
+        }
+        .balon_user3 {
+            width: 100% !important;
+            margin-left:20%;
+            margin-top: 135%;
+            position: absolute !important;
+            animation-name: balon-user3;
+            animation-duration: 2s;
+            animation-delay: 17s;
+            animation-iteration-count: 1;
+        }
+        @keyframes balon-hafiz {
+            from {margin-top: 300%;}
+            to {margin-top: 0%;}
+        }
+        .walaikumsalam {
+            opacity: 1;
+            width: 130% !important;
+            margin-left:-45%;
+            margin-top: 90%;
+            position: absolute !important;
+            animation-name: balon-hafiz;
+            animation-duration: 2s;
+            animation-delay: 7s;
+            animation-iteration-count: 1;
+        }
+        @keyframes balon-hafiz1 {
+            from {margin-top: 300%;}
+            to {margin-top: 60%;}
+        }
+        .balon_hafiz1 {
+            opacity: 0;
+            width: 120% !important;
+            margin-left:25%;
+            margin-top: 80%;
+            position: absolute !important;
+            animation-name: balon-hafiz1;
+            animation-duration: 2s;
+            animation-delay: 11s;
+            animation-iteration-count: 1;
+        }
+        .balon_hafiz11 {
+            display: none !important;
+            position: absolute !important;
+        }
+        /* .balon_hafiz11 {
+            width: 100% !important;
+            margin-left:0%;
+            margin-top: 200%;
+            position: absolute !important;
+            animation-name: balon-hafiz11;
+            animation-delay: 20s;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+        } */
+        @keyframes balon-hafiz2 {
+            from {margin-top: 300%;}
+            to {margin-top: 110%;}
+        }
+        .alhamdulillah {
+            opacity: 0;
+            width: 120% !important;
+            margin-left:10%;
+            margin-top: 55%;
+            position: absolute !important;
+            animation-name: balon-hafiz2;
+            animation-duration: 2s;
+            animation-delay: 15s;
+            animation-iteration-count: 1;
+        }
+        @keyframes balon-hafiz3 {
+            from {margin-top: 300%;}
+            to {margin-top: 165%;}
+        }
+        .balon_hafiz3 {
+            width: 100% !important;
+            margin-left:-25%;
+            margin-top: 165%;
+            position: absolute !important;
+            animation-name: balon-hafiz3;
+            animation-duration: 2s;
+            animation-delay: 19s;
+            animation-iteration-count: 1;
+        }
+        .bg_awan_talk {
+            width: 110% !important;
+            z-index: 2;
+            margin-top:150%;
+            height: 20px;
+            position: inherit;
+            margin-left: -10%;
+            display: none !important;
+        }
+        .bg_awan {
+            width: 100% !important;
+            z-index: 2;
+            position: inherit;
+            margin-top: -20%;
+            animation: cloud-animation 10s infinite;
+            display: none !important;
+        }
+        .bg_awan_tengah {
+            width: 100% !important;
+            z-index: 2;
+            margin-top: -20%;
+            animation: cloud-animation 5s infinite;
+        }
+        /* ========== END TALK STYLE ============*/
+    
+        /* ========== About STYLE ============*/
+    
+        .cube {
+            top: 70vh;
+            left: 50vw;
+            width: 10px;
+            height: 10px;
+            border: solid 0.5px #769be6;
+            transform-origin: top left;
+            transform: scale(0) rotate(0deg) translate(-50%, -50%);
+            animation: cube 12s ease-in forwards infinite;
+            z-index: 5;
+            position: absolute !important;
+        }
+        .cube:nth-child(2) {
+            animation-delay: 2s;
+            left: 77vw;
+            top: 10vh;
+            width: 5px;
+            height: 5px;
+            position: absolute !important;
+        }
+        .background_about {
+            background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/about_mobile.png') center center no-repeat;
+            height: 120% !important;
+            width: 100% !important;
+            position: absolute !important;
+            background-size: cover;
+            z-index: 4;
+            margin-left:4%;
+            margin-top:-20%;
+            position: absolute !important;
+        }
+        .bi{
+            width: 200% !important;
+            height: 100% !important;
+            z-index: 2;
+            position: absolute !important;
+            margin-top: -50%;
+            margin-left: 4%;
+            animation-name: fade-in-mobile;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            /* display: none !important; */
+        }
+        .bi2{
+            width: 200% !important;
+            height: 100% !important;
+            z-index: 2;
+            position: absolute !important;
+            margin-top: -50%;
+            margin-left: 4%;
+            animation-name: fade-in-mobile;
+            animation-duration: 5s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            /* display: none !important; */
+        }
+        .description {
+            width: 90% !important;
+            z-index: 4;
+            font-family: acumin;
+            color: #fff;
+            position: absolute !important;
+            margin-top: 60%;
+            text-align: left;
+            font-size: 0.8em;
+            margin-left: 10%;
+            margin-right: 5%;
+            position: absolute !important;
+            animation-name: fade-in;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+        }
+        .title_about {
+            z-index: 4;
+            font-family: acumin;
+            color: #fff;
+            margin-top: 50%;
+            text-align: left;
+            font-size: 1.3em;
+            margin-left: 30%;
+            margin-right: 5%;
+            position: absolute !important;
+        }
+        .hr_title {
+            z-index: 4;
+            margin-top: 57%;
+            margin-left: 30%;
+            border: 1px solid white;
+            width: 60%;
+            border-radius: 5px;
+            background: blue;
+            position: absolute !important;
+        }
+        .wifi_about{
+            width: 25% !important;
+            position: absolute;
+            z-index: 6;
+            margin-top: 95%;
+            margin-left: 5%;
+            animation-name: bounce;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            position: absolute !important;
+        }
+        .talk_about{
+            width: 25% !important;
+            position: absolute;
+            z-index: 6;
+            margin-top: 95%;
+            margin-left: 28%;
+            animation-name: bounce;
+            animation-delay: 3s;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            position: absolute !important;
+        }
+        .onlinecontent_about {
+            width: 25% !important;
+            position: absolute !important;
+            z-index: 6;
+            margin-top: 95%;
+            margin-left: 53%;
+            animation-name: bounce;
+            animation-delay: 6s;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+        }
+        .offlinecontent_about {
+            width: 25% !important;
+            position: absolute !important;
+            z-index: 6;
+            margin-top: 95%;
+            margin-left: 76%;
+            animation-name: bounce;
+            animation-delay: 9s;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+        }
+        .bilingual_about {
+            width: 25% !important;
+            position: absolute !important;
+            z-index: 6;
+            margin-top: 120%;
+            margin-left: 5%;
+            animation-name: bounce;
+            animation-delay: 12s;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+        }
+        .kontenislami_about {
+            width: 25% !important;
+            position: absolute !important;
+            z-index: 6;
+            margin-top: 120%;
+            margin-left: 28%;
+            animation-name: bounce;
+            animation-delay: 15s;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+        }
+        .AI_about {
+            width: 25% !important;
+            position: absolute !important;
+            z-index: 6;
+            margin-top: 120%;
+            margin-left: 53%;
+            animation-name: bounce;
+            animation-delay: 18s;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+        }
+        .song_about {
+            width: 25% !important;
+            position: absolute !important;
+            z-index: 6;
+            margin-top: 120%;
+            margin-left: 76%;
+            animation-name: bounce;
+            animation-delay: 21s;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+        }
+        .alquran_about {
+            width: 25% !important;
+            position: absolute !important;
+            z-index: 6;
+            margin-top: 145%;
+            margin-left: 5%;
+            animation-name: bounce;
+            animation-delay: 24s;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+        }
+        .funemoticon_about {
+            width: 25% !important;
+            position: absolute !important;
+            z-index: 6;
+            margin-top: 145%;
+            margin-left: 28%;
+            animation-name: bounce;
+            animation-delay: 27s;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+        }
+        .ensiklopedia_about {
+            width: 25% !important;
+            position: absolute !important;
+            z-index: 6;
+            margin-top: 145%;
+            margin-left: 53%;
+            animation-name: bounce;
+            animation-delay: 30s;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            /* display : none !important; */
+        }
+        .matdas_about {
+            width: 25% !important;
+            position: absolute !important;
+            z-index: 6;
+            margin-top: 145%;
+            margin-left: 76%;
+            animation-name: bounce;
+            animation-delay: 33s;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+        }
+        .layout_about {
+            height:100% !important;
+            width: 100% !important;
+            z-index: 4;
+            position: absolute !important;
+            margin-left:5%;
+            display: none !important;
+            background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/background_mobile.png') center center no-repeat;
+        }
+        /* ========== About STYLE ============*/
+    
+        /* ========== HOME STYLE ============*/
+        .backgroundLayout {
+            background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/background_mobile.png') center center no-repeat;
+            height: 110% !important;
+            width: 100% !important;
+            position: absolute !important;
+            background-size: cover;
+            z-index: 0;
+        }
+        .planet_orange {
+            animation: bounce 1.5s infinite;
+            margin-left: -110%;
+            margin-top: 100%;
+            position: absolute !important;
+            width: 200% !important;
+            /* background: blue; */
+        }
+        .title_home {
+            color: #fff;
+            font-size: 1.2em;
+            font-weight: 600;
+            margin-top: 80% !important;
+            margin-left: -85%;
+            /* width: 245% !important; */
+            font-family: acumin;
+            width: 300px;
+            position: absolute !important;
+        }
+        .hafiz_home {
+            width: 220% !important;
+            margin-top: 160%;
+            margin-left: -110%;
+            margin-right: auto;
+            position: absolute !important;
+            /* background: red; */
+            animation: bounce 3s infinite; 
+        }
+        .left_cloud {
+            /* animation: cloud-animation 10s infinite;
+            width: 150% !important;
+            height: auto;
+            margin-left: -90%;
+            margin-top: 300%;
+            position: absolute !important; */
+            display: none;
+        }
+        .left_cloud_blur {
+            /* animation: cloud-animation 15s infinite;
+            width: 100% !important;
+            height: auto;
+            margin-left: -50%;
+            margin-top: 200%;
+            filter:blur(1px);
+            position: absolute !important; */
+            display: none !important;
+        }
+        .hafiz_baling_baling {
+            width:170% !important;
+            height: auto;
+            margin-top: 235%;
+            margin-left:-85%;
+            z-index: 2;
+            position: absolute !important;
+            animation: balingbaling-animation infinite 0.2s linear;
+        }
+        .center_baling{
+            width: 150% !important;
+            height: auto; 
+            margin-top: 250%;
+            z-index:3;
+            position: absolute !important;
+            margin-left: -75%;
+            animation: bounce 3s infinite
+        }
+        .navigation {
+            position: absolute !important;
+            margin-left: -100%;
+            margin-top: 456%;
+            width: 200% !important;
+            animation: fading infinite 3s linear;
+        }
+        .planet_ungu {
+            position: absolute !important;
+            width: 200% !important;
+            margin-left: -90%;
+            margin-top: 100%;
+            animation: bounce 2s infinite;
+        }
+        .right_cloud {
+            /* width: 100% !important;
+            position: absolute !important;
+            margin-top: 300%;
+            margin-left: -50%;
+            animation: cloud-animation 10s infinite; */
+            display: none;
+        }
+        .right_cloud_blur {
+            /* width: 100% !important;
+            position: absolute !important;
+            margin-top: 200%;
+            margin-left: -50%;
+            filter: blur(1px);
+            animation: cloud-animation 13s infinite; */
+            display: none !important;
+        }
+        /* ========== END HOME STYLE ============*/
+      }
     

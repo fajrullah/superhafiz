@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+// import './App.css';
 import {  Row } from 'react-bootstrap';
 import bi from './images/bi-about.png';
 import bi2 from './images/bi-about1.png';
@@ -16,7 +16,8 @@ import alquran from './images/about_alquranmobile.png';
 import funemoticon from './images/about_funemoticonmobile.png';
 import ensiklopedia from './images/about_ensiklopediamobile.png';
 import matdas from './images/about_matdasmobile.png';
-import image from './image';
+// import './New.css';
+import './Style.css';
 // import hafiz from './images/hafiz.png';
 // import baling2 from './images/baling2.png';
 // import center_baling2 from './images/center.png';
