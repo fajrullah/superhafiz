@@ -48,6 +48,7 @@ class About extends Component{
 	  }
 
 	  componentDidMount(){
+		console.log('s')
 		const { isrender } = this.props
 		this.setState({
 		  isLoading : isrender

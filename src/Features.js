@@ -28,10 +28,13 @@ class Features extends Component{
     return null;
   }
   componentDidMount(){
+    console.log('features')
     const { isrender } = this.props
+    console.log(isrender)
     this.setState({
       isLoading : isrender
      })
+
   }
   render() { 
     const { isLoading } = this.state
