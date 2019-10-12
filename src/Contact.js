@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
-import './App.css';
+// import './App.css';
+import './New.css';
 import hafiz from './images/hafiz-hi.png';
 import awan_contact from './images/bg_cloud.png';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import firework from './images/firework.gif';
+import TNC from './TNC';
 import Modal from 'react-modal';
 
 const ImageLoader = () => {

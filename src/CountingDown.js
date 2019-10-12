@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './New.css';
 import { Row, Col,Form, Button } from 'react-bootstrap';
 import bg_bumi from './images/background-bumi.png';
 import hafiz_roket_before from './images/hafiz_roket_before.png';
@@ -10,6 +10,17 @@ import awan_depan from './images/awan_tengah_roket.png';
 import dust from './images/dust.png';
 import fire_roket from './images/fire_roket.png';
 import arus_roket from './images/arus_roket.png';
+import Loadable from 'react-loadable';
+import Loading from './CountingComponent';
+ 
+function MyLoadingComponent() {
+  return <div>Loading...</div>;
+}
+
+const LoadableAnotherComponent = Loadable({
+  loader: () => import('./CountingComponent'),
+  loading: Loading,
+});
 
 const ImageLoader = () => {
   return (<div>Loading ...</div>)
@@ -47,13 +58,13 @@ const renderer = ({ hours, minutes, seconds, completed }) => {
   }
 };
 
+
 class CountingDown extends Component{
   constructor(props) {
     super(props) 
       this.state = {
         show: false,
         isLoading : true,
-        // Completionist : false,
       }
   }
   static getDerivedStateFromProps(props, state) {
@@ -65,16 +76,11 @@ class CountingDown extends Component{
     return null;
   }
   componentDidMount(){
-    const { isrender } = this.props
+    const { isrender, renderer } = this.props
     this.setState({
-      isLoading : isrender
+      isLoading : isrender,
     })
   }
-  // componentWillUnmount(){
-	// 	this.setState({
-  //     isLoading : 'false'
-  //   })
-	// }
 
   render() {
     const { isLoading } = this.state
@@ -82,47 +88,9 @@ class CountingDown extends Component{
       return <ImageLoader/>
     }
     // console.log(Date.now())
-    // console.log(renderer)
+    console.log(renderer)
     return (
-    	<div>
-        <Row>
-          {/* <Teshafiz/> */}
-          <p className="title_form absolute">Ayo Kawan Pre Order Sekarang Ya...</p>          
-          {/* <img src={awan_tengah} className="bg_awan_tengah_roket" alt="awan di tengah roket"/> */}
-          {/* <img src={awan_depan} className="bg_awan_roket" alt="awan di depan roket"/> */}
-          <Form className="form-custom absolute">
-            <Row>
-              <Col style={{marginBottom:20+'px'}}>
-                <Form.Control placeholder='Nama Lengkap Kamu'/>
-              </Col>
-              <Col>
-                <Form.Control placeholder='Email Kamu'/>
-              </Col>
-            </Row>
-            {/* <Row>
-              <Col>
-                <Form.control as="textarea" rows="3" placeholder='tulis pesan kamu ya' style={{height:'auto', minHeight:120+'px'}}/>
-              </Col>
-            </Row> */}
-            <Row>
-              <Col>
-                <Button className="button button-secondary button-kirim">
-                  <i className="fas fa-paper-plane"></i>
-                    Kirim
-                </Button>
-              </Col>
-            </Row>
-          </Form>
-
-          <Col className="counting-down">
-            <Countdown
-              date={'Sept 26, 2019 17:39:00 GMT+7'}
-              renderer={renderer}
-            />
-          </Col>
-        </Row>
-       
-        </div>
+      <LoadableAnotherComponent/>
     );
   }
 }

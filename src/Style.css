@@ -299,12 +299,12 @@
     /* ========== END SLIDE STYLE ============*/
 
     .backgroundFeatures {
-        background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/bg-counting.png') center center no-repeat;
-        height: 950px !important;
-        -webkit-height: 950px !important;
-        -moz-height: 950px !important;
-        -ms-height: 950px !important;
-        -o-height: 950px !important;
+        background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/empty_bg.png') center center no-repeat;
+        height: 100% !important;
+        -webkit-height: 100% !important;
+        -moz-height: 100% !important;
+        -ms-height: 100% !important;
+        -o-height: 100% !important;
         width: 100% !important;
         background-size: cover;
         z-index: 2;
@@ -313,19 +313,23 @@
         width: 100% !important;
         z-index: 3;
         margin-top: 40%;
+        margin-left: -50%;
     }
     .mata{
         width: 100% !important;
         z-index: 3;
         margin-top: 40%;
-        /* margin-left: -30%; */
+        margin-left: -50%;
         /* margin-top: 10%; */
+    }
+    .mata-mobile, .material-mobile, .tombol-mobile{
+        display: none !important;
     }
     .tombol{
         width: 100% !important;
         z-index: 3;
         margin-top: 40%;
-        /* margin-left: -30%; */
+        margin-left: -50%;
         /* margin-top: 10%; */
     }
     .title_features {
@@ -334,7 +338,6 @@
         font-size: 3em;
         margin-top: 3%;
         text-align: center;
-        /* margin-left: 8%; */
         /* animation: opacity 10s; */
       }
     .bg-detail {
@@ -355,6 +358,21 @@
     }
     .Detail {
         font-size: 1.2em;
+    }
+    .mata-judul-Detail, .material-judul-Detail, .tombol-judul-Detail {
+        color: white;
+        font-size: 3em;
+        font-weight: 600;
+        font-family: acumin;
+        margin-top: 100%;
+    }
+    .Detail-mata, .Detail-material, .Detail-tombol {
+        color: white;
+        font-size: 1.6em;
+        font-family: acumin;
+        margin-top: 120%;
+        text-align: justify;
+        width: 90% !important;
     }
     /* ========== CONTACT STYLE ============*/
     .firework_contact {
@@ -421,11 +439,11 @@
     }
     .backgroundContact {
         background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/bg_features.png') center center no-repeat;
-        height: 950px !important;
-        -webkit-height: 950px !important;
-        -moz-height: 950px !important;
-        -ms-height: 950px !important;
-        -o-height: 950px !important;
+        height: 100% !important;
+        -webkit-height: 100% !important;
+        -moz-height: 100% !important;
+        -ms-height: 100% !important;
+        -o-height: 100% !important;
         width: 100% !important;
         background-size: cover;
     }
@@ -626,6 +644,7 @@
         margin-left: -50%;
         z-index: 5;       
         opacity: 0.7;
+        height: 100% !important;
     }
     .backgroundTalk1 {
         background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/bg_features.png') center center no-repeat;
@@ -683,8 +702,8 @@
     .column {
         margin-top: 0%;
         position: absolute !important;
-        width: 15% !important;
-        margin-left: 35%;  
+        width: 20% !important;
+        margin-left: 30%;  
         /* animation-name : column-up;
         animation-delay : 25s;
         animation-fill-mode: forwards;
@@ -739,13 +758,13 @@
     }
     @keyframes head-hafiz {
         from{ margin-top: 400%; }
-        to{ margin-top: 30%; }
+        to{ margin-top: 35%; }
     }
     .head_hafiz {
         opacity: 1;
-        width: 35% !important;
+        width: 30% !important;
         position: absolute !important;
-        margin-top: 400%;
+        margin-top: 400% !important;
         margin-left: -50%;
         animation-name : head-hafiz;
         animation-duration: 3s;
@@ -802,23 +821,23 @@
         100% { margin-top: 0%}
     }
     .head_user {
-        width: 40% !important;
-        margin-top: 0%;
+        width: 30% !important;
+        margin-top: 10%;
         margin-left: 100%;
         position: absolute !important;
         animation-name : head-user;
         animation-duration: 3s;
         animation-iteration-count: 1; 
-        /* background: blue;*/
     }
     @keyframes head-user1 {
-        0%{ margin-top: 400%;}
+        0%{ margin-top: 300%;}
         100% { margin-top: 60%; }
     }
     .head_user1 {
-        width: 40% !important;
+        width: 30% !important;
         margin-left: 100%;
-        margin-top: 400%;
+        margin-top: 300%;
+        /* background: blue; */
         position: absolute !important;
         animation-name : head-user1;
         animation-duration: 2s;
@@ -859,10 +878,10 @@
         0%{ margin-top: 400%;}
         100% { margin-top: -30%;}
     }
-    .balon_user {
-        width: 100% !important;
-        margin-left: 28%;
-        margin-top: -30%;
+    .assalamualikum {
+        width: 90% !important;
+        margin-left: 23%;
+        margin-top: -20%;
         position: absolute !important;
         animation-name : balon-user;
         animation-duration: 3s;
@@ -887,7 +906,7 @@
         0%{ margin-top: 400%;}
         100% { margin-top: 30%;}
     }
-    .balon_user1 {
+    .apakabar {
         width: 100% !important;
         margin-left:20%;
         margin-top: 400%;
@@ -928,9 +947,9 @@
             opacity: 1;
         }
     }
-    .balon_hafiz {
-        width: 100% !important;
-        margin-left:-45%;
+    .walaikumsalam {
+        width: 90% !important;
+        margin-left:-20%;
         margin-top: 400%;
         position: absolute !important;
         animation-name : balon-hafiz;
@@ -938,7 +957,6 @@
         animation-delay: 4s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
-        /*    */
     }
     .balon_hafiz_custom {
         width: 100% !important;
@@ -949,16 +967,17 @@
     }
     @keyframes balon-hafiz1 {
         0%{ margin-top: 400%;}
-        100% { margin-top: 85%; }
+        100% { margin-top: 0%; }
     }
-    .balon_hafiz1 {
+    .walaikumsalam {
         width: 100% !important;
-        margin-left:-30%;
+        margin-left:-20%;
         margin-top: 400%;
         position: absolute !important;    
         animation-name: balon-hafiz1;
         animation-delay: 12s;
         animation-duration: 3s;
+        animation-iteration-count: 1;
         animation-fill-mode: forwards;
     }
     @keyframes balon-hafiz11 {
@@ -979,7 +998,7 @@
         0%{ margin-top: 400%;}
         100% { margin-top: 60%; }
     }
-    .balon_hafiz2 {
+    .alhamdulillah {
         width: 100% !important;
         margin-left:-43%;
         margin-top: 4000%;
@@ -1232,7 +1251,7 @@
         position: absolute !important;
     }
     .layout_about {
-        height: 950px !important;
+        height: 100% !important;
         z-index: 4;
         width: 100% !important;
         margin-left:5%;
@@ -1291,6 +1310,7 @@
         color: #fff;
         width: 200% !important;
         font-size: 2em;
+        /* background: blue; */
         font-weight: 600;
         margin-top: 40% !important;
         margin-left: -55% !important;
@@ -1457,13 +1477,13 @@
         margin-top: 165%;
         position: absolute !important;
     }
-    .balon_user {
+    .assalamualaikum {
         width: 100% !important;
         margin-left: 28%;
         margin-top: -30%;
         position: absolute !important;
     }
-    .balon_user1 {
+    .apakabar {
         width: 100% !important;
         margin-left:20%;
         margin-top: 30%;
@@ -1481,7 +1501,7 @@
         margin-top: 135%;
         position: absolute !important;
     }
-    .balon_hafiz {
+    .walaikumsalam {
         width: 100% !important;
         margin-left:-30%;
         margin-top: 0%;
@@ -1493,7 +1513,7 @@
         margin-top: 60%;
         position: absolute !important;
     }
-    .balon_hafiz2 {
+    .alhamdulillah {
         width: 100% !important;
         margin-left:-43%;
         margin-top: 110%;
@@ -1552,21 +1572,21 @@
         position: absolute !important;
     }
     .bi{
-        width: 120% !important;
-        height: 25% !important;
+        width: 100% !important;
+        height: 100% !important;
         z-index: 2;
         position: absolute !important;
-        margin-top: -10%;
-        margin-left: 3%;
+        /* margin-top: -10%; */
+        /* margin-left: 3%; */
         animation: fade-in 10s infinite;
     }
     .bi2{
         width: 120% !important;
-        height: 25% !important;
+        height: 100% !important;
         z-index: 2;
         position: absolute !important;
-        margin-top: -10%;
-        margin-left: 3%;
+        /* margin-top: -10%;
+        margin-left: 3%; */
         animation: fade-in 5s infinite;
     }
     .description {
@@ -1837,34 +1857,93 @@
             position: absolute !important;
             background-size: cover;
         }
+        .mata-mobile, .tombol-mobile, .material-mobile{
+            display: none !important;
+        }
         .material {
             width: 100% !important;
             z-index: 3;
+            margin-top: 30%;
+            margin-left: -110%;
         }
         .mata {
             width: 100% !important;
             z-index: 3;
+            margin-left: -110%;
+            margin-top: 30%;
+        }
+        .tombol {
+            width: 100% !important;
+            z-index: 3;
+            margin-left: 152%;
+            margin-top: 8%;
         }
         .title_features {
             color: white;
             font-family: acumin;
             font-weight: 600;
-            padding: 20px 0;
+            font-size: 2em;
+            padding: 20px 20px;
+            /* background: blue; */
         }
         .bg-detail {
-            z-index: 2;
-            margin-top: -20%;
+            /* z-index: 2;
+            margin-top: 60%;
+            margin-left: 0%;
+             */
+             display: none !important;
         }
-        .judul-Detail, .Detail {
+        .mata-judul-Detail {
             color: white;
-            padding-right: 20px;
-            padding-left: 20px;
+            /* padding-right: 20px;
+            padding-left: 20px; */
+            margin-left: -60%;
+            margin-top: 85%;
+            font-size: 3em;
+            text-align: justify;
+        }
+        .material-judul-Detail {
+            color: white;
+            margin-left: -60%;
+            margin-top: 85%;
+            font-size: 3em;
+            text-align: justify;
+        }
+        .tombol-judul-Detail {
+            color: white;
+            margin-left: 200%;
+            margin-top: 60%;
+            font-size: 3em;
             text-align: justify;
         }
         .judul-Detail {
             margin-top: -80%;
             font-size: 2em;
             margin-bottom:5%;
+        }
+        .Detail-mata {
+            color: white;
+            text-align: justify;
+            font-family: acumin;
+            margin-left: -60%;
+            margin-top: 110%;
+            width: 90% !important;
+        }
+        .Detail-material {
+            color: white;
+            text-align: justify;
+            font-family: acumin;
+            margin-left: -60%;
+            margin-top: 110%;
+            width: 90% !important;
+        }
+        .Detail-tombol {
+            color: white;
+            text-align: justify;
+            font-family: acumin;
+            margin-left: 200%;
+            margin-top: 87%;
+            width: 90% !important;
         }
         /* ========== CONTACT SLIDE STYLE ============*/
         .modalclose {
@@ -1955,7 +2034,7 @@
         }
         .backgroundContact {
             background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/bg-counting.png') center center no-repeat;
-            height: 700px !important;
+            height: 100% !important;
             width: 100% !important;
             position: absolute !important;
             background-size: cover;
@@ -2222,6 +2301,7 @@
     .whiteButton{
         position: absolute !important;
         width: 100% !important;
+        height: 100% !important;
         margin-left: -50%;
         z-index: 5;       
         opacity: 0.7;
@@ -2316,13 +2396,12 @@
     .head_hafiz {
         width: 35% !important;
         position: absolute !important;
-        margin-left: -50%;
-        margin-top: 30%;
+        margin-left: -75%;
         animation-name: head-hafiz;
         animation-delay: 4s;
         animation-duration: 3s;
         animation-iteration-count: 1;
-        /* background: blue; */
+        animation-fill-mode: forwards;
     }
     .head_hafiz_hide {
         width: 35% !important;
@@ -2332,18 +2411,18 @@
         opacity: 0;
     }
     @keyframes head-hafiz1 {
-        0%{margin-top: 200%;}
+        0%{margin-top: 400%;}
         100%{margin-top: 90%;}
     }
     .head_hafiz1 {
         width: 35% !important;
-        margin-left: -50%;
-        margin-top: 90%;
+        margin-left: -75%;
         position: absolute !important;
         animation-name: head-hafiz1;
         animation-duration: 2s;
         animation-delay: 8s;
         animation-iteration-count: 1;
+        animation-fill-mode: forwards;
     }
     @keyframes head-hafiz2 {
         0%{ margin-top: 200%;}
@@ -2379,27 +2458,27 @@
     }
     .head_user {
         width: 40% !important;
-        margin-top: 400%;
         margin-left: 100%;
         position: absolute !important;
         animation-name : head-user;
         animation-duration: 3s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
+        /* background: blue; */
     }
     @keyframes head-user1 {
-        from { margin-top: 200%;}
+        from { margin-top: 400%;}
         to { margin-top: 60%;}
     }
     .head_user1 {
         width: 40% !important;
         margin-left: 100%;
-        margin-top: 60%;
         position: absolute !important;
         animation-name: head-user1;
         animation-delay: 6s;
         animation-duration: 2s;
-        animation-timing-function: 1;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
     }
     @keyframes head-user2 {
         from{margin-top: 200%;}
@@ -2408,12 +2487,12 @@
     .head_user2 {
         width: 40% !important;
         margin-left: 100%;
-        margin-top: 138%;
+        /* margin-top: 138%; */
         position: absolute !important;
-        /* animation-name: head-user2;
+        animation-name: head-user2;
         animation-delay: 10s;
         animation-iteration-count: 1;
-        animation-duration: 2s; */
+        animation-duration: 2s;
     }
     @keyframes head-user2 {
         from{margin-top: 200%;}
@@ -2433,10 +2512,9 @@
         0%{ margin-top: 400%}
         100% { margin-top: -30%}
     }
-    .balon_user {
+    .assalamualaikum {
         width: 100% !important;
-        margin-left: 28%;
-        margin-top: 400%;
+        margin-left: 20%;
         position: absolute !important;
         animation-name : balon-user;
         animation-duration: 3s;
@@ -2444,22 +2522,18 @@
         animation-fill-mode: forwards;
     }
     @keyframes balon-user1 {
-        0%{
-            margin-top: 200%;
-        }
-        100%{
-            margin-top: 30%;
-        }
+        0%{ margin-top: 200%; }
+        100%{ margin-top: 30%; }
     }
-    .balon_user1 {
+    .apakabar {
         width: 100% !important;
-        margin-left:20%;
-        margin-top: 30%;
+        margin-left:25%;
         position: absolute !important;
         animation-name: balon-user1;
         animation-delay: 6s;
         animation-iteration-count: 1;
         animation-duration: 2s;
+        animation-fill-mode: forwards;
     }
     @keyframes balon-user2 {
         0%{margin-top: 200%;}
@@ -2492,21 +2566,21 @@
     }
     @keyframes balon-hafiz {
         from{
-            margin-top: 200%;
+            margin-top: 400%;
         }
         to{
             margin-top: 0%;
         }
     }
-    .balon_hafiz {
+    .walaikumsalam {
         width: 100% !important;
         margin-left:-43%;
-        margin-top: 0%;
         position: absolute !important;
         animation-name: balon-hafiz;
         animation-duration: 3s;
         animation-delay: 4s;
         animation-iteration-count: 1;
+        animation-fill-mode: forwards;
     }
     @keyframes balon-hafiz1 {
         0%{margin-top: 200%;}
@@ -2524,18 +2598,18 @@
     }
     @keyframes balon-hafiz2 {
         0%{margin-top: 200%;}
-        100%{margin-top: 110%;}
+        100%{margin-top: 55%;}
     }
-    .balon_hafiz2 {
+    .alhamdulillah {
         width: 100% !important;
         margin-left:-43%;
-        margin-top: 60%;
-        position: absolute !important;
-        
-        /* animation-name: balon-hafiz2;
+        margin-top: 55%;
+        position: absolute !important;        
+        animation-name: balon-hafiz2;
         animation-duration: 2s;
         animation-iteration-count: 1;
-        animation-delay: 12s; */
+        animation-fill-mode: forwards;
+        animation-delay: 12s;
     }
     @keyframes balon-hafiz3 {
         0%{margin-top: 200%;}
@@ -2726,7 +2800,7 @@
         width: 8% !important;
         z-index: 4;
         margin-top: 35%;
-        margin-left: 50%;
+        margin-left: 55%;
         animation-name: scale;
         animation-delay: 18s;
         animation-duration: 3s;
@@ -2737,7 +2811,7 @@
         width: 8% !important;
         z-index: 4;
         margin-top: 35%;
-        margin-left: 57%;
+        margin-left: 61%;
         animation-name: scale;
         animation-delay: 21s;
         animation-duration: 3s;
@@ -2748,7 +2822,7 @@
         width: 8% !important;
         z-index: 4;
         margin-top: 35%;
-        margin-left: 64%;
+        margin-left: 67%;
         animation-name: scale;
         animation-delay: 24s;
         animation-duration: 3s;
@@ -2759,7 +2833,7 @@
         width: 8% !important;
         z-index: 4;
         margin-top: 35%;
-        margin-left: 71%;
+        margin-left: 73%;
         animation-name: scale;
         animation-delay: 27s;
         animation-duration: 3s;
@@ -2770,7 +2844,7 @@
         width: 8% !important;
         z-index: 4;
         margin-top: 35%;
-        margin-left: 78%;
+        margin-left: 79%;
         animation-name: scale;
         animation-delay: 30s;
         animation-duration: 3s;
@@ -2817,8 +2891,8 @@
             color: #fff;
             font-size: 1.5em;
             font-weight: 600;
-            margin-top: 30% !important;
-            margin-left: 17% !important;
+            margin-top: 25% !important;
+            margin-left: -5% !important;
             font-family: acumin;
             position: absolute !important;
         }
@@ -2879,7 +2953,11 @@
             margin-top: 78%;
             margin-left:-37%;
             z-index: 2;
+            /* background: blue; */
             position: absolute !important;
+            /* animation-name: balingbaling-animation;
+            animation-iteration-count:  infinite;
+            animation-duration: 0.2s linear; */
             animation: balingbaling-animation infinite 0.2s linear;
         }
         .center_baling{
@@ -2887,9 +2965,10 @@
             height: auto; 
             margin-top: 85%;
             z-index:3;
+            /* background: blue; */
             position: absolute !important;
             margin-left: -32%;
-            animation: bounce 3s infinite
+            /* animation: bounce 3s infinite */
         }
         .right_cloud {
             width: 200% !important;
@@ -3137,7 +3216,7 @@
     /* ========== HOME STYLE ============*/
     .backgroundLayout {
         background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/background_mobile.png') center center no-repeat;
-        height: 100% !important;
+        height: 130% !important;
         width: 100% !important;
         position: absolute !important;
         background-size: cover;
@@ -3234,6 +3313,116 @@
         height: 100% !important;
     }
     /* ========== END SLIDE STYLE ============*/
+
+    /* ========== FEATURES STYLE ============*/
+
+    .backgroundFeatures{
+        background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/empty_bg_mobile.png') center center no-repeat;
+        height: 100% !important;
+        width: 100% !important;
+        position: absolute !important;
+        background-size: cover;
+        z-index: 2 !important;
+    }
+    .title_features {
+        color: white;
+        position: absolute;
+        font-size: 2em;
+        margin-top: 3%;
+        text-align: center;
+        padding: 0% 5%;
+    }
+    .mata, .tombol, .material{
+        display: none !important;
+    }
+    .mata-mobile {
+        width: 25% !important;
+        margin-left: -48%; 
+        margin-top: 20%;
+        /* background: blue; */
+    }
+    .material-mobile {
+        width: 25% !important;
+        margin-left: -48%; 
+        z-index: 3;
+        margin-top: 70%;
+        opacity: 1;
+    }
+    .tombol-mobile{
+        width: 25% !important;
+        z-index: 3;
+        margin-left: -48%; 
+        margin-top: 120%;
+        opacity: 1;
+    }
+    .bg-detail {
+        z-index: 2;
+        opacity: 1;
+        /* margin-top: -30%; */
+        height: 40% !important;
+        width: 55% !important;
+    }
+    .mata-judul-Detail, .material-judul-Detail, .tombol-judul-Detail,.Detail {
+        color: white;
+        padding-right: 20px;
+        padding-left: 20px;
+        text-align: justify;
+    }
+    .mata-judul-Detail {
+        margin-top: 20%;
+        margin-left: 20%;
+        font-size: 1.5em;
+        margin-bottom:5%;
+        opacity: 1;
+    }
+    .material-judul-Detail {
+        margin-top: 70%;
+        margin-left: 20%;
+        font-size: 1.5em;
+        margin-bottom:5%;
+        opacity: 1;
+    }
+    .tombol-judul-Detail {
+        margin-top: 120%;
+        margin-left: 20%;
+        font-size: 1.5em;
+        margin-bottom:5%;
+        opacity: 1;
+    }
+    /* .Detail {
+        font-size: 1em;
+        opacity: 1;
+        margin-top: 30%;
+        margin-left: 40%;
+        height: 50% !important;
+        width: 55% !important;
+    } */
+    .Detail-mata {
+        color : white;
+        margin-top: 30%;
+        margin-left: 25%;
+        text-align: justify;
+        width: 65% !important;
+        font-size: 0.9em;
+    }
+    .Detail-material {
+        color : white;
+        margin-top: 80%;
+        margin-left: 25%;
+        text-align: justify;
+        width: 65% !important;
+        font-size: 0.9em;
+    }
+    .Detail-tombol {
+        color : white;
+        margin-top: 130%;
+        margin-left: 25%;
+        font-size: 0.9em;
+        text-align: justify;
+        width: 65% !important;
+    }
+
+    /* ========== END FEATURES STYLE ============*/
 
     /* ========== CONTACT STYLE ============*/
     .backgroundContact {
@@ -3351,11 +3540,12 @@
     .digital_after {
         color: white;
         font-family: digital;
-        font-size: 4.6em;
+        font-size: 4.3em;
         font-weight: 600;
         margin-top: 5%;
-        margin-left: 5%;
-        margin-right: 5%;
+        margin-left: 8%;
+        margin-right: auto;
+        text-align: center !important;
     }
     .form-custom {
         width: 90% !important;
@@ -3570,6 +3760,10 @@
         from {margin-top: 300%;}
         to {margin-top: 115%;}
     }
+    @keyframes head-user2-move {
+        from {margin-top: 300%;}
+        to {margin-top: 115%;}
+    }
     .head_user2 {
         opacity: 0;
         width: 50% !important;
@@ -3599,7 +3793,7 @@
         from {margin-top: 300%;}
         to {margin-top: -30%;}
     }
-    .balon_user {
+    .assalamualaikum {
         width: 130% !important;
         margin-left: 0%;
         margin-top: 50%;
@@ -3613,7 +3807,7 @@
         from {margin-top: 300%;}
         to {margin-top: 30%;}
     }
-    .balon_user1 {
+    .apakabar {
         opacity: 1;
         width: 130% !important;
         margin-left:-10%;
@@ -3669,7 +3863,7 @@
         from {margin-top: 300%;}
         to {margin-top: 0%;}
     }
-    .balon_hafiz {
+    .walaikumsalam {
         opacity: 1;
         width: 130% !important;
         margin-left:-45%;
@@ -3713,7 +3907,7 @@
         from {margin-top: 300%;}
         to {margin-top: 110%;}
     }
-    .balon_hafiz2 {
+    .alhamdulillah {
         opacity: 0;
         width: 120% !important;
         margin-left:10%;
@@ -3787,7 +3981,7 @@
     }
     .background_about {
         background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/about_mobile.png') center center no-repeat;
-        height: 110% !important;
+        height: 120% !important;
         width: 100% !important;
         position: absolute !important;
         background-size: cover;
@@ -3802,7 +3996,7 @@
         z-index: 2;
         position: absolute !important;
         margin-top: -50%;
-        margin-left: 5%;
+        margin-left: 4%;
         animation-name: fade-in-mobile;
         animation-duration: 5s;
         animation-iteration-count: infinite;
@@ -3814,7 +4008,7 @@
         z-index: 2;
         position: absolute !important;
         margin-top: -50%;
-        margin-left: 5%;
+        margin-left: 4%;
         animation-name: fade-in-mobile;
         animation-duration: 5s;
         animation-delay: 2s;
@@ -4006,7 +4200,7 @@
     /* ========== HOME STYLE ============*/
     .backgroundLayout {
         background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('./images/background_mobile.png') center center no-repeat;
-        height: 100% !important;
+        height: 130% !important;
         width: 100% !important;
         position: absolute !important;
         background-size: cover;
@@ -4022,11 +4216,11 @@
     }
     .title_home {
         color: #fff;
-        font-size: 0.9em;
+        font-size: 1.2em;
         font-weight: 600;
         margin-top: 80% !important;
         margin-left: -85%;
-        width: max-content;
+        width: 245% !important;
         font-family: acumin;
         position: absolute !important;
     }

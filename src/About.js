@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+// import './App.css';
 import {  Row } from 'react-bootstrap';
 import bi from './images/bi-about.png';
 import bi2 from './images/bi-about1.png';
@@ -16,6 +16,8 @@ import alquran from './images/about_alquranmobile.png';
 import funemoticon from './images/about_funemoticonmobile.png';
 import ensiklopedia from './images/about_ensiklopediamobile.png';
 import matdas from './images/about_matdasmobile.png';
+// import './New.css';
+import './Style.css';
 // import hafiz from './images/hafiz.png';
 // import baling2 from './images/baling2.png';
 // import center_baling2 from './images/center.png';
@@ -37,6 +39,7 @@ class About extends Component{
 		super(props); 
 		this.state = {
 			isLoading : true,
+			didLoad : false
 		}
 	  }
 	  static getDerivedStateFromProps(props, state) {
@@ -55,19 +58,27 @@ class About extends Component{
 		})
 	  }
 
+	onLoad = () => {
+		this.setState({
+			didLoad : true
+		})
+	}
   	render() {
 	const { isLoading } = this.state
+	const style = this.state.didLoad ? {} : {visibility: 'hidden'}
+	// console.log(style)
 	// console.log(isLoading)
 		if(isLoading){
 		  return <ImageLoader/>
 		}
+		// console.log(image)
     	return (
     	<div>
 			<Row>
 				<div className="cube absolute"></div>
 				<div className="cube absolute version1"></div>
 				<div className="cube absolute"></div>
-				<img src={bi} className="bi absolute" alt="bi"/>
+				<img src={bi} className="bi absolute" alt="bi" onLoad={this.onLoad} style={style}/>
 				<img src={bi2} className="bi2 absolute" alt="bi"/>
 				<img src={layout_about} className="layout_about absolute" alt="layout about"/>				
 				<div className="background_about"></div>

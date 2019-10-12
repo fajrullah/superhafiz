@@ -1,17 +1,58 @@
 import React, { Component } from 'react';
-import './App.css';
 // import tes from './images/tes.png';
 import { Row, Container, Col } from 'react-bootstrap';
 import material from './images/Material-DetailsProduct.png';
+import materialmobile from './images/material-mobile.png';
 import mata from './images/mata-DetailProduct.png';
+import matamobile from './images/mata-mobile.png';
 import tombol from './images/Tombol-DetailProduct.png';
+import tombolmobile from './images/tombol-mobile.png';
 import bg from './images/detail-background.png';
+import LazyLoad from 'react-lazyload';
+import { TransitionGroup } from 'react-transition-group';
+import './New.css';
+// import './Style.css';
 
 // import hafiz from './images/3.png';
 
 const ImageLoader = () => {
 	return (<div>Loading ...</div>)
   }
+
+  const Mata = () =>{
+    return (
+      <div>
+        <img src={mata} className="mata absolute" alt="fire roket kiri"/>
+        <img src={matamobile} className="mata-mobile absolute" alt="fire roket kiri"/>
+        <img src={bg} className="bg-detail absolute" alt="fire roket kiri"/>
+        <h3 className="mata-judul-Detail absolute">Mata</h3>
+        <p className="Detail-mata absolute">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+      </div>
+    )
+  }
+
+const Material = () =>{
+  return (
+    <div>
+      <img src={material} className="material absolute" alt="fire roket kiri"/>
+      <img src={materialmobile} className="material-mobile absolute" alt="fire roket kiri"/>
+      <img src={bg} className="bg-detail absolute" alt="fire roket kiri"/>
+      <h3 className="material-judul-Detail absolute">Material</h3>
+      <p className="Detail-material absolute">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+    </div>
+  )
+}
+const Tombol = () => {
+  return (
+    <div>
+      <img src={tombol} className="tombol absolute" alt="fire roket kiri"/>
+      <img src={tombolmobile} className="tombol-mobile absolute" alt="fire roket kiri"/>
+      <img src={bg} className="bg-detail absolute" alt="fire roket kiri"/>
+      <h3 className="tombol-judul-Detail absolute">Tombol</h3>
+      <p className="Detail-tombol absolute">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+    </div>
+  )
+}
 
 class Features extends Component{
   constructor(props) {
@@ -41,65 +82,52 @@ class Features extends Component{
     if(isLoading){
       return <ImageLoader/>
     }
+    console.log(isLoading);
     return (
       <div>
-        <Container>
-        <Row>
+        {/* <Container> */}
+        <Row className="detail_product">
           <h2 className="title_features">Detail Produk</h2>
-          <Row>
-            <Col className="col-lg-4 col-xs-12">
-              <img src={mata} className="mata" alt="fire roket kiri"/>
-              <img src={bg} className="bg-detail" alt="fire roket kiri"/>
-              <h3 className="judul-Detail">Mata</h3>
-              <p className="Detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          {/* <Row> */}
+            <Col lg={4} className="hide-mobile">
+                <Mata/>
             </Col>
-            <Col className="col-lg-4 col-xs-12">
-              <img src={material} className="material" alt="fire roket kiri"/>
-              <img src={bg} className="bg-detail" alt="fire roket kiri"/>
-              <h3 className="judul-Detail">Material</h3>
-              <p className="Detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <Col lg={4} className="hide-mobile">
+              <Material/>
             </Col>
-            <Col className="col-lg-4 col-xs-12">
-              <img src={tombol} className="tombol" alt="fire roket kiri"/>
-              <img src={bg} className="bg-detail" alt="fire roket kiri"/>
-              <h3 className="judul-Detail">Tombol</h3>
-              <p className="Detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <Col lg={4} className="hide-mobile">
+              <Tombol/>
             </Col>
-          </Row>
-          {/* <Col className="col-lg-4">
-            <img src={hafiz} className="hafiz-features" alt="fire roket kiri"/>
-          </Col> 
+            <Col sm={12} className="hide-desktop">
+                <Col sm={5}>
+                  <img src={mata} className="absolute" alt="fire roket kiri"/>
+                </Col>
+                <Col sm={7}>
+                  <img src={bg} className="absolute" alt="fire roket kiri"/>
+                  <h3 className="absolute">Mata</h3>
+                  <p className="absolute">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                </Col>
+            </Col>
+            <Col sm={12} className="hide-desktop">
+            <div>
+              <img src={material} className="absolute" alt="fire roket kiri"/>
+              <img src={bg} className="absolute" alt="fire roket kiri"/>
+              <h3 className="absolute">Material</h3>
+              <p className="absolute">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+            </Col>
+            <Col sm={12} className="hide-desktop">
+              <div>
+                <img src={tombol} className="absolute" alt="fire roket kiri"/>
+                <img src={bg} className="absolute" alt="fire roket kiri"/>
+                <h3 className="absolute">Tombol</h3>
+                <p className="absolute">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+              </div>
+            </Col>
+          {/* </Row> */}
 
-          <Col className="col-lg-8 col-xs-12">
-            <Row>
-              <Col className="col-lg-6 col-xs-6">
-                <img src={material} className="material" alt="fire roket kiri"/>
-              </Col>
-              <Col className="col-lg-6 col-xs-6">
-                <p class="desc_mata">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
-              </Col>
-              <Col className="col-lg-6 col-xs-6">
-                <p class="desc_mata">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
-              </Col>
-              <Col className="col-lg-6 col-xs-6">
-                <img src={mata} className="mata" alt="fire roket kiri"/>
-              </Col>
-              <Col className="col-lg-6 col-xs-6">
-                <img src={tombol} className="tombol" alt="fire roket kiri"/>
-              </Col>
-              <Col className="col-lg-6 col-xs-6">
-                <p class="desc_tombol">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
-              </Col>
-            </Row>
-          </Col> */}
         </Row>
-        </Container>
+        {/* </Container> */}
       </div>
     );
   }
